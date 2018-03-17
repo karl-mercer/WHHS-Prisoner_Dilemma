@@ -123,10 +123,10 @@ def play_round(player1, player2, score1, score2, moves1, moves2):
     Returns a 2-tuple with score1 and score2 incremented by this round
     '''
     
-    RELEASE = 0 # (R, "reward" in literature) when both players collude
+    RELEASE = 75 # (R, "reward" in literature) when both players collude
     TREAT = 100 # (T, "temptation" in literature) when you betray your partner
-    SEVERE_PUNISHMENT = -500 # (S, "sucker" in literature) when your partner betrays you
-    PUNISHMENT = -250 # (P) when both players betray each other
+    SEVERE_PUNISHMENT = 0 # (S, "sucker" in literature) when your partner betrays you
+    PUNISHMENT = 25 # (P) when both players betray each other
     
     # Keep T > R > P > S to be a Prisoner's Dilemma
     # Keep 2R > T + S to be an Iterative Prisoner's Dilemma
