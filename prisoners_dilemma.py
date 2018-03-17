@@ -1,8 +1,7 @@
 from __future__ import print_function
 
 ##### 
-# Computer Science and Software Engineering
-# PLTW AP CS Principles
+# PLTW Computer Science Principles
 # (c)2014 Project Lead The Way, Inc.
 #
 # Activity 1.3.9 Tools for Collaboration
@@ -33,17 +32,17 @@ from __future__ import print_function
 import random
 import os.path              
     
-import example0, example1, example2, example3
-import example4, example5, example6, example7
-import team0, team1, team2, team3, team4
-import team5, team6, team7, team8, team9
+#import example0, example1, example2, example3
+#import example4, example5, example6, example7
+import team00, team01, team02, team03, team04
+import team05, team06, team07, team08, team09
 import team10, team11, team12, team13, team14
-betray = example1
-collude = example0
-
-modules = [example0, example1, example2, example3, example4, example5, example6, example7,
-team0, team1, team2, team3, team4, team5, team6, team7, team8, team9, team10, 
-team11, team12, team13, team14]
+import team15, team16, team17, team18
+#betray = example1
+#collude = example0
+'''example0, example1, example2, example3, example4, example5, example6, example7,'''
+modules = [team00, team01, team02, team03, team04, team05, team06, team07, team08, 
+team09, team10, team11, team12, team13, team14, team15, team16, team17, team18]
 for module in modules:
     reload(module)
     print ('reloaded',module)
