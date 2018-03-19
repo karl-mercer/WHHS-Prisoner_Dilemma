@@ -7,7 +7,7 @@
 ####
 
 team_name = 'Team 13' # Only 10 chars displayed.
-strategy_name = 'The God Strat'
+strategy_name = 'The Good Strat'
 strategy_description = 'How does this strategy decide?'
     
 def move(my_history, their_history, my_score, their_score):
@@ -66,3 +66,22 @@ if __name__ == '__main__':
               my_score=0, 
               their_score=0,
               result='b')             
+              
+def winningstrat(my_history, their_history, my_score, their_score):
+    print 'c'
+    if their_history[-1] == 'c':
+        print 'b'
+    while their_history[-1] == 'c':
+        print 'b'
+    
+
+'''
+def winningstratv2(my_history, their_history, my_score, their_score):
+    first_move = winningstrat(my_history, their_history, my_score, their_score)
+    last_turn_them = their_history[-1]
+    last_turn_me = my_history[-1]
+    while last_turn_me == last_turn_them:
+        print 'c'
+    else:
+        print 'b'
+'''
