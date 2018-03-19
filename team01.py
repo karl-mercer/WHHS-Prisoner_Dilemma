@@ -10,7 +10,22 @@ team_name = 'Team Success' # Only 10 chars displayed.
 strategy_name = 'Win'
 strategy_description = 'Not lose'
     
-def move(my_history, their_history, my_score, their_score):
+def move(my_history, their_history, my_score, their_score):    
+    if their_history ==0:
+        return 'c'
+    else:
+        if their_history != 'c':
+            return 'b'
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ''' Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
     
