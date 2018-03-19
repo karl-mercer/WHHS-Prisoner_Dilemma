@@ -1,8 +1,7 @@
 from __future__ import print_function
 
 ##### 
-# Computer Science and Software Engineering
-# PLTW AP CS Principles
+# PLTW Computer Science Principles
 # (c)2014 Project Lead The Way, Inc.
 #
 # Activity 1.3.9 Tools for Collaboration
@@ -33,17 +32,17 @@ from __future__ import print_function
 import random
 import os.path              
     
-import example0, example1, example2, example3
-import example4, example5, example6, example7
-import team0, team1, team2, team3, team4
-import team5, team6, team7, team8, team9
+#import example0, example1, example2, example3
+#import example4, example5, example6, example7
+import team00, team01, team02, team03, team04
+import team05, team06, team07, team08, team09
 import team10, team11, team12, team13, team14
-betray = example1
-collude = example0
-
-modules = [example0, example1, example2, example3, example4, example5, example6, example7,
-team0, team1, team2, team3, team4, team5, team6, team7, team8, team9, team10, 
-team11, team12, team13, team14]
+import team15, team16, team17, team18
+#betray = example1
+#collude = example0
+'''example0, example1, example2, example3, example4, example5, example6, example7,'''
+modules = [team00, team01, team02, team03, team04, team05, team06, team07, team08, 
+team09, team10, team11, team12, team13, team14, team15, team16, team17, team18]
 for module in modules:
     reload(module)
     print ('reloaded',module)
@@ -124,15 +123,17 @@ def play_round(player1, player2, score1, score2, moves1, moves2):
     Returns a 2-tuple with score1 and score2 incremented by this round
     '''
     
-    RELEASE = 0 # (R, "reward" in literature) when both players collude
-    TREAT = 100 # (T, "temptation" in literature) when you betray your partner
-    SEVERE_PUNISHMENT = -500 # (S, "sucker" in literature) when your partner betrays you
-    PUNISHMENT = -250 # (P) when both players betray each other
+    #Current setup would be used for an IPD
+    #2(-1) > 0-3 True
+    RELEASE = -1 # (R, "reward" in literature) when both players collude
+    TREAT = 0 # (T, "temptation" in literature) when you betray your partner
+    SEVERE_PUNISHMENT = -3 # (S, "sucker" in literature) when your partner betrays you
+    PUNISHMENT = -2 # (P) when both players betray each other
     
     # Keep T > R > P > S to be a Prisoner's Dilemma
-    # Keep 2R > T + S to be an Iterative Prisoner's Dilemma
+    # Keep 2R > T + S to be an Iterative Prisoner's Dilemma (IPD)
     
-    ERROR = -250
+    ERROR = -2
     
     # Get the two players' actions and remember them.
     action1 = player1.move(moves1, moves2, score1, score2)
