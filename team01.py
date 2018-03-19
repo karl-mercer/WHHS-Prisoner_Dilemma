@@ -8,14 +8,13 @@
 
 team_name = 'Team Success' # Only 10 chars displayed.
 strategy_name = 'Win'
-strategy_description = 'Not lose'
+strategy_description = 'Not Lose'
     
 def move(my_history, their_history, my_score, their_score):    
-    if their_history ==0:
+    if len(their_history) == 0:
         return 'c'
-    else:
-        if their_history != 'c':
-            return 'b'
+    elif my_history == 'c' and their_history == 'c':
+        return 'b'
     
     
     
