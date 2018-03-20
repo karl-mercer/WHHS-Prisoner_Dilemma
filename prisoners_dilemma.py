@@ -40,9 +40,10 @@ import team10, team11, team12, team13, team14
 import team15, team16, team17, team18
 #betray = example1
 #collude = example0
-'''example0, example1, example2, example3, example4, example5, example6, example7,'''
+'''example0, example1, example2, example3, example4, example5, example6, example7'''
 modules = [team00, team01, team02, team03, team04, team05, team06, team07, team08, 
 team09, team10, team11, team12, team13, team14, team15, team16, team17, team18]
+
 for module in modules:
     reload(module)
     print ('reloaded',module)
