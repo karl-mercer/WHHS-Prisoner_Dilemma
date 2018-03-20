@@ -8,7 +8,7 @@
 
 team_name = 'Fodder2' # Only 10 chars displayed.
 strategy_name = 'Another sacrificial lamb.'
-strategy_description = 'It does not decide either.'
+strategy_description = 'It does not decide either. It is simply envious of the opponent score.'
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.

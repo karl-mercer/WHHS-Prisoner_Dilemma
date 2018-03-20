@@ -28,19 +28,21 @@ from __future__ import print_function
 # play a tournament. To run the tournament of [team, team1, team1, example1]:
 # scores, moves, reports = main_play([team1]*3+[example1])
 # section0, section1, section2, section3 = reports
+#
+# To enter all teams in the tournament, run the prisoners_dilemma.py file and
+# then enter in the iPython Shell:
+#               scores, moves, reports = main_play([team00, ..., team-n])
 #######
 import random
 import os.path              
     
-#import example0, example1, example2, example3
-#import example4, example5, example6, example7
 import team00, team01, team02, team03, team04
 import team05, team06, team07, team08, team09
 import team10, team11, team12, team13, team14
 import team15, team16, team17, team18
 #betray = example1
 #collude = example0
-'''example0, example1, example2, example3, example4, example5, example6, example7'''
+
 modules = [team00, team01, team02, team03, team04, team05, team06, team07, team08, 
 team09, team10, team11, team12, team13, team14, team15, team16, team17, team18]
 
