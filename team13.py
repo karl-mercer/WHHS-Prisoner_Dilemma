@@ -69,12 +69,8 @@ if __name__ == '__main__':
 '''            
 def winningstrat(my_history, their_history):
     if my_history == '':
-        return 'c'
-    while their_history[-1] == 'c':
         return 'b'
-    if winningstrat('bbb', 'ccc'):
-        return 'b'
-    while their_history[-1]:
+    else:
         return their_history[-1]
         
         
