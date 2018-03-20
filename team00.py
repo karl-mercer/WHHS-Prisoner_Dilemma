@@ -12,6 +12,8 @@ strategy_description = 'How does this strategy decide?'
     
 def move(my_history, their_history, my_score, their_score):
     #Function will accept most recent input into a list 
+    if my_history == 1:
+        return 'c'
     if their_history[-1] is 'b':
         return 'c'
     else: 
