@@ -9,9 +9,9 @@
 team_name = 'Team 13' # Only 10 chars displayed.
 strategy_name = 'The Good Strat'
 strategy_description = 'How does this strategy decide?'
-    
+'''    
 def move(my_history, their_history, my_score, their_score):
-    ''' Arguments accepted: my_history, their_history are strings.
+#Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
     
     Make my move.
@@ -26,7 +26,7 @@ def move(my_history, their_history, my_score, their_score):
     # Analyze my_history and their_history and/or my_score and their_score.
     # Decide whether to return 'c' or 'b'.
     
-    return 'c'
+ #   return 'c'
 
     
 def test_move(my_history, their_history, my_score, their_score, result):
@@ -66,14 +66,18 @@ if __name__ == '__main__':
               my_score=0, 
               their_score=0,
               result='b')             
-              
-def winningstrat(my_history, their_history, my_score, their_score):
-    print 'c'
-    if their_history[-1] == 'c':
-        print 'b'
+            
+def winningstrat(my_history, their_history):
+    if my_history == '':
+        return 'c'
     while their_history[-1] == 'c':
-        print 'b'
-    
+        return 'b'
+    if winningstrat('bbb', 'ccc'):
+        return 'b'
+    if winningstrat('bbb', 'cbcbcbcbcbc'):
+        return 'b'
+        
+        
 
 '''
 def winningstratv2(my_history, their_history, my_score, their_score):
@@ -84,4 +88,4 @@ def winningstratv2(my_history, their_history, my_score, their_score):
         print 'c'
     else:
         print 'b'
-'''
+#'''
