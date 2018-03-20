@@ -8,7 +8,7 @@
 
 team_name = 'Bichael' # Only 10 chars displayed.
 strategy_name = 'Basic-AI'
-strategy_description = 'Finds a pattern in the opponent code and then generates a pattern that betrays when they collude and colludes when they collude.'
+strategy_description = 'Finds a pattern in the opponent code and then generates a pattern.If they betray I drag them down with me. Also checks for constant collusion over 8 items in their history after betraying them. then colludes until they betray.'
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
@@ -33,8 +33,12 @@ def move(my_history, their_history, my_score, their_score):
         return 'c'
     elif their_history[-1]=='c':
         return 'b'
-    else:
+    elif 'bbb' in their_history:
+        return 'b'
+    elif 'cccccccc' in their_history:
         return 'c'
+    else:
+        return 'b'
 
     
 def test_move(my_history, their_history, my_score, their_score, result):
