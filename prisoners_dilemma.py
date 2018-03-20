@@ -128,10 +128,10 @@ def play_round(player1, player2, score1, score2, moves1, moves2):
     
     #Current setup would be used for an IPD
     #2(-1) > 0-3 True
-    RELEASE = -1 # (R, "reward" in literature) when both players collude
+    RELEASE = -10 # (R, "reward" in literature) when both players collude
     TREAT = 0 # (T, "temptation" in literature) when you betray your partner
-    SEVERE_PUNISHMENT = -3 # (S, "sucker" in literature) when your partner betrays you
-    PUNISHMENT = -2 # (P) when both players betray each other
+    SEVERE_PUNISHMENT = -30 # (S, "sucker" in literature) when your partner betrays you
+    PUNISHMENT = -20 # (P) when both players betray each other
     
     # Keep T > R > P > S to be a Prisoner's Dilemma
     # Keep 2R > T + S to be an Iterative Prisoner's Dilemma (IPD)
