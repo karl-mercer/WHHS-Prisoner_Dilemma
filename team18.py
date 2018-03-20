@@ -25,20 +25,19 @@ def move(my_history, their_history, my_score, their_score):
     
     # Analyze my_history and their_history and/or my_score and their_score.
     # Decide whether to return 'c' or 'b'.
-    betrayal_count = 0
+    betcount = 0
     if len(their_history)==0:
         return 'c'
     elif their_history[-1] == 'b': #if they have betrayed me in the last round
         for betrayals in their_history: #will examine how many betrayals they have played
             if betrayals == 'b':
-                betrayal_count +=1
-            if betrayal_count%5 == 0:
-                return 'c' #for every 5th betrayal I will not retaliate, but forgive 
-            else:
-                return 'b'
+                betcount +=1
+        if betcount%5 == 0:
+            return 'c' #for every 5th betrayal I will not retaliate, but forgive 
+        else:
+            return 'b'
     else: 
         return 'c'
-
     
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
