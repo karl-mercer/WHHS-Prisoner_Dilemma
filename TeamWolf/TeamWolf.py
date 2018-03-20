@@ -31,15 +31,15 @@ def move(my_history, their_history, my_score, their_score):
         return 'b'
     
         
-    #return 'c'
+    return 'c'
 
     
 '''def test_move(my_history, their_history, my_score, their_score, result):
-    '''#calls move(my_history, their_history, my_score, their_score)'''
-'''''' '''from this module. Prints error if return value != result.
-    Returns True or False, dpending on whether result was as expected.
-    '''
-    '''real_result = move(my_history, their_history, my_score, their_score)
+    '''#calls move(my_history, their_history, my_score, their_score)
+    #from this module. Prints error if return value != result.
+   # Returns True or False, dpending on whether result was as expected.
+'''
+    real_result = move(my_history, their_history, my_score, their_score)
     if real_result == result:
         return True
     else:
@@ -70,4 +70,4 @@ if __name__ == '__main__':
               # move('bbb', 'ccc', 0, 0) returns 'b'.
               my_score=0, 
               their_score=0,
-              result='b')             '''
+              result='b') '''            
