@@ -8,7 +8,7 @@
 
 team_name = 'Bichael' # Only 10 chars displayed.
 strategy_name = 'Basic-AI'
-strategy_description = 'Finds a pattern in the opponent code and then generates a pattern that betrays when they collude and colludes when they collude.'
+strategy_description = 'Finds a pattern in the opponent code and then generates a pattern that betrays first'
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
