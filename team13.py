@@ -6,12 +6,12 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'The name the team gives to itself' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
+team_name = 'Team 13' # Only 10 chars displayed.
+strategy_name = 'The Good Strat'
 strategy_description = 'How does this strategy decide?'
-    
+'''    
 def move(my_history, their_history, my_score, their_score):
-    ''' Arguments accepted: my_history, their_history are strings.
+#Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
     
     Make my move.
@@ -26,14 +26,14 @@ def move(my_history, their_history, my_score, their_score):
     # Analyze my_history and their_history and/or my_score and their_score.
     # Decide whether to return 'c' or 'b'.
     
-    return 'c'
+ #   return 'c'
 
-    
+'''    
 def test_move(my_history, their_history, my_score, their_score, result):
-    '''calls move(my_history, their_history, my_score, their_score)
+    calls move(my_history, their_history, my_score, their_score)
     from this module. Prints error if return value != result.
     Returns True or False, dpending on whether result was as expected.
-    '''
+    
     real_result = move(my_history, their_history, my_score, their_score)
     if real_result == result:
         return True
@@ -66,3 +66,26 @@ if __name__ == '__main__':
               my_score=0, 
               their_score=0,
               result='b')             
+'''            
+def winningstrat(my_history, their_history):
+    if my_history == '':
+        return 'c'
+    while their_history[-1] == 'c':
+        return 'b'
+    if winningstrat('bbb', 'ccc'):
+        return 'b'
+    while their_history[-1]:
+        return their_history[-1]
+        
+        
+
+'''
+def winningstratv2(my_history, their_history, my_score, their_score):
+    first_move = winningstrat(my_history, their_history, my_score, their_score)
+    last_turn_them = their_history[-1]
+    last_turn_me = my_history[-1]
+    while last_turn_me == last_turn_them:
+        print 'c'
+    else:
+        print 'b'
+#'''
