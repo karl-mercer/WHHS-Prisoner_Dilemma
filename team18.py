@@ -27,9 +27,9 @@ def move(my_history, their_history, my_score, their_score):
     # Decide whether to return 'c' or 'b'.
     
     if len(their_history)==0:
-        return 'c'
-    else: 
         return 'b'
+    else: 
+        return 'c'
 
     
 def test_move(my_history, their_history, my_score, their_score, result):
