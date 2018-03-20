@@ -71,7 +71,10 @@ def winningstrat(my_history, their_history):
     if my_history == '':
         return 'b'
     else:
-        return their_history[-1]
+        if their_history[-1] == 'c':
+            return 'b'
+        else:
+            return their_history[-1]
         
         
 
