@@ -8,9 +8,32 @@
 
 team_name = 'Team Success' # Only 10 chars displayed.
 strategy_name = 'Win'
-strategy_description = 'Not lose'
+strategy_description = 'Not Lose'
     
-def move(my_history, their_history, my_score, their_score):
+def move(my_history, their_history, my_score, their_score):    
+    if len(their_history) == 0 and len(my_history) ==0:
+        return 'b'
+    elif my_history[-1] == 'c' and their_history[-1] == 'c':
+        return 'b'
+    elif their_history[-1] == 'c':
+        return 'b'
+    elif their_history[-1] == 'b' and my_history[-1] == 'b':
+        return 'c'
+    elif their_score >= my_score:
+        return 'b'
+    elif my_score <= their score:
+        return 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     ''' Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
     
