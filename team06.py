@@ -11,6 +11,7 @@ strategy_name = 'Anticipation of vengeance'
 strategy_description = '''This strat defeats other opponents based
 on their response to being betrayed, which will likely be to betray back.
 '''
+r
 def move(my_history, their_history, my_score, their_score):
     
     if (their_history) == '':
