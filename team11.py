@@ -1,43 +1,30 @@
 import random
 ####
 # Each team's file must define four tokens:
-#     team_name: LoneNotSkylarWolf
-#     strategy_name: a string
-#     strategy_description: a string
-#     move: A function that returns 'c' or 'b'
+team_name = 'LoneNotSkylarWolf'
+strategy_name = 'The bet strategy'
+strategy_description = 'beats everyone'
+#move = A function that returns 'c' or 'b'
 ####
 
-team_name = 'LoneSkylarWolf' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
-score = 0
-moves = 0
+moves = 1 #sets move to 1, to check the count of moves
+
+
 def move(my_history, their_history, my_score, their_score):
-    ''' Arguments accepted: my_history, their_history are strings.
-    my_score, their_score are ints.
-    Make my move.
-    Returns 'c' or 'b'. 
-    '''
-    return random.choice('bc')
-    if their_history[-1:] == my_history[-1:]:
-        return my_history[-2:]
-        moves += 1
-    elif their_history[-3] == 'c' or my_history[-1:] == 'c':
-        return 'c'
-        moves += 1
-    elif moves%2 == 0:
-        return their_history[-1]
-        moves += 1
-    
-    if their_history[-1:] and my_history[-1:] == 'c':
-        score -= 1
-    elif their_history[-1:] and my_history[-1:] == 'b':
-        score -= 2
-    elif their_history[-1:] == 'c' and my_history[-1:] == 'b':
-        score += 0
-    elif their_history[-1:] == 'b' and my_history[-1:] == 'c':
-        score -= 3
-    return score
+    global moves #sets moves to global variables
+    if their_history[-1:] is my_history[-1:]: #checks if their last output is my last output
+        moves = moves + 1 #adds one to the move count
+        return (my_history[-1:]) #returns the last output the code has given
+    elif their_history[-1] is 'c' and my_history[-1:] is 'b': #checks to see if their history is 'c' and my history is 'b'
+        moves = moves + 1 #adds 1 to the move count
+        return ('c') #returns c as output
+    elif (moves%2 is 0) and (moves is not 0): #Checks to see if the number of moves is even
+        moves = moves + 1 #adds 1 to the move count
+        return (their_history[-1]) #returns their last output
+    else: #if none of the above criteria are met, return a random output 'bc'
+        moves = moves + 1 #adds 1 to the move count
+        return random.choice('bc') #selects a random letter 'bc'
+               
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
     # their_history: a string of the same length as history, possibly empty. 
     # The first round between these two players is my_history[0] and their_history[0].
