@@ -12,13 +12,13 @@ strategy_description = 'How does this strategy decide?'
     
 def move(my_history, their_history, my_score, their_score):
     
-    if my_score == 0:
+    if len(their_history) == 0:
         return 'c'
     else:
         return their_history [-1]
         
         
-        
+    
 
     
     
