@@ -3,8 +3,9 @@ strategy_name = 'Codename: staight-faced'
 strategy_description = 'this strategy decides either to keep c or b based on their_history'
     
 def move(my_history, their_history, my_score, their_score):
-    if len(their_history)==0:
+    if len(their_history)==0 or 1:
         return 'c'    
+    
     elif(their_history[-2] is 'b') and (my_history[-1]  is 'c'):
         return 'c'
     elif () and ():
