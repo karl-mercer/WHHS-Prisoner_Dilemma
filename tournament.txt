@@ -1,44 +1,445 @@
 --------------------------------------------------------------------------------
 Section 0 - Line up
 --------------------------------------------------------------------------------
-Player 0 (P0): napes, RNG GOD
-        It is random unless I am losing
-Player 1 (P1): Bichael, Basic-AI
+Player 0 (P0): Team Success, Win
+        Not Lose
+Player 1 (P1): big_dogs, The name the team gives to this strategy
+        How does this strategy decide?
+Player 2 (P2): Shrek, fun
+        How does this strategy decide?
+Player 3 (P3): The name the team gives to itself, The name the team gives to this strategy
+        How does this strategy decide?
+Player 4 (P4): Bichael, Basic-AI
         Finds a pattern in the opponent code and then generates a pattern.If the
         y betray I drag them down with me. Also checks for constant collusion ov
         er 8 items in their history after betraying them. then colludes until th
         ey betray.
+Player 5 (P5): Raphael, Tit for Tat
+        It does not decide. It simply retaliates.
+Player 6 (P6): Michaelangelo, Random action.
+        It does not decide either. It is simply envious of the opponent score.
+Player 7 (P7): k. mercer, Anatol Rapoport
+        Collude, relatiate, but maybe forgive.
+Player 8 (P8): forest, The name the team gives to this strategy
+        How does this strategy decide?
+Player 9 (P9): 11040221, The name the team gives to this strategy
+        How does this strategy decide?
+Player 10 (P10): Team 10, Conquistadors
+        How does this strategy decide?
+Player 11 (P11): LoneSkylarWolf, The name the team gives to this strategy
+        How does this strategy decide?
+Player 12 (P12): Naga, HI
+        Baseline
+Player 13 (P13): napes, Pavlov
+        It chooses b or c depending on rewards
 --------------------------------------------------------------------------------
 Section 1 - Player vs. Player
 --------------------------------------------------------------------------------
 Each column shows pts/round earned against each other player:
-             P0     P1
-vs. P0 :      0    -16
-vs. P1 :    -18      0
-TOTAL  :    -18    -16
+             P0     P1     P2     P3     P4     P5     P6     P7     P8     P9    P10    P11    P12    P13
+vs. P0 :      0    -22    -49    -50     -8    -22    -19    -21     -8    -22    -22    -19    -22    -50
+vs. P1 :    -22      0     -1      0    -25      0    -16      0    -25      0    -20    -16    -20    -50
+vs. P2 :      9     -1      0     -1      9     -1      4     -1      9     -1     -1      4     -1    -50
+vs. P3 :     10      0      0      0     10      0      5      0     10      0      0      4      0    -50
+vs. P4 :    -38    -26    -50    -50      0    -26    -37    -31    -25    -26    -25    -38    -25    -50
+vs. P5 :    -22      0     -1      0    -25      0    -16      0    -25      0    -20    -17    -20    -50
+vs. P6 :    -15    -17    -25    -28     -9    -16      0    -20     -7    -16    -17    -17    -18    -45
+vs. P7 :    -14      0     -1      0    -18      0    -13      0    -18      0     -2    -12     -1    -50
+vs. P8 :    -38    -26    -50    -50    -25    -26    -39    -31      0    -26    -25    -38    -25    -50
+vs. P9 :    -22      0     -1      0    -25      0    -16      0    -25      0    -20    -15    -20    -50
+vs. P10 :    -22    -21     -1     -1    -25    -21    -17     -3    -25    -20      0    -18    -25    -50
+vs. P11 :    -16    -16    -23    -23     -8    -17    -19    -18     -7    -15    -18      0    -18    -33
+vs. P12 :    -22    -20     -1     -1    -25    -20    -18     -2    -25    -21    -25    -18      0    -50
+vs. P13 :     10    -50    -50    -50     10    -50    -45    -50     10    -50    -50    -33    -50      0
+TOTAL  :   -202   -199   -253   -254   -164   -199   -246   -177   -161   -197   -245   -233   -245   -628
 --------------------------------------------------------------------------------
 Section 2 - Leaderboard
 --------------------------------------------------------------------------------
 Average points per round:
 Team name (P#):  Score      with strategy name
-Bichael   (P1):         -8 points with Basic-AI                                
-napes     (P0):         -9 points with RNG GOD                                 
+Bichael   (P4):        -12 points with Basic-AI                                
+forest    (P8):        -12 points with The name the team gives to this strategy
+k. mercer (P7):        -13 points with Anatol Rapoport                         
+Team Succe(P0):        -15 points with Win                                     
+big_dogs  (P1):        -15 points with The name the team gives to this strategy
+Raphael   (P5):        -15 points with Tit for Tat                             
+11040221  (P9):        -15 points with The name the team gives to this strategy
+LoneSkylar(P11):        -17 points with The name the team gives to this strategy
+Michaelang(P6):        -18 points with Random action.                          
+Team 10   (P10):        -18 points with Conquistadors                           
+Naga      (P12):        -18 points with HI                                      
+Shrek     (P2):        -19 points with fun                                     
+The name t(P3):        -19 points with The name the team gives to this strategy
+napes     (P13):        -45 points with Pavlov                                  
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-team14--------------------------------------------------------------------------------
-import random
+team01--------------------------------------------------------------------------------
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
 
-team_name = 'napes' 
-strategy_name = 'RNG GOD'
-strategy_description = 'It is random unless I am losing'
-                 
-def move(my_history, their_history, my_score, their_score):
-    if my_score < their_score:
-        return random.choice('b''c')
-    elif their_score > my_score:
-        return ('b')
+team_name = 'Team Success' # Only 10 chars displayed.
+strategy_name = 'Win'
+strategy_description = 'Not Lose'
+    
+def move(my_history, their_history, my_score, their_score):    
+    if len(their_history) == 0 and len(my_history) ==0:
+        return 'b'
+    elif my_history[-1] == 'c' and their_history[-1] == 'c':
+        return 'b'
+    elif their_history[-1] == 'c':
+        return 'b'
+    elif their_history[-1] == 'b' and my_history[-1] == 'b':
+        return 'c'
+    elif their_score >= my_score:
+        return 'b'
+    elif my_score <= their_score:
+        return 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+    
+    return 'c'
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
     else:
-        return ('c')--------------------------------------------------------------------------------
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
+team02--------------------------------------------------------------------------------
+####
+# Each team's file must define four tokens:
+#     team_name: Big Dogs
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'big_dogs' # Only 10 chars displayed.
+strategy_name = 'The name the team gives to this strategy'
+strategy_description = 'How does this strategy decide?'
+    
+def move(my_history, their_history, my_score, their_score):
+    
+    if len(their_history) == 0:
+        return 'c'
+    else:
+        return their_history [-1]
+        
+        
+    
+
+    
+    
+    
+    
+    
+    
+
+    
+''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+'''
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+    
+   
+
+
+
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
+team03--------------------------------------------------------------------------------
+'''
+Dalton Price
+William 
+T3AM
+
+
+
+
+
+
+
+
+
+'''
+
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'Shrek' # Only 10 chars displayed.
+strategy_name = 'fun'
+strategy_description = 'How does this strategy decide?'
+    
+def move(my_history, their_history, my_score, their_score):
+    if len(their_history) and len (my_history) ==0:
+        return 'b'
+    if len(their_history) and len (my_history) ==1:
+        return 'b'
+    if len(their_history) and len (my_history) ==2:
+        return 'c'
+    if len(their_history) and len (my_history) ==3:
+        return 'b'
+    else:
+        return 'c'
+  
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+    
+    return 'c'
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
+team04--------------------------------------------------------------------------------
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'The name the team gives to itself' # Only 10 chars displayed.
+strategy_name = 'The name the team gives to this strategy'
+strategy_description = 'How does this strategy decide?'
+    
+def move(my_history, their_history, my_score, their_score):
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+    
+    return 'c'
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
 team05--------------------------------------------------------------------------------
 ####
 # Each team's file must define four tokens:
@@ -72,12 +473,12 @@ def move(my_history, their_history, my_score, their_score):
     if their_history=='':
         return 'b'
     elif their_history[-1]=='b':
-        return 'c'
+        return 'b'
     elif their_history[-1]=='c':
         return 'b'
-    elif 'bb' in their_history:
+    if 'bb' in their_history:
         return 'b'
-    elif 'cccccccc' in their_history:
+    if 'cccccccc' in their_history:
         return 'c'
     else:
         return 'b'
@@ -120,26 +521,2620 @@ if __name__ == '__main__':
               my_score=0, 
               their_score=0,
               result='b')             --------------------------------------------------------------------------------
-Section 3 - Game Data for Team napes
---------------------------------------------------------------------------------
--18 pt/round: napes(P0) "RNG GOD"
--16 pt/round: Bichael(P1) "Basic-AI"
-cbBCcbBCcccbBCbCcbBBBCcccccbCcccbCcbBBBBBBBBBCcbCccbBCcbCbCbBBBCcbBCcbCcbBBCcbBC
-BbcCBbcCBBBbcCbCBbcccCBBBBBbCBBBbCBbcccccccccCBbCBBbcCBbCbCbcccCBbcCBbCBbccCBbcC
+team16--------------------------------------------------------------------------------
+import random
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
 
-cccbBCbCbBBCccccbCccbBCcccbBBBCbCbCbBCccccbBBCcccbBCcbCbCbBCbBCbCcbCcbBBBB
-BBBbcCbCbccCBBBBbCBBbcCBBBbcccCbCbCbcCBBBBbccCBBBbcCBbCbCbcCbcCbCBbCBbcccc
+team_name = 'Raphael' # Only 10 chars displayed.
+strategy_name = 'Tit for Tat'
+strategy_description = 'It does not decide. It simply retaliates.'
+    
+def move(my_history, their_history, my_score, their_score):
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+    if len(my_history)==0:
+        return 'c'
+    elif their_history[-1] == 'b':
+        return 'b'
+    else:
+        return 'c'
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
+team17--------------------------------------------------------------------------------
+import random
+
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'Michaelangelo' # Only 10 chars displayed.
+strategy_name = 'Random action.'
+strategy_description = 'It does not decide either. It is simply envious of the opponent score.'
+    
+def move(my_history, their_history, my_score, their_score):
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+    choices = ['b', 'c']
+    turn = random.choice(choices)
+    return turn
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
+team18--------------------------------------------------------------------------------
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'k. mercer' # Only 10 chars displayed.
+strategy_name = 'Anatol Rapoport'
+strategy_description = 'Collude, relatiate, but maybe forgive.'
+    
+def move(my_history, their_history, my_score, their_score):
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+#####
+#
+#                                Strategy 1 - Strategic
+#
+#####    
+    betcount = 0
+    if len(their_history)==0:
+        return 'c'
+    elif 'BbcCBbcCBBb' in their_history:
+        return 'b'
+    elif their_history[-1] == 'b': #if they have betrayed me in the last round
+        for betrayals in their_history: #will examine how many betrayals they have played
+            if betrayals == 'b':
+                betcount +=1
+        if betcount%5 == 0:
+            return 'c' #for every 5th betrayal I will not retaliate, but forgive 
+        else:
+            return 'b'
+    else: 
+        return 'c'
+#####
+#
+#                               Strategy 2
+#
+#####
+    #if len(my_history)==0: #show a little trust and begin with collusion
+    #    return 'c'
+    #elif 25>len(my_history)>0: #for the first 25 moves return whatever move they just played
+    #    if their_history[-1] == 'b':
+    #        return 'b'
+    #    else:
+    #        return 'c'
+    #else:
+    #    betcount = 0 #begin counting the number of collusions and betrayals in their history
+    #    colcount = 0
+    #    for moves in their_history: #examine each move in their history and accumulate a total of betrayals and colludes
+    #        if moves == 'b':
+    #            betcount +=1
+    #        else:
+    #            colcount += 1
+    #    total = len(their_history)
+    #    if betcount/total > 0.5: #if they are betraying more than 25% of the time, then betray also
+    #        return 'b'
+    #    else:
+    #        return 'c'
+#####
+#
+#                               Strategy 3 - Frequency Response (no good or needs work)
+#
+#####
+    #if len(my_history) < 10:
+    #    return 'c'
+    #betCount, myCount = 0, 0 #counters tracking number of betrayals by both players
+    #myCount = 0
+    #for bets in their_history:
+    #    if bets == 'b':
+    #        betCount += 1
+    #total = len(their_history)
+    #for bets in my_history:
+    #    if bets == 'b':
+    #        myCount += 1
+    #myTotal = len(my_history)
+    #betPercent = betCount/total
+    #myBets = myCount/myTotal
+    #if betPercent < 0.1:
+    #    if their_history[-1] == 'b':
+    #        return 'c'
+    #elif 0.2 > betPercent >= 0.1:
+    #    if their_history[-1] == 'b' and myBets >0.1:
+    #        return 'b'
+    #else:
+    #    return 'c'
+    
+#####   
+#
+#                               Test Function
+#
+#####
+
+#def test_move(my_history, their_history, my_score, their_score, result):
+#    '''calls move(my_history, their_history, my_score, their_score)
+#    from this module. Prints error if return value != result.
+#    Returns True or False, dpending on whether result was as expected.
+#    '''
+#    real_result = move(my_history, their_history, my_score, their_score)
+#    if real_result == result:
+#        return True
+#    else:
+#        print("move(" +
+#            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+#                       str(my_score), str(their_score)])+
+#            ") returned " + "'" + real_result + "'" +
+#            " and should have returned '" + result + "'")
+#        return False
+#
+#if __name__ == '__main__':
+#     
+#    # Test 1: Betray on first move.
+#    if test_move(my_history='',
+#              their_history='', 
+#              my_score=0,
+#              their_score=0,
+#              result='b'):
+#         print 'Test passed'
+#     # Test 2: Continue betraying if they collude despite being betrayed.
+#    test_move(my_history='bbb',
+#              their_history='ccc', 
+#              # Note the scores are for testing move().
+#              # The history and scores don't need to match unless
+#              # that is relevant to the test of move(). Here,
+#              # the simulation (if working correctly) would have awarded 
+#              # 300 to me and -750 to them. This test will pass if and only if
+#              # move('bbb', 'ccc', 0, 0) returns 'b'.
+#              my_score=0, 
+#              their_score=0,
+#              result='b')             --------------------------------------------------------------------------------
+team09--------------------------------------------------------------------------------
+import random
+
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'forest' # Only 10 chars displayed.
+strategy_name = 'The name the team gives to this strategy'
+strategy_description = 'How does this strategy decide?'
+    
+def move(my_history, their_history, my_score, their_score):
+    if my_history > their_history:
+        return 'c'
+    else:
+        return 'b'
+    if my_score > their_score:
+        return 'c'
+    else:
+        return 'b'
+    if my_score == their_score:
+        return random.choice('b', 'c')
+        
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             
+              
+              
+              
+              --------------------------------------------------------------------------------
+team08--------------------------------------------------------------------------------
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = '11040221' # Only 10 chars displayed.
+strategy_name = 'The name the team gives to this strategy'
+strategy_description = 'How does this strategy decide?'
+    
+def move(my_history, their_history, my_score, their_score):
+    if len(my_history) == 0:
+        return 'c'
+    if their_history[-1] == 'b':
+        return 'b'
+    else:
+        return 'c'
+        
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+    
+    return 'c'
+
+
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='c'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='c',
+              their_history='b',
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='c')--------------------------------------------------------------------------------
+team10--------------------------------------------------------------------------------
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'Team 10' # Only 10 chars displayed.
+strategy_name = 'Conquistadors'
+strategy_description = 'How does this strategy decide?'
+    
+def move(my_history, their_history, my_score, their_score):
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+    if len(my_history) == 0:
+        return 'b'
+    elif their_history[-1] == 'b':
+        return 'b'
+    else:
+        return 'c'
+        
+        
+
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+    
+    return 'c'
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
+team11--------------------------------------------------------------------------------
+import random
+####
+# Each team's file must define four tokens:
+#     team_name: LoneNotSkylarWolf
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'LoneSkylarWolf' # Only 10 chars displayed.
+strategy_name = 'The name the team gives to this strategy'
+strategy_description = 'How does this strategy decide?'
+score = 0
+moves = 0
+def move(my_history, their_history, my_score, their_score):
+    ''' Arguments accepted: my_history, their_history are strings.
+    my_score, their_score are ints.
+    Make my move.
+    Returns 'c' or 'b'. 
+    '''
+    return random.choice('bc')
+    if their_history[-1:] == my_history[-1:]:
+        return my_history[-2:]
+        moves += 1
+    elif their_history[-3] == 'c' or my_history[-1:] == 'c':
+        return 'c'
+        moves += 1
+    elif moves%2 == 0:
+        return their_history[-1]
+        moves += 1
+    
+    if their_history[-1:] and my_history[-1:] == 'c':
+        score -= 1
+    elif their_history[-1:] and my_history[-1:] == 'b':
+        score -= 2
+    elif their_history[-1:] == 'c' and my_history[-1:] == 'b':
+        score += 0
+    elif their_history[-1:] == 'b' and my_history[-1:] == 'c':
+        score -= 3
+    return score
+    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    # their_history: a string of the same length as history, possibly empty. 
+    # The first round between these two players is my_history[0] and their_history[0].
+    # The most recent round is my_history[-1] and their_history[-1].
+    
+    # Analyze my_history and their_history and/or my_score and their_score.
+    # Decide whether to return 'c' or 'b'.
+
+    
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')             --------------------------------------------------------------------------------
+team12--------------------------------------------------------------------------------
+####
+# Each team's file must define four tokens:
+#     team_name: a string
+#     strategy_name: a string
+#     strategy_description: a string
+#     move: A function that returns 'c' or 'b'
+####
+
+team_name = 'Naga' # Only 10 chars displayed.
+strategy_name = 'HI'
+strategy_description = 'Baseline'
+
+def move(my_history, their_history, my_score, their_score):
+    if their_history == 'c':
+        return 'c'
+    else:
+        if their_history == 'b':
+            return 'b'
+        if their_score > my_score:
+            return 'b'
+        if their_score == my_score:
+            return 'b'
+        else:
+            return 'c'     
+        while their_history == 'bb':
+            return 'b'
+        else:
+            return 'c'
+    
+   # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+# their_history: a string of the same length as history, possibly empty.
+# The first round between these two players is my_history[0] and their_history[0].
+# The most recent round is my_history[-1] and their_history[-1].
+# Analyze my_history and their_history and/or my_score and their_score.
+# Decide whether to return 'c' or 'b'.
+
+def test_move(my_history, their_history, my_score, their_score, result):
+    '''calls move(my_history, their_history, my_score, their_score)
+    from this module. Prints error if return value != result.
+    Returns True or False, dpending on whether result was as expected.
+    '''
+    real_result = move(my_history, their_history, my_score, their_score)
+    if real_result == result:
+        return True
+    else:
+        print("move(" +
+            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+                       str(my_score), str(their_score)])+
+            ") returned " + "'" + real_result + "'" +
+            " and should have returned '" + result + "'")
+        return False
+
+if __name__ == '__main__':
+     
+    # Test 1: Betray on first move.
+    if test_move(my_history='',
+              their_history='', 
+              my_score=0,
+              their_score=0,
+              result='b'):
+         print 'Test passed'
+     # Test 2: Continue betraying if they collude despite being betrayed.
+    test_move(my_history='bbb',
+              their_history='ccc', 
+              # Note the scores are for testing move().
+              # The history and scores don't need to match unless
+              # that is relevant to the test of move(). Here,
+              # the simulation (if working correctly) would have awarded 
+              # 300 to me and -750 to them. This test will pass if and only if
+              # move('bbb', 'ccc', 0, 0) returns 'b'.
+              my_score=0, 
+              their_score=0,
+              result='b')                     
+
+
+
+                --------------------------------------------------------------------------------
+team14--------------------------------------------------------------------------------
+team_name = 'napes' 
+strategy_name = 'Pavlov'
+strategy_description = 'It chooses b or c depending on rewards'
+                 
+def move(my_history, their_history, my_score, their_score):
+    if my_history == '':
+        return 'c'
+    if my_score < their_score:
+        if their_history [-1] == 'b':
+            return 'c'
+        else:
+            return 'b'
+    if my_score > their_score:
+        if their_history [-1] == 'b':
+            return 'b'
+        else:
+            return 'c'
+    
+        --------------------------------------------------------------------------------
+Section 3 - Game Data for Team Team Success
+--------------------------------------------------------------------------------
+-22 pt/round: Team Success(P0) "Win"
+-22 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+BbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBb
+cbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcb
+
+cBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBb
+BcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcb
+
+--------------------------------------------------------------------------------
+9 pt/round: Team Success(P0) "Win"
+-49 pt/round: Shrek(P2) "fun"
+BbCbCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cbCbCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+ccccccccccccccccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+10 pt/round: Team Success(P0) "Win"
+-50 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBB
+cccccccccccc
+
+--------------------------------------------------------------------------------
+-38 pt/round: Team Success(P0) "Win"
+-8 pt/round: Bichael(P4) "Basic-AI"
+bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbc
+bBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbB
+
+bcbcbcbcbcbcbcbcbcbcbcbc
+bBbBbBbBbBbBbBbBbBbBbBbB
+
+--------------------------------------------------------------------------------
+-22 pt/round: Team Success(P0) "Win"
+-22 pt/round: Raphael(P5) "Tit for Tat"
+BbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBb
+cbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcb
+
+cBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcB
+BcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBc
+
+bcBbcBbcBbcBbcBbcBbcBbcB
+bBcbBcbBcbBcbBcbBcbBcbBc
+
+--------------------------------------------------------------------------------
+-15 pt/round: Team Success(P0) "Win"
+-19 pt/round: Michaelangelo(P6) "Random action."
+bcbCbCbCbcBbCBBbCBBBbCBbccccCbCbcBBbcCBBBBBbccccCBBBBbCbCbccCbCBBbccccCBBBBbcCBb
+bBbCbCbCbBcbCccbCcccbCcbBBBBCbCbBccbBCcccccbBBBBCccccbCbCbBBCbCccbBBBBCccccbBCcb
+
+CbcccccCBBbCbCBbcCbCBBBbCBbCBBBBBbCBBbCBbcCbCbCBBBbccCbcCbcccCBBBbCbCbcccCbCBbcc
+CbBBBBBCccbCbCcbBCbCcccbCcbCcccccbCccbCcbBCbCbCcccbBBCbBCbBBBCcccbCbCbBBBCbCcbBB
+
+cCBBbcccCBBbccCbCbCBbCBbCbCbCBbCBBbc
+BCccbBBBCccbBBCbCbCcbCcbCbCbCcbCccbB
+
+--------------------------------------------------------------------------------
+-14 pt/round: Team Success(P0) "Win"
+-21 pt/round: k. mercer(P7) "Anatol Rapoport"
+BbcBbcBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBB
+cbBcbBccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCcc
+
+bcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcC
+bBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBC
+
+--------------------------------------------------------------------------------
+-38 pt/round: Team Success(P0) "Win"
+-8 pt/round: forest(P8) "The name the team gives to this strategy"
+bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbc
+bBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbB
+
+bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
+bBbBbBbBbBbBbBbBbBbBbBbBbBbBbBb
+
+--------------------------------------------------------------------------------
+-22 pt/round: Team Success(P0) "Win"
+-22 pt/round: 11040221(P9) "The name the team gives to this strategy"
+BbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBb
+cbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcb
+
+cBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbc
+BcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbB
+
+--------------------------------------------------------------------------------
+-22 pt/round: Team Success(P0) "Win"
+-22 pt/round: Team 10(P10) "Conquistadors"
+bcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbc
+bBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbB
+
+BbcBbcBbcBbcBbcBbcBbcBbcBbcBbc
+cbBcbBcbBcbBcbBcbBcbBcbBcbBcbB
+
+--------------------------------------------------------------------------------
+-16 pt/round: Team Success(P0) "Win"
+-19 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+bCbCbcbcBbCBbCbCbcbCbcBbcBBBbCbCbCbcBbcbcBBBbccbCBbCbCBBbcCbCBBbCbcCbcCbcCBBbcCB
+bCbCbBbBcbCcbCbCbBbCbBcbBcccbCbCbCbBcbBbBcccbBBbCcbCbCccbBCbCccbCbBCbBCbBCccbBCc
+
+BBBBBBbCBBBbcccccccCbCBbccCbCBbcCbcccCBbCbCBbcccbCBbCBbCbccbcBBBBBBBbCBbCbCbcCBb
+ccccccbCcccbBBBBBBBCbCcbBBCbCcbBCbBBBCcbCbCcbBBBbCcbCcbCbBBbBcccccccbCcbCbCbBCcb
+
+CbcCbcCbcCBBbCBbcCBBbCbCBbcCBbc
+CbBCbBCbBCccbCcbBCccbCbCcbBCcbB
+
+--------------------------------------------------------------------------------
+-22 pt/round: Team Success(P0) "Win"
+-22 pt/round: Naga(P12) "HI"
+bcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbc
+bBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbB
+
+BbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbc
+cbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbB
+
+--------------------------------------------------------------------------------
+10 pt/round: Team Success(P0) "Win"
+-50 pt/round: napes(P13) "Pavlov"
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team big_dogs
+--------------------------------------------------------------------------------
+-22 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+-22 pt/round: Team Success(P0) "Win"
+cbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcb
+BbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBb
+
+BcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcb
+cBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBb
+
+--------------------------------------------------------------------------------
+-1 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+-1 pt/round: Shrek(P2) "fun"
+CcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+0 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+0 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-26 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+-25 pt/round: Bichael(P4) "Basic-AI"
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+0 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+0 pt/round: Raphael(P5) "Tit for Tat"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCC
+CCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-17 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+-16 pt/round: Michaelangelo(P6) "Random action."
+cbbbBCCcbBcBcbbbBCcbBcbbbbbBcbbbbbbBCCcBCcBcbbBcbBcBcBCcbBcbbbBCCCcBCCcbBCCCCCCC
+BbbbcCCBbcBcBbbbcCBbcBbbbbbcBbbbbbbcCCBcCBcBbbcBbcBcBcCBbcBbbbcCCCBcCCBbcCCCCCCC
+
+CCCcBcBcbbBcbBcBCCCcbBcBCCCcBCCcBcBCCCcBcBCCcBCCcBCcbBCCCCCCcbbbBcbBcbbBcbbbBcbB
+CCCBcBcBbbcBbcBcCCCBbcBcCCCBcCCBcBcCCCBcBcCCBcCCBcCBbcCCCCCCBbbbcBbcBbbcBbbbcBbc
+
+CcbbbBCcBCcBcbBcbbbBcBcBCcBCCCcb
+CBbbbcCBcCBcBbcBbbbcBcBcCBcCCCBb
+
+--------------------------------------------------------------------------------
+0 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+0 pt/round: k. mercer(P7) "Anatol Rapoport"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-26 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+-25 pt/round: forest(P8) "The name the team gives to this strategy"
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+0 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+0 pt/round: 11040221(P9) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-21 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+-20 pt/round: Team 10(P10) "Conquistadors"
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+
+cBcBcBcBcBcBcBcBcBcBc
+BcBcBcBcBcBcBcBcBcBcB
+
+--------------------------------------------------------------------------------
+-16 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+-16 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+CcBcBcbBcBcbBCCCcBcBCcbbBcBCcbbbBcBCcbBCCcbBCcBCcbbBcBCCcBCCcBcBCCCCcbBcbbBcbBcB
+CBcBcBbcBcBbcCCCBcBcCBbbcBcCBbbbcBcCBbcCCBbcCBcCBbbcBcCCBcCCBcBcCCCCBbcBbbcBbcBc
+
+CcbbBCCCCcBCCcbbbBcBCcBCCCcBcB
+CBbbcCCCCBcCCBbbbcBcCBcCCCBcBc
+
+--------------------------------------------------------------------------------
+-20 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+-20 pt/round: Naga(P12) "HI"
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+
+cBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBc
+
+--------------------------------------------------------------------------------
+-50 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+-50 pt/round: napes(P13) "Pavlov"
+Cc                                                                              
+C                                                                               
+
+                                                                                
+                                                                                
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team Shrek
+--------------------------------------------------------------------------------
+-49 pt/round: Shrek(P2) "fun"
+9 pt/round: Team Success(P0) "Win"
+cbCbCccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BbCbCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+ccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+-1 pt/round: Shrek(P2) "fun"
+-1 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+CBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+0 pt/round: Shrek(P2) "fun"
+-1 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+CBCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CcCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-50 pt/round: Shrek(P2) "fun"
+9 pt/round: Bichael(P4) "Basic-AI"
+cbcbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BbBbBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+ccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+-1 pt/round: Shrek(P2) "fun"
+-1 pt/round: Raphael(P5) "Tit for Tat"
+CBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-25 pt/round: Shrek(P2) "fun"
+4 pt/round: Michaelangelo(P6) "Random action."
+CbcBCcccCCCccccccCCcCCcccccCCcccCcCcccCcCccCcCcCCccCCCcCCCccCCCCccccCCcCcCcCCccC
+CbBcCBBBCCCBBBBBBCCBCCBBBBBCCBBBCBCBBBCBCBBCBCBCCBBCCCBCCCBBCCCCBBBBCCBCBCBCCBBC
+
+CCCCCcCCCCCccCcCccCCCccCCccCCCcCccCccCCcCcCCCCCCccCcccCcCcCccCCcCCcCcCCcCccccccC
+CCCCCBCCCCCBBCBCBBCCCBBCCBBCCCBCBBCBBCCBCBCCCCCCBBCBBBCBCBCBBCCBCCBCBCCBCBBBBBBC
+
+CcCccccCcCcCCcccC
+CBCBBBBCBCBCCBBBC
+
+--------------------------------------------------------------------------------
+-1 pt/round: Shrek(P2) "fun"
+-1 pt/round: k. mercer(P7) "Anatol Rapoport"
+CBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-50 pt/round: Shrek(P2) "fun"
+9 pt/round: forest(P8) "The name the team gives to this strategy"
+cbcbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BbBbBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+-1 pt/round: Shrek(P2) "fun"
+-1 pt/round: 11040221(P9) "The name the team gives to this strategy"
+CBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-1 pt/round: Shrek(P2) "fun"
+-1 pt/round: Team 10(P10) "Conquistadors"
+cBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+BcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-23 pt/round: Shrek(P2) "fun"
+4 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+CBcbCCCCCCCcCCCCCcCCCcCcCCcCCccCCcccccCCCCCCCcCCCccCCCCCCcCcccCcCcCCccCcCcCccccC
+CcBbCCCCCCCBCCCCCBCCCBCBCCBCCBBCCBBBBBCCCCCCCBCCCBBCCCCCCBCBBBCBCBCCBBCBCBCBBBBC
+
+cCCccCcCcCcccCCcccCcccCCcccccCccCCcCCcCcCcCcccCcCCCCcccCccCCCcccCCcCCCCCCCCCCccC
+BCCBBCBCBCBBBCCBBBCBBBCCBBBBBCBBCCBCCBCBCBCBBBCBCCCCBBBCBBCCCBBBCCBCCCCCCCCCCBBC
+
+CcCCcCCCccCcCCCcccCccccccCcCCcCcCc
+CBCCBCCCBBCBCCCBBBCBBBBBBCBCCBCBCB
+
+--------------------------------------------------------------------------------
+-1 pt/round: Shrek(P2) "fun"
+-1 pt/round: Naga(P12) "HI"
+cBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+BcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-50 pt/round: Shrek(P2) "fun"
+-50 pt/round: napes(P13) "Pavlov"
+Cbcbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+C                                                                               
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+                                                                                
+
+ccccccccccccccccccccccccccccccc
+                               
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team The name the team gives to itself
+--------------------------------------------------------------------------------
+-50 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+10 pt/round: Team Success(P0) "Win"
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccc
+BBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+0 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+0 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-1 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+0 pt/round: Shrek(P2) "fun"
+CcCcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CBCBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-50 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+10 pt/round: Bichael(P4) "Basic-AI"
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+ccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+0 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+0 pt/round: Raphael(P5) "Tit for Tat"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-28 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+5 pt/round: Michaelangelo(P6) "Random action."
+ccCCcCcCccCccccCccCCCCcCCCCCCcCCCCcccCcccCccccCcccCcCCccCcCCCCcCcCcCccccccCcCcCC
+BBCCBCBCBBCBBBBCBBCCCCBCCCCCCBCCCCBBBCBBBCBBBBCBBBCBCCBBCBCCCCBCBCBCBBBBBBCBCBCC
+
+cccccCcccCCcCcCccCcccCcccCCCCc
+BBBBBCBBBCCBCBCBBCBBBCBBBCCCCB
+
+--------------------------------------------------------------------------------
+0 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+0 pt/round: k. mercer(P7) "Anatol Rapoport"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-50 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+10 pt/round: forest(P8) "The name the team gives to this strategy"
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+ccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+0 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+0 pt/round: 11040221(P9) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-1 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+0 pt/round: Team 10(P10) "Conquistadors"
+cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-23 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+4 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+cCCCcCcCcCcCCcCcCCcCCcCCCccCCCcCcccccCCCccCCccccccccCccccCcCcCCCCccCCcCCcCCCccCC
+BCCCBCBCBCBCCBCBCCBCCBCCCBBCCCBCBBBBBCCCBBCCBBBBBBBBCBBBBCBCBCCCCBBCCBCCBCCCBBCC
+
+ccCccCCCCccCcCCccCCccCcccCCcCCccCCCCCCcCCccCcCccCCcCcccCcCcCCcCCccCcCCcCcCcCCCcC
+BBCBBCCCCBBCBCCBBCCBBCBBBCCBCCBBCCCCCCBCCBBCBCBBCCBCBBBCBCBCCBCCBBCBCCBCBCBCCCBC
+
+CCccCcCcCCCccCCcCCcCCCCCcCCcCcCcCCc
+CCBBCBCBCCCBBCCBCCBCCCCCBCCBCBCBCCB
+
+--------------------------------------------------------------------------------
+-1 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+0 pt/round: Naga(P12) "HI"
+cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-50 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+-50 pt/round: napes(P13) "Pavlov"
+Cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+C                                                                               
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+                                                                      
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 Section 3 - Game Data for Team Bichael
 --------------------------------------------------------------------------------
--16 pt/round: Bichael(P1) "Basic-AI"
--18 pt/round: napes(P0) "RNG GOD"
-BbcCBbcCBBBbcCbCBbcccCBBBBBbCBBBbCBbcccccccccCBbCBBbcCBbCbCbcccCBbcCBbCBbccCBbcC
-cbBCcbBCcccbBCbCcbBBBCcccccbCcccbCcbBBBBBBBBBCcbCccbBCcbCbCbBBBCcbBCcbCcbBBCcbBC
+-8 pt/round: Bichael(P4) "Basic-AI"
+-38 pt/round: Team Success(P0) "Win"
+bBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbB
+bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbc
 
-BBBbcCbCbccCBBBBbCBBbcCBBBbcccCbCbCbcCBBBBbccCBBBbcCBbCbCbcCbcCbCBbCBbcccc
-cccbBCbCbBBCccccbCccbBCcccbBBBCbCbCbBCccccbBBCcccbBCcbCbCbBCbBCbCcbCcbBBBB
+bBbBbBbBbBbBbBbBbBbBbBbB
+bcbcbcbcbcbcbcbcbcbcbcbc
+
+--------------------------------------------------------------------------------
+-25 pt/round: Bichael(P4) "Basic-AI"
+-26 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+9 pt/round: Bichael(P4) "Basic-AI"
+-50 pt/round: Shrek(P2) "fun"
+BbBbBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cbcbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBB
+ccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+10 pt/round: Bichael(P4) "Basic-AI"
+-50 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBB
+ccccccccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+-25 pt/round: Bichael(P4) "Basic-AI"
+-26 pt/round: Raphael(P5) "Tit for Tat"
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-9 pt/round: Bichael(P4) "Basic-AI"
+-37 pt/round: Michaelangelo(P6) "Random action."
+BbbBBbbbbBbBBBbbbBbBbBbBBBBBbbbbbbbBbbBBBBbBbbBbbbbbbBbbBBBbbbBbbBbBbbbBBbbbbbbB
+cbbccbbbbcbcccbbbcbcbcbcccccbbbbbbbcbbccccbcbbcbbbbbbcbbcccbbbcbbcbcbbbccbbbbbbc
+
+bBBBBBbBbbBBbbBbBBBbBBbbbbBbbbBBbbbBbBBBbbbBBBBbBbbBBBBBbBBBBbbbBBbBBBbbbbBbBBBB
+bcccccbcbbccbbcbcccbccbbbbcbbbccbbbcbcccbbbccccbcbbcccccbccccbbbccbcccbbbbcbcccc
+
+BBbbbBbbbBBbbbBBb
+ccbbbcbbbccbbbccb
+
+--------------------------------------------------------------------------------
+-18 pt/round: Bichael(P4) "Basic-AI"
+-31 pt/round: k. mercer(P7) "Anatol Rapoport"
+BbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbb
+cbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbb
+
+BbbbbBbbbbBbbbbBbbbbBbbbbB
+cbbbbcbbbbcbbbbcbbbbcbbbbc
+
+--------------------------------------------------------------------------------
+-25 pt/round: Bichael(P4) "Basic-AI"
+-25 pt/round: forest(P8) "The name the team gives to this strategy"
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-25 pt/round: Bichael(P4) "Basic-AI"
+-26 pt/round: 11040221(P9) "The name the team gives to this strategy"
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-25 pt/round: Bichael(P4) "Basic-AI"
+-25 pt/round: Team 10(P10) "Conquistadors"
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-8 pt/round: Bichael(P4) "Basic-AI"
+-38 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+bbBBbbbbBBBbBBBbbbBbBbbBBbbBbBbbBBbBbBBBBbbBBBBBbBbBbBBBBbbBbbBbBbbBbBBbbBBBbBBb
+bbccbbbbcccbcccbbbcbcbbccbbcbcbbccbcbccccbbcccccbcbcbccccbbcbbcbcbbcbccbbcccbccb
+
+bBbBBbBbbbbBbBbBbBbbbbbBb
+bcbccbcbbbbcbcbcbcbbbbbcb
+
+--------------------------------------------------------------------------------
+-25 pt/round: Bichael(P4) "Basic-AI"
+-25 pt/round: Naga(P12) "HI"
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+10 pt/round: Bichael(P4) "Basic-AI"
+-50 pt/round: napes(P13) "Pavlov"
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBB
+ccccccccccccc
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team Raphael
+--------------------------------------------------------------------------------
+-22 pt/round: Raphael(P5) "Tit for Tat"
+-22 pt/round: Team Success(P0) "Win"
+cbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcb
+BbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBb
+
+BcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBc
+cBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcB
+
+bBcbBcbBcbBcbBcbBcbBcbBc
+bcBbcBbcBbcBbcBbcBbcBbcB
+
+--------------------------------------------------------------------------------
+0 pt/round: Raphael(P5) "Tit for Tat"
+0 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCC
+CCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-1 pt/round: Raphael(P5) "Tit for Tat"
+-1 pt/round: Shrek(P2) "fun"
+CcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+0 pt/round: Raphael(P5) "Tit for Tat"
+0 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-26 pt/round: Raphael(P5) "Tit for Tat"
+-25 pt/round: Bichael(P4) "Basic-AI"
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-16 pt/round: Raphael(P5) "Tit for Tat"
+-16 pt/round: Michaelangelo(P6) "Random action."
+CCcbbBcBcBCCCCcBcbBcbBcBcbBcbbBCcBCCCCCcBcBcbBcbBCCcbBcbbBcBcbBcBcbbBcbbbBcbbbBC
+CCBbbcBcBcCCCCBcBbcBbcBcBbcBbbcCBcCCCCCBcBcBbcBbcCCBbcBbbcBcBbcBcBbbcBbbbcBbbbcC
+
+CCcBCcBCcBCCcbBCcbBCcbbBcbBCCCCcBCCCCcBcBCcBCCCcBCcbbBcbbBCCcBCCcBCCcbBcbBCcbBcb
+CCBcCBcCBcCCBbcCBbcCBbbcBbcCCCCBcCCCCBcBcCBcCCCBcCBbbcBbbcCCBcCCBcCCBbcBbcCBbcBb
+
+BC
+cC
+
+--------------------------------------------------------------------------------
+0 pt/round: Raphael(P5) "Tit for Tat"
+0 pt/round: k. mercer(P7) "Anatol Rapoport"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-26 pt/round: Raphael(P5) "Tit for Tat"
+-25 pt/round: forest(P8) "The name the team gives to this strategy"
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+0 pt/round: Raphael(P5) "Tit for Tat"
+0 pt/round: 11040221(P9) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-21 pt/round: Raphael(P5) "Tit for Tat"
+-20 pt/round: Team 10(P10) "Conquistadors"
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+
+cBcBcBcBcBcBcBcBcBcBc
+BcBcBcBcBcBcBcBcBcBcB
+
+--------------------------------------------------------------------------------
+-17 pt/round: Raphael(P5) "Tit for Tat"
+-17 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+CcbBCcBCCCcBCcBCcbbBCCcBCcBcbBcBcBcBcbBCCCcbBCcBcBcbBCcBcbBcbbbbBCCcbBCCCCcBCCCC
+CBbcCBcCCCBcCBcCBbbcCCBcCBcBbcBcBcBcBbcCCCBbcCBcBcBbcCBcBbcBbbbbcCCBbcCCCCBcCCCC
+
+cbbbbBcBcbbbBCCcbbbbBcbbBCcbbbBcBCcBcbbbBCcbbBcBCcb
+BbbbbcBcBbbbcCCBbbbbcBbbcCBbbbcBcCBcBbbbcCBbbcBcCBb
+
+--------------------------------------------------------------------------------
+-20 pt/round: Raphael(P5) "Tit for Tat"
+-20 pt/round: Naga(P12) "HI"
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+
+--------------------------------------------------------------------------------
+-50 pt/round: Raphael(P5) "Tit for Tat"
+-50 pt/round: napes(P13) "Pavlov"
+Cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+C                                                                               
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+                                                                                
+
+cccc
+    
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team Michaelangelo
+--------------------------------------------------------------------------------
+-19 pt/round: Michaelangelo(P6) "Random action."
+-15 pt/round: Team Success(P0) "Win"
+bBbCbCbCbBcbCccbCcccbCcbBBBBCbCbBccbBCcccccbBBBBCccccbCbCbBBCbCccbBBBBCccccbBCcb
+bcbCbCbCbcBbCBBbCBBBbCBbccccCbCbcBBbcCBBBBBbccccCBBBBbCbCbccCbCBBbccccCBBBBbcCBb
+
+CbBBBBBCccbCbCcbBCbCcccbCcbCcccccbCccbCcbBCbCbCcccbBBCbBCbBBBCcccbCbCbBBBCbCcbBB
+CbcccccCBBbCbCBbcCbCBBBbCBbCBBBBBbCBBbCBbcCbCbCBBBbccCbcCbcccCBBBbCbCbcccCbCBbcc
+
+BCccbBBBCccbBBCbCbCcbCcbCbCbCcbCccbB
+cCBBbcccCBBbccCbCbCBbCBbCbCbCBbCBBbc
+
+--------------------------------------------------------------------------------
+-16 pt/round: Michaelangelo(P6) "Random action."
+-17 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+BbbbcCCBbcBcBbbbcCBbcBbbbbbcBbbbbbbcCCBcCBcBbbcBbcBcBcCBbcBbbbcCCCBcCCBbcCCCCCCC
+cbbbBCCcbBcBcbbbBCcbBcbbbbbBcbbbbbbBCCcBCcBcbbBcbBcBcBCcbBcbbbBCCCcBCCcbBCCCCCCC
+
+CCCBcBcBbbcBbcBcCCCBbcBcCCCBcCCBcBcCCCBcBcCCBcCCBcCBbcCCCCCCBbbbcBbcBbbcBbbbcBbc
+CCCcBcBcbbBcbBcBCCCcbBcBCCCcBCCcBcBCCCcBcBCCcBCCcBCcbBCCCCCCcbbbBcbBcbbBcbbbBcbB
+
+CBbbbcCBcCBcBbcBbbbcBcBcCBcCCCBb
+CcbbbBCcBCcBcbBcbbbBcBcBCcBCCCcb
+
+--------------------------------------------------------------------------------
+4 pt/round: Michaelangelo(P6) "Random action."
+-25 pt/round: Shrek(P2) "fun"
+CbBcCBBBCCCBBBBBBCCBCCBBBBBCCBBBCBCBBBCBCBBCBCBCCBBCCCBCCCBBCCCCBBBBCCBCBCBCCBBC
+CbcBCcccCCCccccccCCcCCcccccCCcccCcCcccCcCccCcCcCCccCCCcCCCccCCCCccccCCcCcCcCCccC
+
+CCCCCBCCCCCBBCBCBBCCCBBCCBBCCCBCBBCBBCCBCBCCCCCCBBCBBBCBCBCBBCCBCCBCBCCBCBBBBBBC
+CCCCCcCCCCCccCcCccCCCccCCccCCCcCccCccCCcCcCCCCCCccCcccCcCcCccCCcCCcCcCCcCccccccC
+
+CBCBBBBCBCBCCBBBC
+CcCccccCcCcCCcccC
+
+--------------------------------------------------------------------------------
+5 pt/round: Michaelangelo(P6) "Random action."
+-28 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+BBCCBCBCBBCBBBBCBBCCCCBCCCCCCBCCCCBBBCBBBCBBBBCBBBCBCCBBCBCCCCBCBCBCBBBBBBCBCBCC
+ccCCcCcCccCccccCccCCCCcCCCCCCcCCCCcccCcccCccccCcccCcCCccCcCCCCcCcCcCccccccCcCcCC
+
+BBBBBCBBBCCBCBCBBCBBBCBBBCCCCB
+cccccCcccCCcCcCccCcccCcccCCCCc
+
+--------------------------------------------------------------------------------
+-37 pt/round: Michaelangelo(P6) "Random action."
+-9 pt/round: Bichael(P4) "Basic-AI"
+cbbccbbbbcbcccbbbcbcbcbcccccbbbbbbbcbbccccbcbbcbbbbbbcbbcccbbbcbbcbcbbbccbbbbbbc
+BbbBBbbbbBbBBBbbbBbBbBbBBBBBbbbbbbbBbbBBBBbBbbBbbbbbbBbbBBBbbbBbbBbBbbbBBbbbbbbB
+
+bcccccbcbbccbbcbcccbccbbbbcbbbccbbbcbcccbbbccccbcbbcccccbccccbbbccbcccbbbbcbcccc
+bBBBBBbBbbBBbbBbBBBbBBbbbbBbbbBBbbbBbBBBbbbBBBBbBbbBBBBBbBBBBbbbBBbBBBbbbbBbBBBB
+
+ccbbbcbbbccbbbccb
+BBbbbBbbbBBbbbBBb
+
+--------------------------------------------------------------------------------
+-16 pt/round: Michaelangelo(P6) "Random action."
+-16 pt/round: Raphael(P5) "Tit for Tat"
+CCBbbcBcBcCCCCBcBbcBbcBcBbcBbbcCBcCCCCCBcBcBbcBbcCCBbcBbbcBcBbcBcBbbcBbbbcBbbbcC
+CCcbbBcBcBCCCCcBcbBcbBcBcbBcbbBCcBCCCCCcBcBcbBcbBCCcbBcbbBcBcbBcBcbbBcbbbBcbbbBC
+
+CCBcCBcCBcCCBbcCBbcCBbbcBbcCCCCBcCCCCBcBcCBcCCCBcCBbbcBbbcCCBcCCBcCCBbcBbcCBbcBb
+CCcBCcBCcBCCcbBCcbBCcbbBcbBCCCCcBCCCCcBcBCcBCCCcBCcbbBcbbBCCcBCCcBCCcbBcbBCcbBcb
+
+cC
+BC
+
+--------------------------------------------------------------------------------
+-13 pt/round: Michaelangelo(P6) "Random action."
+-20 pt/round: k. mercer(P7) "Anatol Rapoport"
+BcBcCCCBcBbBcCBbbbBbbbcCCCCCCBBbcBbbCBbbcBcCBCBbcBbcCBCBbcCCBcCCBcCBBbbbbCBcBcCC
+cBcBCCCcBcbcBCcbbbcbbbBCCCCCCccbBcbbCcbbBcBCcCcbBcbBCcCcbBCCcBCCcBCccbbbbCcBcBCC
+
+CBbbCCBcBbcBbCBcCCBcCBbcBBbcBbbBbcBbbBcCBbbbCCBcBcCCCCBcCBbCBbcCBcBbBbcCCBbcBBcC
+CcbbCCcBcbBcbCcBCCcBCcbBccbBcbbcbBcbbcBCcbbbCCcBcBCCCCcBCcbCcbBCcBcbcbBCCcbBccBC
+
+CBbbbCBbcBbcBBbbcBcBCBbbcBcBCBcBbcCCC
+CcbbbCcbBcbBccbbBcBcCcbbBcBcCcBcbBCCC
+
+--------------------------------------------------------------------------------
+-39 pt/round: Michaelangelo(P6) "Random action."
+-7 pt/round: forest(P8) "The name the team gives to this strategy"
+bccbccbccbcccbbccccbccbccbcbbbcbbbbbcccbbcbbccccbbccbbbbccbbcccccbbccbbbbcccbbcc
+bBBbBBbBBbBBBbbBBBBbBBbBBbBbbbBbbbbbBBBbbBbbBBBBbbBBbbbbBBbbBBBBBbbBBbbbbBBBbbBB
+
+ccbccccccbbbcccccbccbbcbccbcbbbcccccbbbccbccccbbbcccccbbcbbbbbbbbcccbcbbccbbcbbc
+BBbBBBBBBbbbBBBBBbBBbbBbBBbBbbbBBBBBbbbBBbBBBBbbbBBBBBbbBbbbbbbbbBBBbBbbBBbbBbbB
+
+cbcccbbbccbbbbbcccbbcbbbcc
+BbBBBbbbBBbbbbbBBBbbBbbbBB
+
+--------------------------------------------------------------------------------
+-16 pt/round: Michaelangelo(P6) "Random action."
+-16 pt/round: 11040221(P9) "The name the team gives to this strategy"
+CCCCBcBcCCCBbbcBcBbbcCCBcBbcBbbbcCBcCBbbbcBbbbbbcCBbbbbbbbbcCCCBbbcBbcCBcBbcCBcC
+CCCCcBcBCCCcbbBcBcbbBCCcBcbBcbbbBCcBCcbbbBcbbbbbBCcbbbbbbbbBCCCcbbBcbBCcBcbBCcBC
+
+CCBbbbcCCCBcCCBcCBcBbcBcCBcBbbbcCBbcBcCCCCCCCCBcBcBbcCCCBcBcBcBbcCBcCCBcCCBcCBcC
+CCcbbbBCCCcBCCcBCcBcbBcBCcBcbbbBCcbBcBCCCCCCCCcBcBcbBCCCcBcBcBcbBCcBCCcBCCcBCcBC
+
+BcBbbcBbcCCCBcCBbbcCCBc
+cBcbbBcbBCCCcBCcbbBCCcB
+
+--------------------------------------------------------------------------------
+-17 pt/round: Michaelangelo(P6) "Random action."
+-17 pt/round: Team 10(P10) "Conquistadors"
+cBbbbcCBcBbcCCCCBbcBcCCCBbcCBcBbcCBcBcBcBcCBbbcCCBcCBcCBbcCBbcCCBbcBbbbcCBcCBbbc
+BcbbbBCcBcbBCCCCcbBcBCCCcbBCcBcbBCcBcBcBcBCcbbBCCcBCcBCcbBCcbBCCcbBcbbbBCcBCcbbB
+
+BcBcCBcBbcCCCBbbbbcCCBcBcCCBbbcBbcBcBcBcCCBbbcCCBbcBbbbcBbcCCCBbcCBbcBcCBbbbc
+cBcBCcBcbBCCCcbbbbBCCcBcBCCcbbBcbBcBcBcBCCcbbBCCcbBcbbbBcbBCCCcbBCcbBcBCcbbbB
+
+--------------------------------------------------------------------------------
+-19 pt/round: Michaelangelo(P6) "Random action."
+-17 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+BCcCcccBCCBbcCcbCcBccbcbBBCbCCBbCbBBbbbbBbBbCcbBbbbccbcbBcBBCCcBBbBcccCcBCCCBCCC
+cCBCBBBcCCcbBCBbCBcBBbBbccCbCCcbCbccbbbbcbcbCBbcbbbBBbBbcBccCCBccbcBBBCBcCCCcCCC
+
+BBCcBcbBBbbbccBbcbCbcccbCccCbBCcbbbcCBcbbbbCbBbccCBBbcccBbbbbBc
+ccCBcBbccbbbBBcbBbCbBBBbCBBCbcCBbbbBCcBbbbbCbcbBBCccbBBBcbbbbcB
+
+--------------------------------------------------------------------------------
+-18 pt/round: Michaelangelo(P6) "Random action."
+-18 pt/round: Naga(P12) "HI"
+cBbbcBcBbcCBbbbbcBcCCBbbbbbbbbcBcBcBcBbcBcCBbcBcBbcBbbbcCCBcCBcCCBcBcBbcBcBbbbbc
+BcbbBcBcbBCcbbbbBcBCCcbbbbbbbbBcBcBcBcbBcBCcbBcBcbBcbbbBCCcBCcBCCcBcBcbBcBcbbbbB
+
+CBbcBbbbcCBcBcCCCCBbcBcCBbbcCBcBbbcCCCCCCCBcBbbbcCCBcBbbbbbbcBcCBbcCBbbbbbbbbcCC
+CcbBcbbbBCcBcBCCCCcbBcBCcbbBCcBcbbBCCCCCCCcBcbbbBCCcBcbbbbbbBcBCcbBCcbbbbbbbbBCC
+
+CCBbcCBbbbcBcCBcCCCCBcBcBbbbbb
+CCcbBCcbbbBcBCcBCCCCcBcBcbbbbb
+
+--------------------------------------------------------------------------------
+-45 pt/round: Michaelangelo(P6) "Random action."
+-45 pt/round: napes(P13) "Pavlov"
+BBCbBBBCbBCbCcbBCcccbCcbCccccbbbccbcccbbcbccbcbbcbbcbbcbbbbcbbccbccbbbbccccbbbcb
+ccCbcccCbcCbCBbcCBBBbCBbCBB                                                     
+
+cbbbccccbcbbbbccbbbbbccccccbcbbbcbbcbbbbbcccbccbbbbbccbcbcccccbcccccccbcccccbcbb
+                                                                                
+
+bccbbcbbbb
+          
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team k. mercer
+--------------------------------------------------------------------------------
+-21 pt/round: k. mercer(P7) "Anatol Rapoport"
+-14 pt/round: Team Success(P0) "Win"
+cbBcbBccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCcc
+BbcBbcBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBB
+
+bBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBC
+bcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcC
+
+--------------------------------------------------------------------------------
+0 pt/round: k. mercer(P7) "Anatol Rapoport"
+0 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-1 pt/round: k. mercer(P7) "Anatol Rapoport"
+-1 pt/round: Shrek(P2) "fun"
+CcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+0 pt/round: k. mercer(P7) "Anatol Rapoport"
+0 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-31 pt/round: k. mercer(P7) "Anatol Rapoport"
+-18 pt/round: Bichael(P4) "Basic-AI"
+cbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbb
+BbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbb
+
+cbbbbcbbbbcbbbbcbbbbcbbbbc
+BbbbbBbbbbBbbbbBbbbbBbbbbB
+
+--------------------------------------------------------------------------------
+0 pt/round: k. mercer(P7) "Anatol Rapoport"
+0 pt/round: Raphael(P5) "Tit for Tat"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-20 pt/round: k. mercer(P7) "Anatol Rapoport"
+-13 pt/round: Michaelangelo(P6) "Random action."
+cBcBCCCcBcbcBCcbbbcbbbBCCCCCCccbBcbbCcbbBcBCcCcbBcbBCcCcbBCCcBCCcBCccbbbbCcBcBCC
+BcBcCCCBcBbBcCBbbbBbbbcCCCCCCBBbcBbbCBbbcBcCBCBbcBbcCBCBbcCCBcCCBcCBBbbbbCBcBcCC
+
+CcbbCCcBcbBcbCcBCCcBCcbBccbBcbbcbBcbbcBCcbbbCCcBcBCCCCcBCcbCcbBCcBcbcbBCCcbBccBC
+CBbbCCBcBbcBbCBcCCBcCBbcBBbcBbbBbcBbbBcCBbbbCCBcBcCCCCBcCBbCBbcCBcBbBbcCCBbcBBcC
+
+CcbbbCcbBcbBccbbBcBcCcbbBcBcCcBcbBCCC
+CBbbbCBbcBbcBBbbcBcBCBbbcBcBCBcBbcCCC
+
+--------------------------------------------------------------------------------
+-31 pt/round: k. mercer(P7) "Anatol Rapoport"
+-18 pt/round: forest(P8) "The name the team gives to this strategy"
+cbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbb
+BbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbb
+
+cbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcb
+BbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBb
+
+--------------------------------------------------------------------------------
+0 pt/round: k. mercer(P7) "Anatol Rapoport"
+0 pt/round: 11040221(P9) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-3 pt/round: k. mercer(P7) "Anatol Rapoport"
+-2 pt/round: Team 10(P10) "Conquistadors"
+cBcBcBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+BcBcBcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-18 pt/round: k. mercer(P7) "Anatol Rapoport"
+-12 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+cBCCcBcbBCCCcCCcbBcBcbCCCCCCCCCCcbBcbBcCcbbBcbcBCcbBCCCcBCCcCcBCCcBcbBcCCcBcbBCc
+BcCCBcBbcCCCBCCBbcBcBbCCCCCCCCCCBbcBbcBCBbbcBbBcCBbcCCCBcCCBCBcCCBcBbcBCCBcBbcCB
+
+BcCcbBCCCcbbcBCCcBcbBcCcbbbbcBcbbBcCCCcBcBCCcbbcBcBcbbCcbbbBCcc
+cBCBbcCCCBbbBcCCBcBbcBCBbbbbBcBbbcBCCCBcBcCCBbbBcBcBbbCBbbbcCBB
+
+--------------------------------------------------------------------------------
+-2 pt/round: k. mercer(P7) "Anatol Rapoport"
+-1 pt/round: Naga(P12) "HI"
+cBcBcBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+BcBcBcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-50 pt/round: k. mercer(P7) "Anatol Rapoport"
+-50 pt/round: napes(P13) "Pavlov"
+Cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+C                                                                               
+
+cccccccccccccccccccccccccccccccccccccccccccccccc
+                                                
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team forest
+--------------------------------------------------------------------------------
+-8 pt/round: forest(P8) "The name the team gives to this strategy"
+-38 pt/round: Team Success(P0) "Win"
+bBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbBbB
+bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbc
+
+bBbBbBbBbBbBbBbBbBbBbBbBbBbBbBb
+bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
+
+--------------------------------------------------------------------------------
+-25 pt/round: forest(P8) "The name the team gives to this strategy"
+-26 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+9 pt/round: forest(P8) "The name the team gives to this strategy"
+-50 pt/round: Shrek(P2) "fun"
+BbBbBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cbcbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+10 pt/round: forest(P8) "The name the team gives to this strategy"
+-50 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBB
+ccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+-25 pt/round: forest(P8) "The name the team gives to this strategy"
+-25 pt/round: Bichael(P4) "Basic-AI"
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-25 pt/round: forest(P8) "The name the team gives to this strategy"
+-26 pt/round: Raphael(P5) "Tit for Tat"
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-7 pt/round: forest(P8) "The name the team gives to this strategy"
+-39 pt/round: Michaelangelo(P6) "Random action."
+bBBbBBbBBbBBBbbBBBBbBBbBBbBbbbBbbbbbBBBbbBbbBBBBbbBBbbbbBBbbBBBBBbbBBbbbbBBBbbBB
+bccbccbccbcccbbccccbccbccbcbbbcbbbbbcccbbcbbccccbbccbbbbccbbcccccbbccbbbbcccbbcc
+
+BBbBBBBBBbbbBBBBBbBBbbBbBBbBbbbBBBBBbbbBBbBBBBbbbBBBBBbbBbbbbbbbbBBBbBbbBBbbBbbB
+ccbccccccbbbcccccbccbbcbccbcbbbcccccbbbccbccccbbbcccccbbcbbbbbbbbcccbcbbccbbcbbc
+
+BbBBBbbbBBbbbbbBBBbbBbbbBB
+cbcccbbbccbbbbbcccbbcbbbcc
+
+--------------------------------------------------------------------------------
+-18 pt/round: forest(P8) "The name the team gives to this strategy"
+-31 pt/round: k. mercer(P7) "Anatol Rapoport"
+BbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbb
+cbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbb
+
+BbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBb
+cbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcb
+
+--------------------------------------------------------------------------------
+-25 pt/round: forest(P8) "The name the team gives to this strategy"
+-26 pt/round: 11040221(P9) "The name the team gives to this strategy"
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-25 pt/round: forest(P8) "The name the team gives to this strategy"
+-25 pt/round: Team 10(P10) "Conquistadors"
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-7 pt/round: forest(P8) "The name the team gives to this strategy"
+-38 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+BBbBbBbBBBBbBbbBbbBBBBBbbBBbBbBBbBBbBBBbBBBBBBbBbbBbbbBbbBBbbbBBbBBBbbbbBbBbbbbb
+ccbcbcbccccbcbbcbbcccccbbccbcbccbccbcccbccccccbcbbcbbbcbbccbbbccbcccbbbbcbcbbbbb
+
+BbBBbbBBbbbbbbBBbbBbB
+cbccbbccbbbbbbccbbcbc
+
+--------------------------------------------------------------------------------
+-25 pt/round: forest(P8) "The name the team gives to this strategy"
+-25 pt/round: Naga(P12) "HI"
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+10 pt/round: forest(P8) "The name the team gives to this strategy"
+-50 pt/round: napes(P13) "Pavlov"
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BB
+cc
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team 11040221
+--------------------------------------------------------------------------------
+-22 pt/round: 11040221(P9) "The name the team gives to this strategy"
+-22 pt/round: Team Success(P0) "Win"
+cbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcb
+BbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBb
+
+BcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbB
+cBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbc
+
+--------------------------------------------------------------------------------
+0 pt/round: 11040221(P9) "The name the team gives to this strategy"
+0 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-1 pt/round: 11040221(P9) "The name the team gives to this strategy"
+-1 pt/round: Shrek(P2) "fun"
+CcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+0 pt/round: 11040221(P9) "The name the team gives to this strategy"
+0 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-26 pt/round: 11040221(P9) "The name the team gives to this strategy"
+-25 pt/round: Bichael(P4) "Basic-AI"
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+0 pt/round: 11040221(P9) "The name the team gives to this strategy"
+0 pt/round: Raphael(P5) "Tit for Tat"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-16 pt/round: 11040221(P9) "The name the team gives to this strategy"
+-16 pt/round: Michaelangelo(P6) "Random action."
+CCCCcBcBCCCcbbBcBcbbBCCcBcbBcbbbBCcBCcbbbBcbbbbbBCcbbbbbbbbBCCCcbbBcbBCcBcbBCcBC
+CCCCBcBcCCCBbbcBcBbbcCCBcBbcBbbbcCBcCBbbbcBbbbbbcCBbbbbbbbbcCCCBbbcBbcCBcBbcCBcC
+
+CCcbbbBCCCcBCCcBCcBcbBcBCcBcbbbBCcbBcBCCCCCCCCcBcBcbBCCCcBcBcBcbBCcBCCcBCCcBCcBC
+CCBbbbcCCCBcCCBcCBcBbcBcCBcBbbbcCBbcBcCCCCCCCCBcBcBbcCCCBcBcBcBbcCBcCCBcCCBcCBcC
+
+cBcbbBcbBCCCcBCcbbBCCcB
+BcBbbcBbcCCCBcCBbbcCCBc
+
+--------------------------------------------------------------------------------
+0 pt/round: 11040221(P9) "The name the team gives to this strategy"
+0 pt/round: k. mercer(P7) "Anatol Rapoport"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-26 pt/round: 11040221(P9) "The name the team gives to this strategy"
+-25 pt/round: forest(P8) "The name the team gives to this strategy"
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-20 pt/round: 11040221(P9) "The name the team gives to this strategy"
+-20 pt/round: Team 10(P10) "Conquistadors"
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+
+--------------------------------------------------------------------------------
+-15 pt/round: 11040221(P9) "The name the team gives to this strategy"
+-15 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+cbbBCcBcbBcBcbbBcbbBCcbbBCCcBCCcBcBCcBCCCcBCcBcBcBcBCCCcbBcbbBcBCCCcBcBCCCcBcBCC
+BbbcCBcBbcBcBbbcBbbcCBbbcCCBcCCBcBcCBcCCCBcCBcBcBcBcCCCBbcBbbcBcCCCBcBcCCCBcBcCC
+
+CcbBCcbbbBCcBCcbBCCCcbBCCCCcBCcbbbBCcBCcBCCcbBCCCCCcBCcBCCcbbBCcBCCCCcbBCCCCcbbB
+CBbcCBbbbcCBcCBbcCCCBbcCCCCBcCBbbbcCBcCBcCCBbcCCCCCBcCBcCCBbbcCBcCCCCBbcCCCCBbbc
+
+cbBCcBCCcbBcBCcBCCCCCcbBCCcBcBcBcBCcbbB
+BbcCBcCCBbcBcCBcCCCCCBbcCCBcBcBcBcCBbbc
+
+--------------------------------------------------------------------------------
+-21 pt/round: 11040221(P9) "The name the team gives to this strategy"
+-20 pt/round: Naga(P12) "HI"
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+
+cBcBcBcBcBcBc
+BcBcBcBcBcBcB
+
+--------------------------------------------------------------------------------
+-50 pt/round: 11040221(P9) "The name the team gives to this strategy"
+-50 pt/round: napes(P13) "Pavlov"
+Cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+C                                                                               
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+                                                                                
+
+ccccccccccccccccccccccccccc
+                           
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team Team 10
+--------------------------------------------------------------------------------
+-22 pt/round: Team 10(P10) "Conquistadors"
+-22 pt/round: Team Success(P0) "Win"
+bBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbB
+bcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbc
+
+cbBcbBcbBcbBcbBcbBcbBcbBcbBcbB
+BbcBbcBbcBbcBbcBbcBbcBbcBbcBbc
+
+--------------------------------------------------------------------------------
+-20 pt/round: Team 10(P10) "Conquistadors"
+-21 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+
+BcBcBcBcBcBcBcBcBcBcB
+cBcBcBcBcBcBcBcBcBcBc
+
+--------------------------------------------------------------------------------
+-1 pt/round: Team 10(P10) "Conquistadors"
+-1 pt/round: Shrek(P2) "fun"
+BcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+cBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+0 pt/round: Team 10(P10) "Conquistadors"
+-1 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-25 pt/round: Team 10(P10) "Conquistadors"
+-25 pt/round: Bichael(P4) "Basic-AI"
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-20 pt/round: Team 10(P10) "Conquistadors"
+-21 pt/round: Raphael(P5) "Tit for Tat"
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+
+BcBcBcBcBcBcBcBcBcBcB
+cBcBcBcBcBcBcBcBcBcBc
+
+--------------------------------------------------------------------------------
+-17 pt/round: Team 10(P10) "Conquistadors"
+-17 pt/round: Michaelangelo(P6) "Random action."
+BcbbbBCcBcbBCCCCcbBcBCCCcbBCcBcbBCcBcBcBcBCcbbBCCcBCcBCcbBCcbBCCcbBcbbbBCcBCcbbB
+cBbbbcCBcBbcCCCCBbcBcCCCBbcCBcBbcCBcBcBcBcCBbbcCCBcCBcCBbcCBbcCCBbcBbbbcCBcCBbbc
+
+cBcBCcBcbBCCCcbbbbBCCcBcBCCcbbBcbBcBcBcBCCcbbBCCcbBcbbbBcbBCCCcbBCcbBcBCcbbbB
+BcBcCBcBbcCCCBbbbbcCCBcBcCCBbbcBbcBcBcBcCCBbbcCCBbcBbbbcBbcCCCBbcCBbcBcCBbbbc
+
+--------------------------------------------------------------------------------
+-2 pt/round: Team 10(P10) "Conquistadors"
+-3 pt/round: k. mercer(P7) "Anatol Rapoport"
+BcBcBcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+cBcBcBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-25 pt/round: Team 10(P10) "Conquistadors"
+-25 pt/round: forest(P8) "The name the team gives to this strategy"
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-20 pt/round: Team 10(P10) "Conquistadors"
+-20 pt/round: 11040221(P9) "The name the team gives to this strategy"
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+
+--------------------------------------------------------------------------------
+-18 pt/round: Team 10(P10) "Conquistadors"
+-18 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+BcBcbBCcBcbbbBCCCCCcbbbBcBcbbbBcbBCcBCcbbbbBcBcbbbbBCcbbBcbBcbbbBCCCcbBcBCcBcbBC
+cBcBbcCBcBbbbcCCCCCBbbbcBcBbbbcBbcCBcCBbbbbcBcBbbbbcCBbbcBbcBbbbcCCCBbcBcCBcBbcC
+
+cBCcBCCCcbBcBCcbbbbbBCcBCcBCCCcbbbbbBCcbbBcBcbBcBcBCCcbBCcBCcBCCCcbBCCcBcbBcbbBc
+BcCBcCCCBbcBcCBbbbbbcCBcCBcCCCBbbbbbcCBbbcBcBbcBcBcCCBbcCBcCBcCCCBbcCCBcBbcBbbcB
+
+Bcbb
+cBbb
+
+--------------------------------------------------------------------------------
+-25 pt/round: Team 10(P10) "Conquistadors"
+-25 pt/round: Naga(P12) "HI"
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-50 pt/round: Team 10(P10) "Conquistadors"
+-50 pt/round: napes(P13) "Pavlov"
+BCcbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+cCB                                                                             
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+                                                                                
+
+ccccccccccccccccccccccccccccc
+                             
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team LoneSkylarWolf
+--------------------------------------------------------------------------------
+-19 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+-16 pt/round: Team Success(P0) "Win"
+bCbCbBbBcbCcbCbCbBbCbBcbBcccbCbCbCbBcbBbBcccbBBbCcbCbCccbBCbCccbCbBCbBCbBCccbBCc
+bCbCbcbcBbCBbCbCbcbCbcBbcBBBbCbCbCbcBbcbcBBBbccbCBbCbCBBbcCbCBBbCbcCbcCbcCBBbcCB
+
+ccccccbCcccbBBBBBBBCbCcbBBCbCcbBCbBBBCcbCbCcbBBBbCcbCcbCbBBbBcccccccbCcbCbCbBCcb
+BBBBBBbCBBBbcccccccCbCBbccCbCBbcCbcccCBbCbCBbcccbCBbCBbCbccbcBBBBBBBbCBbCbCbcCBb
+
+CbBCbBCbBCccbCcbBCccbCbCcbBCcbB
+CbcCbcCbcCBBbCBbcCBBbCbCBbcCBbc
+
+--------------------------------------------------------------------------------
+-16 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+-16 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+CBcBcBbcBcBbcCCCBcBcCBbbcBcCBbbbcBcCBbcCCBbcCBcCBbbcBcCCBcCCBcBcCCCCBbcBbbcBbcBc
+CcBcBcbBcBcbBCCCcBcBCcbbBcBCcbbbBcBCcbBCCcbBCcBCcbbBcBCCcBCCcBcBCCCCcbBcbbBcbBcB
+
+CBbbcCCCCBcCCBbbbcBcCBcCCCBcBc
+CcbbBCCCCcBCCcbbbBcBCcBCCCcBcB
+
+--------------------------------------------------------------------------------
+4 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+-23 pt/round: Shrek(P2) "fun"
+CcBbCCCCCCCBCCCCCBCCCBCBCCBCCBBCCBBBBBCCCCCCCBCCCBBCCCCCCBCBBBCBCBCCBBCBCBCBBBBC
+CBcbCCCCCCCcCCCCCcCCCcCcCCcCCccCCcccccCCCCCCCcCCCccCCCCCCcCcccCcCcCCccCcCcCccccC
+
+BCCBBCBCBCBBBCCBBBCBBBCCBBBBBCBBCCBCCBCBCBCBBBCBCCCCBBBCBBCCCBBBCCBCCCCCCCCCCBBC
+cCCccCcCcCcccCCcccCcccCCcccccCccCCcCCcCcCcCcccCcCCCCcccCccCCCcccCCcCCCCCCCCCCccC
+
+CBCCBCCCBBCBCCCBBBCBBBBBBCBCCBCBCB
+CcCCcCCCccCcCCCcccCccccccCcCCcCcCc
+
+--------------------------------------------------------------------------------
+4 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+-23 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+BCCCBCBCBCBCCBCBCCBCCBCCCBBCCCBCBBBBBCCCBBCCBBBBBBBBCBBBBCBCBCCCCBBCCBCCBCCCBBCC
+cCCCcCcCcCcCCcCcCCcCCcCCCccCCCcCcccccCCCccCCccccccccCccccCcCcCCCCccCCcCCcCCCccCC
+
+BBCBBCCCCBBCBCCBBCCBBCBBBCCBCCBBCCCCCCBCCBBCBCBBCCBCBBBCBCBCCBCCBBCBCCBCBCBCCCBC
+ccCccCCCCccCcCCccCCccCcccCCcCCccCCCCCCcCCccCcCccCCcCcccCcCcCCcCCccCcCCcCcCcCCCcC
+
+CCBBCBCBCCCBBCCBCCBCCCCCBCCBCBCBCCB
+CCccCcCcCCCccCCcCCcCCCCCcCCcCcCcCCc
+
+--------------------------------------------------------------------------------
+-38 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+-8 pt/round: Bichael(P4) "Basic-AI"
+bbccbbbbcccbcccbbbcbcbbccbbcbcbbccbcbccccbbcccccbcbcbccccbbcbbcbcbbcbccbbcccbccb
+bbBBbbbbBBBbBBBbbbBbBbbBBbbBbBbbBBbBbBBBBbbBBBBBbBbBbBBBBbbBbbBbBbbBbBBbbBBBbBBb
+
+bcbccbcbbbbcbcbcbcbbbbbcb
+bBbBBbBbbbbBbBbBbBbbbbbBb
+
+--------------------------------------------------------------------------------
+-17 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+-17 pt/round: Raphael(P5) "Tit for Tat"
+CBbcCBcCCCBcCBcCBbbcCCBcCBcBbcBcBcBcBbcCCCBbcCBcBcBbcCBcBbcBbbbbcCCBbcCCCCBcCCCC
+CcbBCcBCCCcBCcBCcbbBCCcBCcBcbBcBcBcBcbBCCCcbBCcBcBcbBCcBcbBcbbbbBCCcbBCCCCcBCCCC
+
+BbbbbcBcBbbbcCCBbbbbcBbbcCBbbbcBcCBcBbbbcCBbbcBcCBb
+cbbbbBcBcbbbBCCcbbbbBcbbBCcbbbBcBCcBcbbbBCcbbBcBCcb
+
+--------------------------------------------------------------------------------
+-17 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+-19 pt/round: Michaelangelo(P6) "Random action."
+cCBCBBBcCCcbBCBbCBcBBbBbccCbCCcbCbccbbbbcbcbCBbcbbbBBbBbcBccCCBccbcBBBCBcCCCcCCC
+BCcCcccBCCBbcCcbCcBccbcbBBCbCCBbCbBBbbbbBbBbCcbBbbbccbcbBcBBCCcBBbBcccCcBCCCBCCC
+
+ccCBcBbccbbbBBcbBbCbBBBbCBBCbcCBbbbBCcBbbbbCbcbBBCccbBBBcbbbbcB
+BBCcBcbBBbbbccBbcbCbcccbCccCbBCcbbbcCBcbbbbCbBbccCBBbcccBbbbbBc
+
+--------------------------------------------------------------------------------
+-12 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+-18 pt/round: k. mercer(P7) "Anatol Rapoport"
+BcCCBcBbcCCCBCCBbcBcBbCCCCCCCCCCBbcBbcBCBbbcBbBcCBbcCCCBcCCBCBcCCBcBbcBCCBcBbcCB
+cBCCcBcbBCCCcCCcbBcBcbCCCCCCCCCCcbBcbBcCcbbBcbcBCcbBCCCcBCCcCcBCCcBcbBcCCcBcbBCc
+
+cBCBbcCCCBbbBcCCBcBbcBCBbbbbBcBbbcBCCCBcBcCCBbbBcBcBbbCBbbbcCBB
+BcCcbBCCCcbbcBCCcBcbBcCcbbbbcBcbbBcCCCcBcBCCcbbcBcBcbbCcbbbBCcc
+
+--------------------------------------------------------------------------------
+-38 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+-7 pt/round: forest(P8) "The name the team gives to this strategy"
+ccbcbcbccccbcbbcbbcccccbbccbcbccbccbcccbccccccbcbbcbbbcbbccbbbccbcccbbbbcbcbbbbb
+BBbBbBbBBBBbBbbBbbBBBBBbbBBbBbBBbBBbBBBbBBBBBBbBbbBbbbBbbBBbbbBBbBBBbbbbBbBbbbbb
+
+cbccbbccbbbbbbccbbcbc
+BbBBbbBBbbbbbbBBbbBbB
+
+--------------------------------------------------------------------------------
+-15 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+-15 pt/round: 11040221(P9) "The name the team gives to this strategy"
+BbbcCBcBbcBcBbbcBbbcCBbbcCCBcCCBcBcCBcCCCBcCBcBcBcBcCCCBbcBbbcBcCCCBcBcCCCBcBcCC
+cbbBCcBcbBcBcbbBcbbBCcbbBCCcBCCcBcBCcBCCCcBCcBcBcBcBCCCcbBcbbBcBCCCcBcBCCCcBcBCC
+
+CBbcCBbbbcCBcCBbcCCCBbcCCCCBcCBbbbcCBcCBcCCBbcCCCCCBcCBcCCBbbcCBcCCCCBbcCCCCBbbc
+CcbBCcbbbBCcBCcbBCCCcbBCCCCcBCcbbbBCcBCcBCCcbBCCCCCcBCcBCCcbbBCcBCCCCcbBCCCCcbbB
+
+BbcCBcCCBbcBcCBcCCCCCBbcCCBcBcBcBcCBbbc
+cbBCcBCCcbBcBCcBCCCCCcbBCCcBcBcBcBCcbbB
+
+--------------------------------------------------------------------------------
+-18 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+-18 pt/round: Team 10(P10) "Conquistadors"
+cBcBbcCBcBbbbcCCCCCBbbbcBcBbbbcBbcCBcCBbbbbcBcBbbbbcCBbbcBbcBbbbcCCCBbcBcCBcBbcC
+BcBcbBCcBcbbbBCCCCCcbbbBcBcbbbBcbBCcBCcbbbbBcBcbbbbBCcbbBcbBcbbbBCCCcbBcBCcBcbBC
+
+BcCBcCCCBbcBcCBbbbbbcCBcCBcCCCBbbbbbcCBbbcBcBbcBcBcCCBbcCBcCBcCCCBbcCCBcBbcBbbcB
+cBCcBCCCcbBcBCcbbbbbBCcBCcBCCCcbbbbbBCcbbBcBcbBcBcBCCcbBCcBCcBCCCcbBCCcBcbBcbbBc
+
+cBbb
+Bcbb
+
+--------------------------------------------------------------------------------
+-18 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+-18 pt/round: Naga(P12) "HI"
+cCCBcBcBbbbcCBbcBcCCBcCCBbbbbbcCBbcBcBbbcCBcBcBcBbbcBcBcBcBcCBcBcBcBcCCCBcCBcCCB
+BCCcBcBcbbbBCcbBcBCCcBCCcbbbbbBCcbBcBcbbBCcBcBcBcbbBcBcBcBcBCcBcBcBcBCCCcBCcBCCc
+
+cBcCBbcBbcCCBcBcBbbbcBbbcCCBbbbcBcBbbbbcBbbbcBcBcBcCBcBcCCBcBbbcBcBcBcBbbbbcCBbc
+BcBCcbBcbBCCcBcBcbbbBcbbBCCcbbbBcBcbbbbBcbbbBcBcBcBCcBcBCCcBcbbBcBcBcBcbbbbBCcbB
+
+BbcCCCCBbcCCBcBcCCBcBcCCBbbcBbcBc
+cbBCCCCcbBCCcBcBCCcBcBCCcbbBcbBcB
+
+--------------------------------------------------------------------------------
+-33 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+-33 pt/round: napes(P13) "Pavlov"
+BBBBBCbCbCbBBCbCcccbBCbBCcbCcbCcccbBBCbBBBCcbCcbCbBCcccbBCcbBCcccbcccbcccbcccbcb
+cccccCbCbCbccCbCBBBbcCbcCBbCBbCBBBbccCbcccCBbCBbCbcCBBBbcCBbcCBBB               
+
+cccbcbcbbbbbbcbcbbbbbbbbcccbbbbbbbbbcbbbbcbcbcb
+                                               
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team Naga
+--------------------------------------------------------------------------------
+-22 pt/round: Naga(P12) "HI"
+-22 pt/round: Team Success(P0) "Win"
+bBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbB
+bcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbc
+
+cbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbBcbB
+BbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbcBbc
+
+--------------------------------------------------------------------------------
+-20 pt/round: Naga(P12) "HI"
+-20 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+
+BcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcB
+
+--------------------------------------------------------------------------------
+-1 pt/round: Naga(P12) "HI"
+-1 pt/round: Shrek(P2) "fun"
+BcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+cBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+0 pt/round: Naga(P12) "HI"
+-1 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-25 pt/round: Naga(P12) "HI"
+-25 pt/round: Bichael(P4) "Basic-AI"
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-20 pt/round: Naga(P12) "HI"
+-20 pt/round: Raphael(P5) "Tit for Tat"
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+
+--------------------------------------------------------------------------------
+-18 pt/round: Naga(P12) "HI"
+-18 pt/round: Michaelangelo(P6) "Random action."
+BcbbBcBcbBCcbbbbBcBCCcbbbbbbbbBcBcBcBcbBcBCcbBcBcbBcbbbBCCcBCcBCCcBcBcbBcBcbbbbB
+cBbbcBcBbcCBbbbbcBcCCBbbbbbbbbcBcBcBcBbcBcCBbcBcBbcBbbbcCCBcCBcCCBcBcBbcBcBbbbbc
+
+CcbBcbbbBCcBcBCCCCcbBcBCcbbBCcBcbbBCCCCCCCcBcbbbBCCcBcbbbbbbBcBCcbBCcbbbbbbbbBCC
+CBbcBbbbcCBcBcCCCCBbcBcCBbbcCBcBbbcCCCCCCCBcBbbbcCCBcBbbbbbbcBcCBbcCBbbbbbbbbcCC
+
+CCcbBCcbbbBcBCcBCCCCcBcBcbbbbb
+CCBbcCBbbbcBcCBcCCCCBcBcBbbbbb
+
+--------------------------------------------------------------------------------
+-1 pt/round: Naga(P12) "HI"
+-2 pt/round: k. mercer(P7) "Anatol Rapoport"
+BcBcBcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+cBcBcBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-25 pt/round: Naga(P12) "HI"
+-25 pt/round: forest(P8) "The name the team gives to this strategy"
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-20 pt/round: Naga(P12) "HI"
+-21 pt/round: 11040221(P9) "The name the team gives to this strategy"
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+
+BcBcBcBcBcBcB
+cBcBcBcBcBcBc
+
+--------------------------------------------------------------------------------
+-25 pt/round: Naga(P12) "HI"
+-25 pt/round: Team 10(P10) "Conquistadors"
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-18 pt/round: Naga(P12) "HI"
+-18 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+BCCcBcBcbbbBCcbBcBCCcBCCcbbbbbBCcbBcBcbbBCcBcBcBcbbBcBcBcBcBCcBcBcBcBCCCcBCcBCCc
+cCCBcBcBbbbcCBbcBcCCBcCCBbbbbbcCBbcBcBbbcCBcBcBcBbbcBcBcBcBcCBcBcBcBcCCCBcCBcCCB
+
+BcBCcbBcbBCCcBcBcbbbBcbbBCCcbbbBcBcbbbbBcbbbBcBcBcBCcBcBCCcBcbbBcBcBcBcbbbbBCcbB
+cBcCBbcBbcCCBcBcBbbbcBbbcCCBbbbcBcBbbbbcBbbbcBcBcBcCBcBcCCBcBbbcBcBcBcBbbbbcCBbc
+
+cbBCCCCcbBCCcBcBCCcBcBCCcbbBcbBcB
+BbcCCCCBbcCCBcBcCCBcBcCCBbbcBbcBc
+
+--------------------------------------------------------------------------------
+-50 pt/round: Naga(P12) "HI"
+-50 pt/round: napes(P13) "Pavlov"
+BCcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+cCB                                                                             
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+                                                
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team napes
+--------------------------------------------------------------------------------
+-50 pt/round: napes(P13) "Pavlov"
+10 pt/round: Team Success(P0) "Win"
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+-50 pt/round: napes(P13) "Pavlov"
+-50 pt/round: big_dogs(P1) "The name the team gives to this strategy"
+C                                                                               
+Cc                                                                              
+
+                                                                                
+                                                                                
+
+--------------------------------------------------------------------------------
+-50 pt/round: napes(P13) "Pavlov"
+-50 pt/round: Shrek(P2) "fun"
+C                                                                               
+Cbcbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+                                                                                
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+                               
+ccccccccccccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+-50 pt/round: napes(P13) "Pavlov"
+-50 pt/round: The name the team gives to itself(P3) "The name the team gives to this strategy"
+C                                                                               
+Cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+                                                                      
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+-50 pt/round: napes(P13) "Pavlov"
+10 pt/round: Bichael(P4) "Basic-AI"
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+ccccccccccccc
+BBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+-50 pt/round: napes(P13) "Pavlov"
+-50 pt/round: Raphael(P5) "Tit for Tat"
+C                                                                               
+Cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+                                                                                
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+    
+cccc
+
+--------------------------------------------------------------------------------
+-45 pt/round: napes(P13) "Pavlov"
+-45 pt/round: Michaelangelo(P6) "Random action."
+ccCbcccCbcCbCBbcCBBBbCBbCBB                                                     
+BBCbBBBCbBCbCcbBCcccbCcbCccccbbbccbcccbbcbccbcbbcbbcbbcbbbbcbbccbccbbbbccccbbbcb
+
+                                                                                
+cbbbccccbcbbbbccbbbbbccccccbcbbbcbbcbbbbbcccbccbbbbbccbcbcccccbcccccccbcccccbcbb
+
+          
+bccbbcbbbb
+
+--------------------------------------------------------------------------------
+-50 pt/round: napes(P13) "Pavlov"
+-50 pt/round: k. mercer(P7) "Anatol Rapoport"
+C                                                                               
+Cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+                                                
+cccccccccccccccccccccccccccccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+-50 pt/round: napes(P13) "Pavlov"
+10 pt/round: forest(P8) "The name the team gives to this strategy"
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cc
+BB
+
+--------------------------------------------------------------------------------
+-50 pt/round: napes(P13) "Pavlov"
+-50 pt/round: 11040221(P9) "The name the team gives to this strategy"
+C                                                                               
+Cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+                                                                                
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+                           
+ccccccccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+-50 pt/round: napes(P13) "Pavlov"
+-50 pt/round: Team 10(P10) "Conquistadors"
+cCB                                                                             
+BCcbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+                                                                                
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+                             
+ccccccccccccccccccccccccccccc
+
+--------------------------------------------------------------------------------
+-33 pt/round: napes(P13) "Pavlov"
+-33 pt/round: LoneSkylarWolf(P11) "The name the team gives to this strategy"
+cccccCbCbCbccCbCBBBbcCbcCBbCBbCBBBbccCbcccCBbCBbCbcCBBBbcCBbcCBBB               
+BBBBBCbCbCbBBCbCcccbBCbBCcbCcbCcccbBBCbBBBCcbCcbCbBCcccbBCcbBCcccbcccbcccbcccbcb
+
+                                               
+cccbcbcbbbbbbcbcbbbbbbbbcccbbbbbbbbbcbbbbcbcbcb
+
+--------------------------------------------------------------------------------
+-50 pt/round: napes(P13) "Pavlov"
+-50 pt/round: Naga(P12) "HI"
+cCB                                                                             
+BCcbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+                                                
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 --------------------------------------------------------------------------------
