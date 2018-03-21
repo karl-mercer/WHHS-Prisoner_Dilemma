@@ -8,21 +8,21 @@
 
 team_name = 'Naga' # Only 10 chars displayed.
 strategy_name = 'HI'
-strategy_description = 'Baseline'
+strategy_description = 'Going back and forth on commit or betray '
 
 def move(my_history, their_history, my_score, their_score):
     if their_history == 'c':
-        return 'c'
+        return 'c'# if they don't betray continues to collude too
     else:
         if their_history == 'b':
-            return 'b'
+            return 'b'# betrays if they also betray 
         if their_score > my_score:
-            return 'b'
+            return 'b'# if my score is less then theirs betray
         if their_score == my_score:
-            return 'b'
+            return 'b'#if my score is equal to theirs betray too
         else:
-            return 'c'     
-        while their_history == 'bb':
+            return 'c'     #if noting is different keeps agreeing
+        while their_history == 'ccc':
             return 'b'
         else:
             return 'c'
@@ -72,6 +72,4 @@ if __name__ == '__main__':
               their_score=0,
               result='b')                     
 
-
-
-                
+                                
