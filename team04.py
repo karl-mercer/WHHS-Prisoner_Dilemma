@@ -7,8 +7,7 @@
 ####
 import random
 team_name = 'SledGang' # Only 10 chars displayed.
-strategy_name = ''
-strategy_description = 'How does this strategy decide?'
+strategy_description = 'Will continue to collude, if the other person, colludes. If the other person betrays, we betray'
     
 def move(my_history, their_history, my_score, their_score):
     ''' Arguments accepted: my_history, their_history are strings.
@@ -17,7 +16,20 @@ def move(my_history, their_history, my_score, their_score):
     Make my move.
     Returns 'c' or 'b'. 
     '''
-
+    if my_score < their_score:
+        return ('b')
+    if my_score > their_score:
+        return ('c')
+    if their_score == my_score:
+        return ('b')
+    if my_history == '':
+        return('c')
+    if their_history == '':
+        return('c')
+    if 'bb' == their_history:
+        return('b')
+    if 'cc' == their_history:
+        return('c')
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
     # their_history: a string of the same length as history, possibly empty. 
     # The first round between these two players is my_history[0] and their_history[0].
@@ -25,20 +37,10 @@ def move(my_history, their_history, my_score, their_score):
     
     # Analyze my_history and their_history and/or my_score and their_score.
     # Decide whether to return 'c' or 'b'.
-    if my_score > their_score:
-        return random.choice('b''c')
-    if their_score > my_score:
-        return ('b')
-    if their_score == my_score:
-        return ('b')
-    if my_history == '':
-        return('c')
 
 
 def move2(my_history, their_history, my_score, their_score):
-          return
-
-return 'c'
+    return 'c'
 
     
 def test_move(my_history, their_history, my_score, their_score, result):
