@@ -1,24 +1,33 @@
 ####
 # Each team's file must define four tokens:
-#     team_name: a string
+#     team_name: RokShox
 #     strategy_name: a string
 #     strategy_description: a string
 #     move: A function that returns 'c' or 'b'
 ####
+'work pls'
+team_name = 'RokShox' # Only 10 chars displayed.
+strategy_name = 'Anticipation of vengeance'
+strategy_description = '''This strat defeats other opponents based
+on their response to being betrayed, which will likely be to betray back.
+'''
 
-team_name = 'The name the team gives to itself' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
-    
 def move(my_history, their_history, my_score, their_score):
-    ''' Arguments accepted: my_history, their_history are strings.
-    my_score, their_score are ints.
     
-    Make my move.
-    Returns 'c' or 'b'. 
-    '''
-
-    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
+    if len(their_history) == 0:
+         print ('b')
+    else:
+        if their_history [-1:] == 'b':
+            print ('b')
+        else:
+            return 'c'
+    if their_history == 'c':
+         if my_score >= -1:
+             print ('b')
+         else:
+             print ('c')
+   
+ # my_history: a string with one letter (c or b) per round that has been played with this opponent.
     # their_history: a string of the same length as history, possibly empty. 
     # The first round between these two players is my_history[0] and their_history[0].
     # The most recent round is my_history[-1] and their_history[-1].
@@ -26,14 +35,13 @@ def move(my_history, their_history, my_score, their_score):
     # Analyze my_history and their_history and/or my_score and their_score.
     # Decide whether to return 'c' or 'b'.
     
-    return 'c'
 
-    
+'''
 def test_move(my_history, their_history, my_score, their_score, result):
-    '''calls move(my_history, their_history, my_score, their_score)
-    from this module. Prints error if return value != result.
-    Returns True or False, dpending on whether result was as expected.
-    '''
+    calls move(my_history, their_history, my_score, their_score)
+   # from this module. Prints error if return value != result.
+ #   Returns True or False, dpending on whether result was as expected.
+    
     real_result = move(my_history, their_history, my_score, their_score)
     if real_result == result:
         return True
@@ -45,7 +53,7 @@ def test_move(my_history, their_history, my_score, their_score, result):
             " and should have returned '" + result + "'")
         return False
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
      
     # Test 1: Betray on first move.
     if test_move(my_history='',
@@ -65,4 +73,5 @@ if __name__ == '__main__':
               # move('bbb', 'ccc', 0, 0) returns 'b'.
               my_score=0, 
               their_score=0,
-              result='b')             
+              result='b')   
+'''          

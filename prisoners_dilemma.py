@@ -36,15 +36,21 @@ from __future__ import print_function
 import random
 import os.path              
     
-import team00, team01, team03, team04
-import team05, team06, team07, team08, team09
-import team10, team11, team12, team14
-import team15, team16, team17, team18
-#betray = example1
-#collude = example0
 
-modules = [team00, team01 , team03, team04, team05, team06, team07, team08, 
-team09, team10, team11, team12 , team14, team15, team16, team17, team18]
+import team01, team02, team03, team04
+#import team01, team02, team03, team04
+import team05, team06, team07, team08, team09
+#import team05, team06, team07, team08, team09
+import team10, team11, team12, team13, team14
+#import team10, team11, team12, team13, team14
+import team15, team16, team17, team18
+#import team15, team16, team17, team18
+
+#modules = [team01, team02, team03, team04, team05, team06, team07, team08, team09, team10, 
+#team11, team12, team13, team14, team15, team16, team17, team18]
+
+modules = [team01, team02, team03, team04, team05, team06, team08, team09, team10, 
+team11, team12, team13, team14, team15, team16, team17, team18]
 
 for module in modules:
     reload(module)
@@ -127,16 +133,16 @@ def play_round(player1, player2, score1, score2, moves1, moves2):
     '''
     
     #Current setup would be used for an IPD
-    #2(-1) > 0-3 True
-    RELEASE = -1 # (R, "reward" in literature) when both players collude
-    TREAT = 0 # (T, "temptation" in literature) when you betray your partner
-    SEVERE_PUNISHMENT = -3 # (S, "sucker" in literature) when your partner betrays you
-    PUNISHMENT = -2 # (P) when both players betray each other
+    #-20 > 0-30 True
+    RELEASE = 0 # (R, "reward" in literature) when both players collude
+    TREAT = 10 # (T, "temptation" in literature) when you betray your partner
+    SEVERE_PUNISHMENT = -50 # (S, "sucker" in literature) when your partner betrays you
+    PUNISHMENT = -25 # (P) when both players betray each other
     
     # Keep T > R > P > S to be a Prisoner's Dilemma
     # Keep 2R > T + S to be an Iterative Prisoner's Dilemma (IPD)
     
-    ERROR = -2
+    ERROR = -50
     
     # Get the two players' actions and remember them.
     action1 = player1.move(moves1, moves2, score1, score2)
