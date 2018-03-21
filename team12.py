@@ -22,7 +22,7 @@ def move(my_history, their_history, my_score, their_score):
             return 'b'
         else:
             return 'c'     
-        while their_history == 'bb':
+        while their_history == 'ccc':
             return 'b'
         else:
             return 'c'
