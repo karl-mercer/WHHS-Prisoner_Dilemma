@@ -18,26 +18,27 @@ def move(my_history, their_history, my_score, their_score):
     Make my move.
     Returns 'c' or 'b'. 
     '''
-    return random.choice('bc')
-    if their_history[-1:] == my_history[-1:]:
-        return my_history[-2:]
+    global moves, score
+    #return random.choice('bc')
+    if their_history[-1:] is my_history[-1:]:
         moves += 1
-    elif their_history[-3] == 'c' or my_history[-1:] == 'c':
-        return 'c'
+        print (my_history[-1:])
+    elif their_history[-1] is 'c' and my_history[-1:] is 'b':
         moves += 1
-    elif moves%2 == 0:
-        return their_history[-1]
+        print ('b')
+    elif (moves%2 is 0) and (moves is not 0):
         moves += 1
+        print (their_history[-1])
     
-    if their_history[-1:] and my_history[-1:] == 'c':
+    if their_history[-1:] and my_history[-1:] is 'c':
         score -= 1
-    elif their_history[-1:] and my_history[-1:] == 'b':
+    elif their_history[-1:] and my_history[-1:] is 'b':
         score -= 2
-    elif their_history[-1:] == 'c' and my_history[-1:] == 'b':
+    elif their_history[-1:] is 'c' and my_history[-1:] is 'b':
         score += 0
-    elif their_history[-1:] == 'b' and my_history[-1:] == 'c':
+    elif their_history[-1:] is 'b' and my_history[-1:] is 'c':
         score -= 3
-    return score
+    print (score)
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
     # their_history: a string of the same length as history, possibly empty. 
     # The first round between these two players is my_history[0] and their_history[0].
