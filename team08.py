@@ -11,6 +11,13 @@ strategy_name = 'The name the team gives to this strategy'
 strategy_description = 'How does this strategy decide?'
     
 def move(my_history, their_history, my_score, their_score):
+    if len(my_history) == 0:
+        return 'c'
+    if their_history[-1] == 'b':
+        return 'b'
+    else:
+        return 'c'
+        
     ''' Arguments accepted: my_history, their_history are strings.
     my_score, their_score are ints.
     
@@ -28,7 +35,7 @@ def move(my_history, their_history, my_score, their_score):
     
     return 'c'
 
-    
+
 def test_move(my_history, their_history, my_score, their_score, result):
     '''calls move(my_history, their_history, my_score, their_score)
     from this module. Prints error if return value != result.
@@ -46,17 +53,17 @@ def test_move(my_history, their_history, my_score, their_score, result):
         return False
 
 if __name__ == '__main__':
-     
+
     # Test 1: Betray on first move.
     if test_move(my_history='',
               their_history='', 
               my_score=0,
               their_score=0,
-              result='b'):
+              result='c'):
          print 'Test passed'
      # Test 2: Continue betraying if they collude despite being betrayed.
-    test_move(my_history='bbb',
-              their_history='ccc', 
+    test_move(my_history='c',
+              their_history='b',
               # Note the scores are for testing move().
               # The history and scores don't need to match unless
               # that is relevant to the test of move(). Here,
@@ -65,4 +72,4 @@ if __name__ == '__main__':
               # move('bbb', 'ccc', 0, 0) returns 'b'.
               my_score=0, 
               their_score=0,
-              result='b')             
+              result='c')
