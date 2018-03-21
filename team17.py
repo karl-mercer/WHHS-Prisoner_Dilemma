@@ -1,3 +1,5 @@
+import random
+
 ####
 # Each team's file must define four tokens:
 #     team_name: a string
@@ -6,8 +8,8 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'Fodder2' # Only 10 chars displayed.
-strategy_name = 'Another sacrificial lamb.'
+team_name = 'Michaelangelo' # Only 10 chars displayed.
+strategy_name = 'Random action.'
 strategy_description = 'It does not decide either. It is simply envious of the opponent score.'
     
 def move(my_history, their_history, my_score, their_score):
@@ -25,13 +27,9 @@ def move(my_history, their_history, my_score, their_score):
     
     # Analyze my_history and their_history and/or my_score and their_score.
     # Decide whether to return 'c' or 'b'.
-    
-    if len(my_history)==0:
-        return 'c'
-    elif my_history[-1]=='c':
-        return 'b'
-    else:
-        return 'c'
+    choices = ['b', 'c']
+    turn = random.choice(choices)
+    return turn
 
     
 def test_move(my_history, their_history, my_score, their_score, result):

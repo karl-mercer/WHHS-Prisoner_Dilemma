@@ -32,7 +32,7 @@ def move(my_history, their_history, my_score, their_score):
 #####    
     betcount = 0
     if len(their_history)==0:
-        return 'b'
+        return 'c'
     elif their_history[-1] == 'b': #if they have betrayed me in the last round
         for betrayals in their_history: #will examine how many betrayals they have played
             if betrayals == 'b':
