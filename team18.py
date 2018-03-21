@@ -32,11 +32,12 @@ def move(my_history, their_history, my_score, their_score):
 #####    
     betcount = 0
     if len(their_history)==0:
-        return 'c'
+        return 'b'
     elif their_history[-1] == 'b': #if they have betrayed me in the last round
         for betrayals in their_history: #will examine how many betrayals they have played
             if betrayals == 'b':
                 betcount +=1
+        print betcount
         if betcount%5 == 0:
             return 'c' #for every 5th betrayal I will not retaliate, but forgive 
         else:
@@ -68,8 +69,33 @@ def move(my_history, their_history, my_score, their_score):
     #        return 'b'
     #    else:
     #        return 'c'
-    
-    
+#####
+#
+#                               Strategy 3 - Frequency Response (no good or needs work)
+#
+#####
+    #if len(my_history) < 10:
+    #    return 'c'
+    #betCount, myCount = 0, 0 #counters tracking number of betrayals by both players
+    #myCount = 0
+    #for bets in their_history:
+    #    if bets == 'b':
+    #        betCount += 1
+    #total = len(their_history)
+    #for bets in my_history:
+    #    if bets == 'b':
+    #        myCount += 1
+    #myTotal = len(my_history)
+    #betPercent = betCount/total
+    #myBets = myCount/myTotal
+    #if betPercent < 0.1:
+    #    if their_history[-1] == 'b':
+    #        return 'c'
+    #elif 0.2 > betPercent >= 0.1:
+    #    if their_history[-1] == 'b' and myBets >0.1:
+    #        return 'b'
+    #else:
+    #    return 'c'
     
 #####   
 #
