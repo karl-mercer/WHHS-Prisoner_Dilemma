@@ -7,20 +7,23 @@
 ####
 
 team_name = 'RokShox' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
-    
+strategy_name = 'Anticipation of vengeance'
+strategy_description = '''This strat defeats other opponents based
+on their response to being betrayed, which will likely be to betray back.
+'''
+
 def move(my_history, their_history, my_score, their_score):
     
     if (their_history) == '':
         print ('b')
     if their_history == 'c':
-        if my_score >= -10:
+
+        if my_score >= -1:
             print ('b')
         else:
             print ('c')
-    if their_history == 'bb':
-        print ('b')
+    if their_history [-1] == 'b':
+        print ('c')
     else:
         return 'b'
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
