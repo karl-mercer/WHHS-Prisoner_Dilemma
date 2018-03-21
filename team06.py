@@ -11,11 +11,13 @@ strategy_name = 'Anticipation of vengeance'
 strategy_description = '''This strat defeats other opponents based
 on their response to being betrayed, which will likely be to betray back.
 '''
+
 def move(my_history, their_history, my_score, their_score):
     
     if (their_history) == '':
         print ('b')
     if their_history == 'c':
+
         if my_score >= -1:
             print ('b')
         else:
@@ -24,6 +26,7 @@ def move(my_history, their_history, my_score, their_score):
         print ('b')
     else:
         return 'c'
+
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
     # their_history: a string of the same length as history, possibly empty. 
     # The first round between these two players is my_history[0] and their_history[0].

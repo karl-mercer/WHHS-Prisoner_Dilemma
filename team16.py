@@ -1,3 +1,4 @@
+import random
 ####
 # Each team's file must define four tokens:
 #     team_name: a string
@@ -6,8 +7,8 @@
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'Fodder1' # Only 10 chars displayed.
-strategy_name = 'Be a sacrificial lamb.'
+team_name = 'Raphael' # Only 10 chars displayed.
+strategy_name = 'Tit for Tat'
 strategy_description = 'It does not decide. It simply retaliates.'
     
 def move(my_history, their_history, my_score, their_score):
