@@ -26,55 +26,51 @@ Player 9 (P9): Naga, HI
         Baseline
 Player 10 (P10): napes, RNG GOD
         It is random unless I am losing
-Player 11 (P11): The name the team gives to itself, The name the team gives to this strategy
-        How does this strategy decide?
-Player 12 (P12): Fodder1, Be a sacrificial lamb.
+Player 11 (P11): Fodder1, Be a sacrificial lamb.
         It does not decide. It simply retaliates.
-Player 13 (P13): Fodder2, Another sacrificial lamb.
+Player 12 (P12): Fodder2, Another sacrificial lamb.
         It does not decide either. It is simply envious of the opponent score.
-Player 14 (P14): karl-mercer, Anatol Rapoport
+Player 13 (P13): k. mercer, Anatol Rapoport
         Collude, relatiate, but maybe forgive.
 --------------------------------------------------------------------------------
 Section 1 - Player vs. Player
 --------------------------------------------------------------------------------
 Each column shows pts/round earned against each other player:
-             P0     P1     P2     P3     P4     P5     P6     P7     P8     P9    P10    P11    P12    P13    P14
-vs. P0 :      0    -10      0      0    -10    -10    -10    -10     -6    -10    -10    -10    -10    -10    -10
-vs. P1 :    -10      0      0      0    -10    -10    -10    -10     -6    -10    -10    -10    -10    -10    -10
-vs. P2 :    -30    -30      0     -1    -30    -30    -30    -30    -16    -15    -17    -30    -16    -16    -17
-vs. P3 :    -30    -30    -30      0    -30    -30    -30    -30    -26    -21    -25    -30    -21    -21    -23
-vs. P4 :    -10    -10      0      0      0    -10    -10    -10     -5    -10    -10    -10    -10    -10    -10
-vs. P5 :    -10    -10      0      0    -10      0    -10    -10     -5    -10    -10    -10    -10    -10    -10
-vs. P6 :    -10    -10      0      0    -10    -10      0    -10     -5    -10    -10    -10    -10    -10    -10
-vs. P7 :    -10    -10      0      0    -10    -10    -10      0     -5    -10    -10    -10    -10    -10    -10
-vs. P8 :    -20    -20    -15    -10    -21    -21    -21    -21      0    -15    -16    -20    -15    -15    -16
-vs. P9 :    -11    -11    -16    -21    -11    -11    -11    -11    -15      0    -14    -11    -16    -15    -11
-vs. P10 :    -10    -10    -14    -11    -10    -10    -10    -10    -15    -14      0    -10    -10    -10    -10
-vs. P11 :    -10    -10      0      0    -10    -10    -10    -10     -6    -10    -10      0    -10    -10    -10
-vs. P12 :    -10    -10    -15    -20    -10    -10    -10    -10    -15    -15    -10    -10      0    -10    -10
-vs. P13 :    -10    -10    -15    -20    -10    -10    -10    -10    -15    -15    -10    -10    -10      0    -10
-vs. P14 :    -10    -10    -14    -16    -10    -10    -10    -10    -14    -11    -10    -10    -10    -10      0
-TOTAL  :   -191   -191   -119    -99   -192   -192   -192   -192   -154   -176   -172   -191   -168   -167   -167
+             P0     P1     P2     P3     P4     P5     P6     P7     P8     P9    P10    P11    P12    P13
+vs. P0 :      0    -10      0      0    -10    -10    -10    -10     -5    -10    -10    -10    -10    -10
+vs. P1 :    -10      0      0      0    -10    -10    -10    -10     -5    -10    -10    -10    -10    -10
+vs. P2 :    -30    -30      0     -1    -30    -30    -30    -30    -15    -16    -17    -16    -16    -27
+vs. P3 :    -30    -30    -30      0    -30    -30    -30    -30    -25    -21    -25    -21    -21    -21
+vs. P4 :    -10    -10      0      0      0    -10    -10    -10     -5    -10    -10    -10    -10    -10
+vs. P5 :    -10    -10      0      0    -10      0    -10    -10     -5    -10    -10    -10    -10    -10
+vs. P6 :    -10    -10      0      0    -10    -10      0    -10     -5    -10    -10    -10    -10    -10
+vs. P7 :    -10    -10      0      0    -10    -10    -10      0     -5    -10    -10    -10    -10    -10
+vs. P8 :    -21    -22    -15    -11    -21    -21    -22    -20      0    -16    -15    -15    -15    -19
+vs. P9 :    -11    -11    -16    -21    -11    -11    -11    -11    -16      0    -14    -15    -15    -11
+vs. P10 :    -10    -10    -14    -11    -10    -10    -10    -10    -15    -14      0    -10    -10    -10
+vs. P11 :    -10    -10    -16    -20    -10    -10    -10    -10    -15    -15    -10      0    -10    -10
+vs. P12 :    -10    -10    -15    -20    -10    -10    -10    -10    -15    -15    -10    -10      0    -10
+vs. P13 :    -10    -10     -4    -20    -10    -10    -10    -10     -8    -11    -10    -10    -10      0
+TOTAL  :   -182   -183   -110   -104   -182   -182   -183   -181   -139   -168   -161   -157   -157   -168
 --------------------------------------------------------------------------------
 Section 2 - Leaderboard
 --------------------------------------------------------------------------------
 Average points per round:
 Team name (P#):  Score      with strategy name
-RokShox   (P3):         -7 points with The name the team gives to this strategy
 Bichael   (P2):         -8 points with Basic-AI                                
-LoneSkylar(P8):        -11 points with The name the team gives to this strategy
+RokShox   (P3):         -8 points with The name the team gives to this strategy
+LoneSkylar(P8):        -10 points with The name the team gives to this strategy
 Naga      (P9):        -12 points with HI                                      
 napes     (P10):        -12 points with RNG GOD                                 
-Fodder1   (P12):        -12 points with Be a sacrificial lamb.                  
-Fodder2   (P13):        -12 points with Another sacrificial lamb.               
-karl-merce(P14):        -12 points with Anatol Rapoport                         
+Fodder1   (P11):        -12 points with Be a sacrificial lamb.                  
+Fodder2   (P12):        -12 points with Another sacrificial lamb.               
+k. mercer (P13):        -12 points with Anatol Rapoport                         
 The name t(P0):        -13 points with The name the team gives to this strategy
-The name t(P1):        -13 points with The name the team gives to this strategy
 Code Monke(P4):        -13 points with The name the team gives to this strategy
 11040221  (P5):        -13 points with The name the team gives to this strategy
-The name t(P6):        -13 points with The name the team gives to this strategy
 Team 10   (P7):        -13 points with The name the team gives to this strategy
-The name t(P11):        -13 points with The name the team gives to this strategy
+The name t(P1):        -14 points with The name the team gives to this strategy
+The name t(P6):        -14 points with The name the team gives to this strategy
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 team03--------------------------------------------------------------------------------
@@ -825,43 +821,6 @@ def move(my_history, their_history, my_score, their_score):
         return ('b')
     else:
         return ('c')--------------------------------------------------------------------------------
-team15--------------------------------------------------------------------------------
-####
-# Each team's file must define four tokens:
-#     team_name: a string
-#     strategy_name: a string
-#     strategy_description: a string
-#     move: A function that returns 'c' or 'b'
-####
-
-team_name = 'The name the team gives to itself' # Only 10 chars displayed.
-strategy_name = 'The name the team gives to this strategy'
-strategy_description = 'How does this strategy decide?'
-    
-def move(my_history, their_history, my_score, their_score):
-    ''' Arguments accepted: my_history, their_history are strings.
-    my_score, their_score are ints.
-    
-    Make my move.
-    Returns 'c' or 'b'. 
-    '''
-
-    # my_history: a string with one letter (c or b) per round that has been played with this opponent.
-    # their_history: a string of the same length as history, possibly empty. 
-    # The first round between these two players is my_history[0] and their_history[0].
-    # The most recent round is my_history[-1] and their_history[-1].
-    
-    # Analyze my_history and their_history and/or my_score and their_score.
-    # Decide whether to return 'c' or 'b'.
-    if their_score > my_score :
-        return 'b'
-    elif their_history[-1] == 'c' :
-        return 'c'
-    elif their_history[-1] == 'b' :
-        return 'b'
-    
-        
---------------------------------------------------------------------------------
 team16--------------------------------------------------------------------------------
 ####
 # Each team's file must define four tokens:
@@ -964,7 +923,9 @@ def move(my_history, their_history, my_score, their_score):
     # Analyze my_history and their_history and/or my_score and their_score.
     # Decide whether to return 'c' or 'b'.
     
-    if my_score<their_score:
+    if len(my_history)==0:
+        return 'c'
+    elif my_history[-1]=='c':
         return 'b'
     else:
         return 'c'
@@ -1016,7 +977,7 @@ team18--------------------------------------------------------------------------
 #     move: A function that returns 'c' or 'b'
 ####
 
-team_name = 'karl-mercer' # Only 10 chars displayed.
+team_name = 'k. mercer' # Only 10 chars displayed.
 strategy_name = 'Anatol Rapoport'
 strategy_description = 'Collude, relatiate, but maybe forgive.'
     
@@ -1035,6 +996,11 @@ def move(my_history, their_history, my_score, their_score):
     
     # Analyze my_history and their_history and/or my_score and their_score.
     # Decide whether to return 'c' or 'b'.
+#####
+#
+#                                Strategy 1 - Strategic
+#
+#####    
     betcount = 0
     if len(their_history)==0:
         return 'c'
@@ -1048,44 +1014,77 @@ def move(my_history, their_history, my_score, their_score):
             return 'b'
     else: 
         return 'c'
+#####
+#
+#                               Strategy 2
+#
+#####
+    #if len(my_history)==0: #show a little trust and begin with collusion
+    #    return 'c'
+    #elif 25>len(my_history)>0: #for the first 25 moves return whatever move they just played
+    #    if their_history[-1] == 'b':
+    #        return 'b'
+    #    else:
+    #        return 'c'
+    #else:
+    #    betcount = 0 #begin counting the number of collusions and betrayals in their history
+    #    colcount = 0
+    #    for moves in their_history: #examine each move in their history and accumulate a total of betrayals and colludes
+    #        if moves == 'b':
+    #            betcount +=1
+    #        else:
+    #            colcount += 1
+    #    total = len(their_history)
+    #    if betcount/total > 0.5: #if they are betraying more than 25% of the time, then betray also
+    #        return 'b'
+    #    else:
+    #        return 'c'
     
-def test_move(my_history, their_history, my_score, their_score, result):
-    '''calls move(my_history, their_history, my_score, their_score)
-    from this module. Prints error if return value != result.
-    Returns True or False, dpending on whether result was as expected.
-    '''
-    real_result = move(my_history, their_history, my_score, their_score)
-    if real_result == result:
-        return True
-    else:
-        print("move(" +
-            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
-                       str(my_score), str(their_score)])+
-            ") returned " + "'" + real_result + "'" +
-            " and should have returned '" + result + "'")
-        return False
+    
+    
+#####   
+#
+#                               Test Function
+#
+#####
 
-if __name__ == '__main__':
-     
-    # Test 1: Betray on first move.
-    if test_move(my_history='',
-              their_history='', 
-              my_score=0,
-              their_score=0,
-              result='b'):
-         print 'Test passed'
-     # Test 2: Continue betraying if they collude despite being betrayed.
-    test_move(my_history='bbb',
-              their_history='ccc', 
-              # Note the scores are for testing move().
-              # The history and scores don't need to match unless
-              # that is relevant to the test of move(). Here,
-              # the simulation (if working correctly) would have awarded 
-              # 300 to me and -750 to them. This test will pass if and only if
-              # move('bbb', 'ccc', 0, 0) returns 'b'.
-              my_score=0, 
-              their_score=0,
-              result='b')             --------------------------------------------------------------------------------
+#def test_move(my_history, their_history, my_score, their_score, result):
+#    '''calls move(my_history, their_history, my_score, their_score)
+#    from this module. Prints error if return value != result.
+#    Returns True or False, dpending on whether result was as expected.
+#    '''
+#    real_result = move(my_history, their_history, my_score, their_score)
+#    if real_result == result:
+#        return True
+#    else:
+#        print("move(" +
+#            ", ".join(["'"+my_history+"'", "'"+their_history+"'",
+#                       str(my_score), str(their_score)])+
+#            ") returned " + "'" + real_result + "'" +
+#            " and should have returned '" + result + "'")
+#        return False
+#
+#if __name__ == '__main__':
+#     
+#    # Test 1: Betray on first move.
+#    if test_move(my_history='',
+#              their_history='', 
+#              my_score=0,
+#              their_score=0,
+#              result='b'):
+#         print 'Test passed'
+#     # Test 2: Continue betraying if they collude despite being betrayed.
+#    test_move(my_history='bbb',
+#              their_history='ccc', 
+#              # Note the scores are for testing move().
+#              # The history and scores don't need to match unless
+#              # that is relevant to the test of move(). Here,
+#              # the simulation (if working correctly) would have awarded 
+#              # 300 to me and -750 to them. This test will pass if and only if
+#              # move('bbb', 'ccc', 0, 0) returns 'b'.
+#              my_score=0, 
+#              their_score=0,
+#              result='b')             --------------------------------------------------------------------------------
 Section 3 - Game Data for Team The name the team gives to itself
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
@@ -1093,11 +1092,8 @@ Section 3 - Game Data for Team The name the team gives to itself
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -30 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
@@ -1105,164 +1101,11 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
-cccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 -30 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
-0 pt/round: RokShox(P3) "The name the team gives to this strategy"
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
-cccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
--10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCC
-CCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
--10 pt/round: 11040221(P5) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
--10 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
--10 pt/round: Team 10(P7) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--20 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
--6 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
-CCccCCCCCCccCccccccCccCCCCCccCCcccCcccccCcCCcCcCcCCCCCCCccccCccccCCcCCcCCCCCccCc
-CCBBCCCCCCBBCBBBBBBCBBCCCCCBBCCBBBCBBBBBCBCCBCBCBCCCCCCCBBBBCBBBBCCBCCBCCCCCBBCB
-
-CCcCcCCcCCCccCCccCCCCCCCccCCCccCCcccccc
-CCBCBCCBCCCBBCCBBCCCCCCCBBCCCBBCCBBBBBB
-
---------------------------------------------------------------------------------
--11 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
--10 pt/round: Naga(P9) "HI"
-cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
--10 pt/round: napes(P10) "RNG GOD"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-Section 3 - Game Data for Team The name the team gives to itself
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
--10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--30 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
-0 pt/round: Bichael(P2) "Basic-AI"
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
-cccc
-BBBB
-
---------------------------------------------------------------------------------
--30 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
 0 pt/round: RokShox(P3) "The name the team gives to this strategy"
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
@@ -1271,13 +1114,154 @@ cccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
+-10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
 -10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+-10 pt/round: 11040221(P5) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+-10 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+-10 pt/round: Team 10(P7) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCC
+CCCCC
+
+--------------------------------------------------------------------------------
+-21 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+-5 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
+cCCCccCccCcCCCCcccCccCccccCCCCccCCCcCCcCCCcCcccccCcCCCcCCccCCcccccCccCcccCcccCcC
+BCCCBBCBBCBCCCCBBBCBBCBBBBCCCCBBCCCBCCBCCCBCBBBBBCBCCCBCCBBCCBBBBBCBBCBBBCBBBCBC
+
+CCcCCCCCcCcCCcCcCCcCcCccccCcccCccCCCcCcCCcCcccCccccCcCCccCCCcccCcCCCCCcc
+CCBCCCCCBCBCCBCBCCBCBCBBBBCBBBCBBCCCBCBCCBCBBBCBBBBCBCCBBCCCBBBCBCCCCCBB
+
+--------------------------------------------------------------------------------
+-11 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+-10 pt/round: Naga(P9) "HI"
+cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+-10 pt/round: napes(P10) "RNG GOD"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCC
+CCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+Section 3 - Game Data for Team The name the team gives to itself
+--------------------------------------------------------------------------------
+-10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
+-10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+--------------------------------------------------------------------------------
+-30 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
+0 pt/round: Bichael(P2) "Basic-AI"
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+-30 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
+0 pt/round: RokShox(P3) "The name the team gives to this strategy"
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+ccccccccccccccccc
+BBBBBBBBBBBBBBBBB
+
+--------------------------------------------------------------------------------
+-10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
+-10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
@@ -1288,8 +1272,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
@@ -1297,8 +1281,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
@@ -1306,20 +1290,17 @@ CCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--20 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
--6 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
-CCCccCcCcCCcCCCCcccCccCcCCcccccCCCcCCCCCcCcCcCcCccccccCcCCCCCCCCCCCCccCcCccccCCc
-CCCBBCBCBCCBCCCCBBBCBBCBCCBBBBBCCCBCCCCCBCBCBCBCBBBBBBCBCCCCCCCCCCCCBBCBCBBBBCCB
+-22 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
+-5 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
+cccccccCCccCCCcCcCcCCcccccCCccCccccCcccCCcCccccCCCcCccCcCccCCCCCcCcCcCcccCcCcccC
+BBBBBBBCCBBCCCBCBCBCCBBBBBCCBBCBBBBCBBBCCBCBBBBCCCBCBBCBCBBCCCCCBCBCBCBBBCBCBBBC
 
-CCCcCccccCCcCCCCcccCccCCccccCccCcCccCCcccccCcCCCcCcCCCccCCcCCCCcCCccCCccCcCCCCcC
-CCCBCBBBBCCBCCCCBBBCBBCCBBBBCBBCBCBBCCBBBBBCBCCCBCBCCCBBCCBCCCCBCCBBCCBBCBCCCCBC
-
-cCcCCcCCCcccCCCcCCcCccCcCCcccccCc
-BCBCCBCCCBBBCCCBCCBCBBCBCCBBBBBCB
+ccCCCCcCcCccCCccccCccccccCcCCCcccCCCCcCcccCCCCccCCCcccCcCCCccCCc
+BBCCCCBCBCBBCCBBBBCBBBBBBCBCCCBBBCCCCBCBBBCCCCBBCCCBBBCBCCCBBCCB
 
 --------------------------------------------------------------------------------
 -11 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
@@ -1327,8 +1308,8 @@ BCBCCBCCCBBBCCCBCCBCBBCBCCBBBBBCB
 cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
@@ -1336,50 +1317,41 @@ CCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCC
-CCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -1390,11 +1362,8 @@ Section 3 - Game Data for Team Bichael
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 0 pt/round: Bichael(P2) "Basic-AI"
@@ -1402,11 +1371,8 @@ cccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-
-BBBB
-cccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 -30 pt/round: Bichael(P2) "Basic-AI"
@@ -1417,8 +1383,8 @@ bBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-ccccccccccccccc
-BBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 0 pt/round: Bichael(P2) "Basic-AI"
@@ -1426,11 +1392,8 @@ BBBBBBBBBBBBBBB
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-
-BBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 0 pt/round: Bichael(P2) "Basic-AI"
@@ -1438,8 +1401,8 @@ cccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 0 pt/round: Bichael(P2) "Basic-AI"
@@ -1447,8 +1410,8 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 0 pt/round: Bichael(P2) "Basic-AI"
@@ -1456,80 +1419,68 @@ ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 -15 pt/round: Bichael(P2) "Basic-AI"
--16 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
-BBBBBbCbcCbCBBbccCbcccCbCbCbccCBbCbCbcCBbccccCbCbcccCBbCBbcCbCbCbCbccCBBbCbCBBbc
-cccccbCbBCbCccbBBCbBBBCbCbCbBBCcbCbCbBCcbBBBBCbCbBBBCcbCcbBCbCbCbCbBBCccbCbCccbB
+-15 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
+BBbcCBBBBBbCbcCBbcCbCbccccccccCBBBbccccCbCbCBBBbCBBBBBbcccccCbCbCbccccccCbCBBbcc
+ccbBCcccccbCbBCcbBCbCbBBBBBBBBCcccbBBBBCbCbCcccbCcccccbBBBBBCbCbCbBBBBBBCbCccbBB
 
-CBbCbCbcCBBBBbccCBBBbcCbCbCBbccCBbCBbcCbCBbCBBBbcCBBbccC
-CcbCbCbBCccccbBBCcccbBCbCbCcbBBCcbCcbBCbCcbCcccbBCccbBBC
+ccCBbccCBbCbCBBbCBBbCBBBBbccCbCbCBBbCbcCBB
+BBCcbBBCcbCbCccbCccbCccccbBBCbCbCccbCbBCcc
 
 --------------------------------------------------------------------------------
 -16 pt/round: Bichael(P2) "Basic-AI"
--15 pt/round: Naga(P9) "HI"
+-16 pt/round: Naga(P9) "HI"
 bcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCB
 bBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCc
 
 bcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCB
 bBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCc
 
-bcC
-bBC
+bcCBbcCBbcCBb
+bBCcbBCcbBCcb
 
 --------------------------------------------------------------------------------
 -14 pt/round: Bichael(P2) "Basic-AI"
 -17 pt/round: napes(P10) "RNG GOD"
-BbcCBbcCBbCbcCBBBBbCBBbcCbcCbcCbCbcCBBbCBBBbcccCbccCBbCbCBBBbccccCBbCbCBBbcCBbCB
-cbBCcbBCcbCbBCccccbCccbBCbBCbBCbCbBCccbCcccbBBBCbBBCcbCbCcccbBBBBCcbCbCccbBCcbCc
+BBBbCbCbcCbccCBbcCBbCBbCbCBbcCbccCBBbccCBBBBbCbccCbCBBbCbccccCBbCbCbcCBbCbCbCBBB
+cccbCbCbBCbBBCcbBCcbCcbCbCcbBCbBBCccbBBCccccbCbBBCbCccbCbBBBBCcbCbCbBCcbCbCbCccc
 
-bCbcCbcccCbCBBbcCBBBBBBbCBbCBbcCb
-bCbBCbBBBCbCccbBCccccccbCcbCcbBCb
+bcccCbCBbCBBBBBBbcccccCBbcCbCBbCBBBBBBBBBBBbCBBbcCbCBbCbcCBBbcccCbccccCBBBbcccCb
+bBBBCbCcbCccccccbBBBBBCcbBCbCcbCcccccccccccbCccbBCbCcbCbBCccbBBBCbBBBBCcccbBBBCb
+
+ccCbCbCBBBbCbcCbCBBBBBbcCBBBbcCbccCbccCB
+BBCbCbCcccbCbBCbCcccccbBCcccbBCbBBCbBBCc
 
 --------------------------------------------------------------------------------
-0 pt/round: Bichael(P2) "Basic-AI"
--30 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+-16 pt/round: Bichael(P2) "Basic-AI"
+-16 pt/round: Fodder1(P11) "Be a sacrificial lamb."
+BbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcC
+cbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBC
 
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccccccccccc
+BbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbc
+cbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbB
 
 --------------------------------------------------------------------------------
 -15 pt/round: Bichael(P2) "Basic-AI"
--16 pt/round: Fodder1(P12) "Be a sacrificial lamb."
+-16 pt/round: Fodder2(P12) "Another sacrificial lamb."
 BbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcC
 cbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBC
 
-BbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcC
-cbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBC
-
-BbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCB
-cbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCc
+BbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBb
+cbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcb
 
 --------------------------------------------------------------------------------
--15 pt/round: Bichael(P2) "Basic-AI"
--16 pt/round: Fodder2(P13) "Another sacrificial lamb."
-BbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcC
-cbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBC
+-4 pt/round: Bichael(P2) "Basic-AI"
+-27 pt/round: k. mercer(P13) "Anatol Rapoport"
+BbcCBbcCBbcCBbcCBbcCBbcCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cbBCcbBCcbBCcbBCcbBCcbBCcccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-BbcCBbcCBbcCBbcCBbcCB
-cbBCcbBCcbBCcbBCcbBCc
-
---------------------------------------------------------------------------------
--14 pt/round: Bichael(P2) "Basic-AI"
--17 pt/round: karl-mercer(P14) "Anatol Rapoport"
-BbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcC
-cbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBC
-
-BBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBb
-ccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccb
+BBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -1540,8 +1491,8 @@ Section 3 - Game Data for Team RokShox
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 0 pt/round: RokShox(P3) "The name the team gives to this strategy"
@@ -1549,8 +1500,11 @@ cccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-BBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBB
+ccccccccccccccccc
 
 --------------------------------------------------------------------------------
 -1 pt/round: RokShox(P3) "The name the team gives to this strategy"
@@ -1561,8 +1515,8 @@ bccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-BBBBBBBBBBBBBBB
-ccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 0 pt/round: RokShox(P3) "The name the team gives to this strategy"
@@ -1573,14 +1527,20 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
+BBBBBBBBBBB
+ccccccccccc
+
 --------------------------------------------------------------------------------
 0 pt/round: RokShox(P3) "The name the team gives to this strategy"
 -30 pt/round: 11040221(P5) "The name the team gives to this strategy"
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-ccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 0 pt/round: RokShox(P3) "The name the team gives to this strategy"
@@ -1588,8 +1548,8 @@ ccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
 --------------------------------------------------------------------------------
 0 pt/round: RokShox(P3) "The name the team gives to this strategy"
@@ -1597,20 +1557,20 @@ cccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-
-BBBBBBBBBBBBBB
-cccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 
 --------------------------------------------------------------------------------
--10 pt/round: RokShox(P3) "The name the team gives to this strategy"
--26 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
-bBbBbBbBBBbBbBbbBBBbBBBbBBbbBbBbbbbBBBBbBbBbbBbbbBbbBBBBbBBbBBbbBbbbbbBBbBBbbBbB
-bcbcbcbcccbcbcbbcccbcccbccbbcbcbbbbccccbcbcbbcbbbcbbccccbccbccbbcbbbbbccbccbbcbc
+-11 pt/round: RokShox(P3) "The name the team gives to this strategy"
+-25 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
+bb BbbbBbBbBBbbbbBBBBBbBbBBbbbbBBBbBbbbBbBBbbbBbbbbBbBbBbBbbBBBBbbBbbBBBbBBbbbBb
+bbbcbbbcbcbccbbbbcccccbcbccbbbbcccbcbbbcbccbbbcbbbbcbcbcbcbbccccbbcbbcccbccbbbcb
 
-bBBBBbbBbbBBBbbbBbbBBBbbBbBBbBBBBBBBbBbBbBbBbbbBbbBB
-bccccbbcbbcccbbbcbbcccbbcbccbcccccccbcbcbcbcbbbcbbcc
+bbBbbBBBBbBbBBBBbbBBBbBBbBbbBbbbbBbBbbbBbBBbBbBbBbBbbBBBBbBBbbbbbBbBbBBbbBbbBBBB
+bbcbbccccbcbccccbbcccbccbcbbcbbbbcbcbbbcbccbcbcbcbcbbccccbccbbbbbcbcbccbbcbbcccc
+
+BbbbbbBBb
+cbbbbbccb
 
 --------------------------------------------------------------------------------
 -21 pt/round: RokShox(P3) "The name the team gives to this strategy"
@@ -1618,45 +1578,21 @@ bccccbbcbbcccbbbcbbcccbbcbccbcccccccbcbcbcbcbbbcbbcc
 bb bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 --------------------------------------------------------------------------------
 -11 pt/round: RokShox(P3) "The name the team gives to this strategy"
 -25 pt/round: napes(P10) "RNG GOD"
-BbBbBbbbBBbbbbBBbbBBbbbbBbBBbBbBbbBBbBBBBBBbbbbbBBbbbBBBbbBBbBbBBBBbbBBBbbbbBBbb
-cbcbcbbbccbbbbccbbccbbbbcbccbcbcbbccbccccccbbbbbccbbbcccbbccbcbccccbbcccbbbbccbb
+BbbbBBbbbBBbBBBBBBbbbbBBBbbBBbbbbBBbbBBbBBBBBbbBBbBbBBbBbbBBBbBbbBbBbBBbbbBbbbBB
+cbbbccbbbccbccccccbbbbcccbbccbbbbccbbccbcccccbbccbcbccbcbbcccbcbbcbcbccbbbcbbbcc
 
-BbbbBbbbBBbbbbbBbbbBbBBBbBBBBbbBBBBbBBbBbbbBbbbbbBBbBBBBBBBBBBBBBbBBbbbbbBbBbbbB
-cbbbcbbbccbbbbbcbbbcbcccbccccbbccccbccbcbbbcbbbbbccbcccccccccccccbccbbbbbcbcbbbc
-
-BBBbBbbBbbbBBbBbbbBbBBb
-cccbcbbcbbbccbcbbbcbccb
-
---------------------------------------------------------------------------------
-0 pt/round: RokShox(P3) "The name the team gives to this strategy"
--30 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-ccccccccccccccccccccccccccccccccccccc
+bbbbbBBbBBbBBBBBbbBbBBbBbbbBbbbBBbBbbbbbb
+bbbbbccbccbcccccbbcbccbcbbbcbbbccbcbbbbbb
 
 --------------------------------------------------------------------------------
 -20 pt/round: RokShox(P3) "The name the team gives to this strategy"
--21 pt/round: Fodder1(P12) "Be a sacrificial lamb."
-Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-
---------------------------------------------------------------------------------
--20 pt/round: RokShox(P3) "The name the team gives to this strategy"
--21 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-21 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
@@ -1667,13 +1603,22 @@ bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 --------------------------------------------------------------------------------
--16 pt/round: RokShox(P3) "The name the team gives to this strategy"
--23 pt/round: karl-mercer(P14) "Anatol Rapoport"
-BbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbb
-cbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbb
+-20 pt/round: RokShox(P3) "The name the team gives to this strategy"
+-21 pt/round: Fodder2(P12) "Another sacrificial lamb."
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
-BbbbbBbbbbBbbbbBbbbbBb
-cbbbbcbbbbcbbbbcbbbbcb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-20 pt/round: RokShox(P3) "The name the team gives to this strategy"
+-21 pt/round: k. mercer(P13) "Anatol Rapoport"
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbb
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -1687,8 +1632,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCC
-CCC
+CCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
@@ -1696,8 +1641,8 @@ CCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -30 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
@@ -1705,11 +1650,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
-cccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 -30 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
@@ -1720,6 +1662,9 @@ BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
+ccccccccccc
+BBBBBBBBBBB
+
 --------------------------------------------------------------------------------
 -10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
 -10 pt/round: 11040221(P5) "The name the team gives to this strategy"
@@ -1729,8 +1674,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
@@ -1738,11 +1683,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CC
-CC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
@@ -1750,17 +1692,20 @@ CC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCC
+CCCCC
 
 --------------------------------------------------------------------------------
 -21 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
 -5 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
-ccCccccCcCCCCccCccccCcCCCCCCCccCccCCCcCCCcccCccCCccCCccccCCCCCccccCCCcCcCcCCcCcc
-BBCBBBBCBCCCCBBCBBBBCBCCCCCCCBBCBBCCCBCCCBBBCBBCCBBCCBBBBCCCCCBBBBCCCBCBCBCCBCBB
+ccccccCccccCCCccCCCCcccCCCCcCcCCCccCcCccCcCcCCcccCcccCCccCCccccCcCccCCcCcCcccCCC
+BBBBBBCBBBBCCCBBCCCCBBBCCCCBCBCCCBBCBCBBCBCBCCBBBCBBBCCBBCCBBBBCBCBBCCBCBCBBBCCC
 
-cCcCCccccCCccCcCccCccCccCccccCcCC
-BCBCCBBBBCCBBCBCBBCBBCBBCBBBBCBCC
+CcCCCcCCCCcccCcccccCccccCcCcCccCcCCccCcCcccCccCCCCccCCCCCcccCccCcccccCCC
+CBCCCBCCCCBBBCBBBBBCBBBBCBCBCBBCBCCBBCBCBBBCBBCCCCBBCCCCCBBBCBBCBBBBBCCC
 
 --------------------------------------------------------------------------------
 -11 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
@@ -1768,8 +1713,8 @@ BCBCCBBBBCCBBCBCBBCBBCBBCBBBBCBCC
 cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
@@ -1780,44 +1725,38 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCC
-CCCCCCCC
+CCCCCCCCCCCCC
+CCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -1828,8 +1767,11 @@ Section 3 - Game Data for Team 11040221
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: 11040221(P5) "The name the team gives to this strategy"
@@ -1840,8 +1782,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -30 pt/round: 11040221(P5) "The name the team gives to this strategy"
@@ -1849,8 +1791,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 -30 pt/round: 11040221(P5) "The name the team gives to this strategy"
@@ -1858,8 +1800,11 @@ BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-ccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+
+cccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 -10 pt/round: 11040221(P5) "The name the team gives to this strategy"
@@ -1870,8 +1815,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: 11040221(P5) "The name the team gives to this strategy"
@@ -1882,8 +1827,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: 11040221(P5) "The name the team gives to this strategy"
@@ -1891,20 +1836,20 @@ CCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -21 pt/round: 11040221(P5) "The name the team gives to this strategy"
 -5 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
-cCcCCCCCcCCccCcCcccCCcCccccCcCcCcccCccCCCcCCCCCcCccCCCCcccccCCcCCCcccCCcCccCcccc
-BCBCCCCCBCCBBCBCBBBCCBCBBBBCBCBCBBBCBBCCCBCCCCCBCBBCCCCBBBBBCCBCCCBBBCCBCBBCBBBB
+CccccCcccCCCcCCcCcCCcccCcccCCCCcCCcccccccCCcCCCcCCcCccCcCCcCCccccCCCCCcCccCCCCCC
+CBBBBCBBBCCCBCCBCBCCBBBCBBBCCCCBCCBBBBBBBCCBCCCBCCBCBBCBCCBCCBBBBCCCCCBCBBCCCCCC
 
-cCCcccCcCCccCCCccCCccCCccc
-BCCBBBCBCCBBCCCBBCCBBCCBBB
+cCccccCcCCCcCCCCccCCCcCcCcCCccCCCccCCCccCcccccccCCccccccCccCccCcccCcCCcCCCcCCccc
+BCBBBBCBCCCBCCCCBBCCCBCBCBCCBBCCCBBCCCBBCBBBBBBBCCBBBBBBCBBCBBCBBBCBCCBCCCBCCBBB
+
+ccCCCcCcCcCcCCcCcCccccCCC
+BBCCCBCBCBCBCCBCBCBBBBCCC
 
 --------------------------------------------------------------------------------
 -11 pt/round: 11040221(P5) "The name the team gives to this strategy"
@@ -1912,11 +1857,8 @@ BCCBBBCBCCBBCCCBBCCBBCCBBB
 cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: 11040221(P5) "The name the team gives to this strategy"
@@ -1924,50 +1866,41 @@ CCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: 11040221(P5) "The name the team gives to this strategy"
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: 11040221(P5) "The name the team gives to this strategy"
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: 11040221(P5) "The name the team gives to this strategy"
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCC
-CCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: 11040221(P5) "The name the team gives to this strategy"
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -1981,8 +1914,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
@@ -1990,8 +1923,8 @@ CCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -30 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
@@ -1999,8 +1932,8 @@ CCCCCCCCCCCCCCCCCCCCCCC
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 -30 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
@@ -2008,8 +1941,8 @@ BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
@@ -2017,11 +1950,8 @@ BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CC
-CC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
@@ -2032,8 +1962,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
@@ -2041,20 +1971,20 @@ CCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--21 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
+-22 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
 -5 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
-CcccccCcCCCCccCcCCccccCcCcCCCCcCCcCCcCccccCCcCcCCcccCcCCCcCcCCcCCcCcccCccCCcCCCC
-CBBBBBCBCCCCBBCBCCBBBBCBCBCCCCBCCBCCBCBBBBCCBCBCCBBBCBCCCBCBCCBCCBCBBBCBBCCBCCCC
+CcCcccCCccCCCccCCccCCcccCcCcCcccCCccCCccccCccccCCcCccccCccccccCccCCcCCCCCccCcccc
+CBCBBBCCBBCCCBBCCBBCCBBBCBCBCBBBCCBBCCBBBBCBBBBCCBCBBBBCBBBBBBCBBCCBCCCCCBBCBBBB
 
-ccCCCCCcCCcCccCCCCCCcCccCCcCCccCccCCCcccCccCccccCCcccccCcccccccCcCCCcCCCcccccCcc
-BBCCCCCBCCBCBBCCCCCCBCBBCCBCCBBCBBCCCBBBCBBCBBBBCCBBBBBCBBBBBBBCBCCCBCCCBBBBBCBB
+cCcccCccccCCCcCccCCcCCCccCCcccCcCCcCccCccCcccCcCCcccccCCccCCCccCcccccccccCCCCccC
+BCBBBCBBBBCCCBCBBCCBCCCBBCCBBBCBCCBCBBCBBCBBBCBCCBBBBBCCBBCCCBBCBBBBBBBBBCCCCBBC
 
-ccccCcCccCC
-BBBBCBCBBCC
+cCcccC
+BCBBBC
 
 --------------------------------------------------------------------------------
 -11 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
@@ -2062,8 +1992,11 @@ BBBBCBCBBCC
 cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
@@ -2071,47 +2004,35 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCC
-CCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -2122,8 +2043,11 @@ Section 3 - Game Data for Team Team 10
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCC
+CCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Team 10(P7) "The name the team gives to this strategy"
@@ -2131,8 +2055,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -30 pt/round: Team 10(P7) "The name the team gives to this strategy"
@@ -2140,8 +2064,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+cccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 -30 pt/round: Team 10(P7) "The name the team gives to this strategy"
@@ -2149,11 +2073,8 @@ BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
 BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
-cccccccccccccc
-BBBBBBBBBBBBBB
+ccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
 -10 pt/round: Team 10(P7) "The name the team gives to this strategy"
@@ -2161,8 +2082,11 @@ BBBBBBBBBBBBBB
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCC
+CCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Team 10(P7) "The name the team gives to this strategy"
@@ -2170,11 +2094,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Team 10(P7) "The name the team gives to this strategy"
@@ -2182,20 +2103,17 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--21 pt/round: Team 10(P7) "The name the team gives to this strategy"
+-20 pt/round: Team 10(P7) "The name the team gives to this strategy"
 -5 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
-cCcCcCCccCCCcCCccCCcCccccccccccccCcCCccCCCccCCCcCCCCCCccCccccccccccCccCCCccCcccc
-BCBCBCCBBCCCBCCBBCCBCBBBBBBBBBBBBCBCCBBCCCBBCCCBCCCCCCBBCBBBBBBBBBBCBBCCCBBCBBBB
+CcCcCcCccCcCCCCCCCCCcCCcCccCCCcCCcccCCCccCcccCCccccCCcCccCccCcCcCccCcCccCCcCccCc
+CBCBCBCBBCBCCCCCCCCCBCCBCBBCCCBCCBBBCCCBBCBBBCCBBBBCCBCBBCBBCBCBCBBCBCBBCCBCBBCB
 
-CcccccCcCCCCCCcCccccCcCcCCCcCCCcCCccccCCCccCCCcCCCcCCCcCccccCccCCCCCCcCcCcCcccCc
-CBBBBBCBCCCCCCBCBBBBCBCBCCCBCCCBCCBBBBCCCBBCCCBCCCBCCCBCBBBBCBBCCCCCCBCBCBCBBBCB
-
-ccCCccCcCCCCcCCCC
-BBCCBBCBCCCCBCCCC
+CccCCcCCCcCcCCCCCCCCcCcccccCcCCcCccCccccCCcccCCccccc
+CBBCCBCCCBCBCCCCCCCCBCBBBBBCBCCBCBBCBBBBCCBBBCCBBBBB
 
 --------------------------------------------------------------------------------
 -11 pt/round: Team 10(P7) "The name the team gives to this strategy"
@@ -2203,11 +2121,8 @@ BBCCBBCBCCCCBCCCC
 cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Team 10(P7) "The name the team gives to this strategy"
@@ -2215,24 +2130,15 @@ CCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Team 10(P7) "The name the team gives to this strategy"
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCC
-CCCC
-
---------------------------------------------------------------------------------
--10 pt/round: Team 10(P7) "The name the team gives to this strategy"
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
@@ -2241,168 +2147,153 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Team 10(P7) "The name the team gives to this strategy"
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Team 10(P7) "The name the team gives to this strategy"
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 Section 3 - Game Data for Team LoneSkylarWolf
 --------------------------------------------------------------------------------
--6 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
--20 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
-CCBBCCCCCCBBCBBBBBBCBBCCCCCBBCCBBBCBBBBBCBCCBCBCBCCCCCCCBBBBCBBBBCCBCCBCCCCCBBCB
-CCccCCCCCCccCccccccCccCCCCCccCCcccCcccccCcCCcCcCcCCCCCCCccccCccccCCcCCcCCCCCccCc
+-5 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
+-21 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
+BCCCBBCBBCBCCCCBBBCBBCBBBBCCCCBBCCCBCCBCCCBCBBBBBCBCCCBCCBBCCBBBBBCBBCBBBCBBBCBC
+cCCCccCccCcCCCCcccCccCccccCCCCccCCCcCCcCCCcCcccccCcCCCcCCccCCcccccCccCcccCcccCcC
 
-CCBCBCCBCCCBBCCBBCCCCCCCBBCCCBBCCBBBBBB
-CCcCcCCcCCCccCCccCCCCCCCccCCCccCCcccccc
-
---------------------------------------------------------------------------------
--6 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
--20 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
-CCCBBCBCBCCBCCCCBBBCBBCBCCBBBBBCCCBCCCCCBCBCBCBCBBBBBBCBCCCCCCCCCCCCBBCBCBBBBCCB
-CCCccCcCcCCcCCCCcccCccCcCCcccccCCCcCCCCCcCcCcCcCccccccCcCCCCCCCCCCCCccCcCccccCCc
-
-CCCBCBBBBCCBCCCCBBBCBBCCBBBBCBBCBCBBCCBBBBBCBCCCBCBCCCBBCCBCCCCBCCBBCCBBCBCCCCBC
-CCCcCccccCCcCCCCcccCccCCccccCccCcCccCCcccccCcCCCcCcCCCccCCcCCCCcCCccCCccCcCCCCcC
-
-BCBCCBCCCBBBCCCBCCBCBBCBCCBBBBBCB
-cCcCCcCCCcccCCCcCCcCccCcCCcccccCc
+CCBCCCCCBCBCCBCBCCBCBCBBBBCBBBCBBCCCBCBCCBCBBBCBBBBCBCCBBCCCBBBCBCCCCCBB
+CCcCCCCCcCcCCcCcCCcCcCccccCcccCccCCCcCcCCcCcccCccccCcCCccCCCcccCcCCCCCcc
 
 --------------------------------------------------------------------------------
--16 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
+-5 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
+-22 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
+BBBBBBBCCBBCCCBCBCBCCBBBBBCCBBCBBBBCBBBCCBCBBBBCCCBCBBCBCBBCCCCCBCBCBCBBBCBCBBBC
+cccccccCCccCCCcCcCcCCcccccCCccCccccCcccCCcCccccCCCcCccCcCccCCCCCcCcCcCcccCcCcccC
+
+BBCCCCBCBCBBCCBBBBCBBBBBBCBCCCBBBCCCCBCBBBCCCCBBCCCBBBCBCCCBBCCB
+ccCCCCcCcCccCCccccCccccccCcCCCcccCCCCcCcccCCCCccCCCcccCcCCCccCCc
+
+--------------------------------------------------------------------------------
+-15 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
 -15 pt/round: Bichael(P2) "Basic-AI"
-cccccbCbBCbCccbBBCbBBBCbCbCbBBCcbCbCbBCcbBBBBCbCbBBBCcbCcbBCbCbCbCbBBCccbCbCccbB
-BBBBBbCbcCbCBBbccCbcccCbCbCbccCBbCbCbcCBbccccCbCbcccCBbCBbcCbCbCbCbccCBBbCbCBBbc
+ccbBCcccccbCbBCcbBCbCbBBBBBBBBCcccbBBBBCbCbCcccbCcccccbBBBBBCbCbCbBBBBBBCbCccbBB
+BBbcCBBBBBbCbcCBbcCbCbccccccccCBBBbccccCbCbCBBBbCBBBBBbcccccCbCbCbccccccCbCBBbcc
 
-CcbCbCbBCccccbBBCcccbBCbCbCcbBBCcbCcbBCbCcbCcccbBCccbBBC
-CBbCbCbcCBBBBbccCBBBbcCbCbCBbccCBbCBbcCbCBbCBBBbcCBBbccC
+BBCcbBBCcbCbCccbCccbCccccbBBCbCbCccbCbBCcc
+ccCBbccCBbCbCBBbCBBbCBBBBbccCbCbCBBbCbcCBB
 
 --------------------------------------------------------------------------------
--26 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
--10 pt/round: RokShox(P3) "The name the team gives to this strategy"
-bcbcbcbcccbcbcbbcccbcccbccbbcbcbbbbccccbcbcbbcbbbcbbccccbccbccbbcbbbbbccbccbbcbc
-bBbBbBbBBBbBbBbbBBBbBBBbBBbbBbBbbbbBBBBbBbBbbBbbbBbbBBBBbBBbBBbbBbbbbbBBbBBbbBbB
+-25 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
+-11 pt/round: RokShox(P3) "The name the team gives to this strategy"
+bbbcbbbcbcbccbbbbcccccbcbccbbbbcccbcbbbcbccbbbcbbbbcbcbcbcbbccccbbcbbcccbccbbbcb
+bb BbbbBbBbBBbbbbBBBBBbBbBBbbbbBBBbBbbbBbBBbbbBbbbbBbBbBbBbbBBBBbbBbbBBBbBBbbbBb
 
-bccccbbcbbcccbbbcbbcccbbcbccbcccccccbcbcbcbcbbbcbbcc
-bBBBBbbBbbBBBbbbBbbBBBbbBbBBbBBBBBBBbBbBbBbBbbbBbbBB
+bbcbbccccbcbccccbbcccbccbcbbcbbbbcbcbbbcbccbcbcbcbcbbccccbccbbbbbcbcbccbbcbbcccc
+bbBbbBBBBbBbBBBBbbBBBbBBbBbbBbbbbBbBbbbBbBBbBbBbBbBbbBBBBbBBbbbbbBbBbBBbbBbbBBBB
+
+cbbbbbccb
+BbbbbbBBb
 
 --------------------------------------------------------------------------------
 -5 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
 -21 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
-BBCBBBBCBCCCCBBCBBBBCBCCCCCCCBBCBBCCCBCCCBBBCBBCCBBCCBBBBCCCCCBBBBCCCBCBCBCCBCBB
-ccCccccCcCCCCccCccccCcCCCCCCCccCccCCCcCCCcccCccCCccCCccccCCCCCccccCCCcCcCcCCcCcc
+BBBBBBCBBBBCCCBBCCCCBBBCCCCBCBCCCBBCBCBBCBCBCCBBBCBBBCCBBCCBBBBCBCBBCCBCBCBBBCCC
+ccccccCccccCCCccCCCCcccCCCCcCcCCCccCcCccCcCcCCcccCcccCCccCCccccCcCccCCcCcCcccCCC
 
-BCBCCBBBBCCBBCBCBBCBBCBBCBBBBCBCC
-cCcCCccccCCccCcCccCccCccCccccCcCC
+CBCCCBCCCCBBBCBBBBBCBBBBCBCBCBBCBCCBBCBCBBBCBBCCCCBBCCCCCBBBCBBCBBBBBCCC
+CcCCCcCCCCcccCcccccCccccCcCcCccCcCCccCcCcccCccCCCCccCCCCCcccCccCcccccCCC
 
 --------------------------------------------------------------------------------
 -5 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
 -21 pt/round: 11040221(P5) "The name the team gives to this strategy"
-BCBCCCCCBCCBBCBCBBBCCBCBBBBCBCBCBBBCBBCCCBCCCCCBCBBCCCCBBBBBCCBCCCBBBCCBCBBCBBBB
-cCcCCCCCcCCccCcCcccCCcCccccCcCcCcccCccCCCcCCCCCcCccCCCCcccccCCcCCCcccCCcCccCcccc
+CBBBBCBBBCCCBCCBCBCCBBBCBBBCCCCBCCBBBBBBBCCBCCCBCCBCBBCBCCBCCBBBBCCCCCBCBBCCCCCC
+CccccCcccCCCcCCcCcCCcccCcccCCCCcCCcccccccCCcCCCcCCcCccCcCCcCCccccCCCCCcCccCCCCCC
 
-BCCBBBCBCCBBCCCBBCCBBCCBBB
-cCCcccCcCCccCCCccCCccCCccc
+BCBBBBCBCCCBCCCCBBCCCBCBCBCCBBCCCBBCCCBBCBBBBBBBCCBBBBBBCBBCBBCBBBCBCCBCCCBCCBBB
+cCccccCcCCCcCCCCccCCCcCcCcCCccCCCccCCCccCcccccccCCccccccCccCccCcccCcCCcCCCcCCccc
 
---------------------------------------------------------------------------------
--5 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
--21 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
-CBBBBBCBCCCCBBCBCCBBBBCBCBCCCCBCCBCCBCBBBBCCBCBCCBBBCBCCCBCBCCBCCBCBBBCBBCCBCCCC
-CcccccCcCCCCccCcCCccccCcCcCCCCcCCcCCcCccccCCcCcCCcccCcCCCcCcCCcCCcCcccCccCCcCCCC
-
-BBCCCCCBCCBCBBCCCCCCBCBBCCBCCBBCBBCCCBBBCBBCBBBBCCBBBBBCBBBBBBBCBCCCBCCCBBBBBCBB
-ccCCCCCcCCcCccCCCCCCcCccCCcCCccCccCCCcccCccCccccCCcccccCcccccccCcCCCcCCCcccccCcc
-
-BBBBCBCBBCC
-ccccCcCccCC
+BBCCCBCBCBCBCCBCBCBBBBCCC
+ccCCCcCcCcCcCCcCcCccccCCC
 
 --------------------------------------------------------------------------------
 -5 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
--21 pt/round: Team 10(P7) "The name the team gives to this strategy"
-BCBCBCCBBCCCBCCBBCCBCBBBBBBBBBBBBCBCCBBCCCBBCCCBCCCCCCBBCBBBBBBBBBBCBBCCCBBCBBBB
-cCcCcCCccCCCcCCccCCcCccccccccccccCcCCccCCCccCCCcCCCCCCccCccccccccccCccCCCccCcccc
+-22 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
+CBCBBBCCBBCCCBBCCBBCCBBBCBCBCBBBCCBBCCBBBBCBBBBCCBCBBBBCBBBBBBCBBCCBCCCCCBBCBBBB
+CcCcccCCccCCCccCCccCCcccCcCcCcccCCccCCccccCccccCCcCccccCccccccCccCCcCCCCCccCcccc
 
-CBBBBBCBCCCCCCBCBBBBCBCBCCCBCCCBCCBBBBCCCBBCCCBCCCBCCCBCBBBBCBBCCCCCCBCBCBCBBBCB
-CcccccCcCCCCCCcCccccCcCcCCCcCCCcCCccccCCCccCCCcCCCcCCCcCccccCccCCCCCCcCcCcCcccCc
+BCBBBCBBBBCCCBCBBCCBCCCBBCCBBBCBCCBCBBCBBCBBBCBCCBBBBBCCBBCCCBBCBBBBBBBBBCCCCBBC
+cCcccCccccCCCcCccCCcCCCccCCcccCcCCcCccCccCcccCcCCcccccCCccCCCccCcccccccccCCCCccC
 
-BBCCBBCBCCCCBCCCC
-ccCCccCcCCCCcCCCC
+BCBBBC
+cCcccC
+
+--------------------------------------------------------------------------------
+-5 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
+-20 pt/round: Team 10(P7) "The name the team gives to this strategy"
+CBCBCBCBBCBCCCCCCCCCBCCBCBBCCCBCCBBBCCCBBCBBBCCBBBBCCBCBBCBBCBCBCBBCBCBBCCBCBBCB
+CcCcCcCccCcCCCCCCCCCcCCcCccCCCcCCcccCCCccCcccCCccccCCcCccCccCcCcCccCcCccCCcCccCc
+
+CBBCCBCCCBCBCCCCCCCCBCBBBBBCBCCBCBBCBBBBCCBBBCCBBBBB
+CccCCcCCCcCcCCCCCCCCcCcccccCcCCcCccCccccCCcccCCccccc
+
+--------------------------------------------------------------------------------
+-16 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
+-16 pt/round: Naga(P9) "HI"
+cCCBcBbbcBbbbbcCBbbbbbbcBbbbcBbcBcBcBcCBcBbbbcCBcBbbcCBcBbbbcBbcCCCBbcBcCBcCBcBc
+BCCcBcbbBcbbbbBCcbbbbbbBcbbbBcbBcBcBcBCcBcbbbBCcBcbbBCcBcbbbBcbBCCCcbBcBCcBCcBcB
+
+CCCCBbcCBcCBcCCBcBcCCCCBbbb
+CCCCcbBCcBCcBCCcBcBCCCCcbbb
 
 --------------------------------------------------------------------------------
 -15 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
--15 pt/round: Naga(P9) "HI"
-cCCCBcBbbcCCBbcBbcBcCBcBcCCBcCCBbcCBcBcCBcCCCBbcCBbbcCCCBcBbbbcBbbbcBbcBbbcCBbbb
-BCCCcBcbbBCCcbBcbBcBCcBcBCCcBCCcbBCcBcBCcBCCCcbBCcbbBCCCcBcbbbBcbbbBcbBcbbBCcbbb
+-15 pt/round: napes(P10) "RNG GOD"
+CBcBbCbbcCBbBBcCCcBbccBcBBbBBccccBcCBcBbBCbcbCbBccBbbBCCbBCCBCcbcbCBcBCcBbCbbBcb
+CcBcbCbbBCcbccBCCBcbBBcBccbccBBBBcBCcBcbcCbBbCbcBBcbbcCCbcCCcCBbBbCcBcCBcbCbbcBb
 
-cCCBcCCCCBbbcCCCBbbbbcBcCBcBcCCCCCBcCBcBcCCBbcBbbcCBcBcCBcCBbbcBbbcCCBcBbc
-BCCcBCCCCcbbBCCCcbbbbBcBCcBcBCCCCCcBCcBcBCCcbBcbbBCcBcBCcBCcbbBcbbBCCcBcbB
+cbbBcbbCBBcBBBcCcbbcBBCBCBCccCBCBcBcbCCCcCCCbbcCcbcCcbBcBCCcbBcCcBcBBCbCcBbcBCCc
+BbbcBbbCccBcccBCBbbBccCcCcCBBCcCcBcBbCCCBCCCbbBCBbBCBbcBcCCBbcBCBcBccCbCBcbBcCCB
 
---------------------------------------------------------------------------------
--15 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
--16 pt/round: napes(P10) "RNG GOD"
-BbCcBcCBBbCBBCBBcCBcBCCbbCcbcBCbCBcCcbBCcCbcBbcBbBBCBBCBbcbCcBCbbBbCcbbbCCcbcbBb
-cbCBcBCccbCccCccBCcBcCCbbCBbBcCbCcBCBbcCBCbBcbBcbccCccCcbBbCBcCbbcbCBbbbCCBbBbcb
-
-cCbcCbCBCBBbbCBbbcCbBbCcbcbcbBBcCBccbBBbbcbbbBccbCbcccBccBbCBBBCCbbcBCCbcCBbBbcC
-BCbBCbCcCccbbCcbbBCbcbCBbBbBbccBCcBBbccbbBbbbcBBbCbBBBcBBcbCcccCCbbBcCCbBCcbcbBC
-
-CBBCCccbCbBCcCBBCB
-CccCCBBbCbcCBCccCc
-
---------------------------------------------------------------------------------
--6 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
--20 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
-BCBCCBBBBCBCCBBCBBBBCCBCBBCBCCCCBBCCBCBCCCBCCCCCCCCBCBCCCBCBCCBCCBCCBBBCCBCBCCBC
-cCcCCccccCcCCccCccccCCcCccCcCCCCccCCcCcCCCcCCCCCCCCcCcCCCcCcCCcCCcCCcccCCcCcCCcC
-
-CBBCCCCBCBCBBBBCBCBBCBBCBCBBCCBBBCCCBCBCBBBBBCCCCCCCBBBBC
-CccCCCCcCcCccccCcCccCccCcCccCCcccCCCcCcCcccccCCCCCCCccccC
+CCBcCbBCCBbcbcBCBCc
+CCcBCbcCCcbBbBcCcCB
 
 --------------------------------------------------------------------------------
 -15 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
--15 pt/round: Fodder1(P12) "Be a sacrificial lamb."
-CBbcCCCCBcCCBcCCCCBbbcCCCBbbbbcBcCBcBcBcCBbbcCBbbcCCBcBbbcBcBbbcCBcBbcBcBbbbbcCC
-CcbBCCCCcBCCcBCCCCcbbBCCCcbbbbBcBCcBcBcBCcbbBCcbbBCCcBcbbBcBcbbBCcBcbBcBcbbbbBCC
+-15 pt/round: Fodder1(P11) "Be a sacrificial lamb."
+CBcBbcBcBbbcCBbbcBbbcCCBcBbcBcCCBbbcBbcCCBbbcCCCBcCBcCCCCBbcBbcCBbcCCBbbbbbbcBbb
+CcBcbBcBcbbBCcbbBcbbBCCcBcbBcBCCcbbBcbBCCcbbBCCCcBCcBCCCCcbBcbBCcbBCCcbbbbbbBcbb
 
-BbcCBcBbbbcBbcCCBcBbbbbcCBcCBcCCCBcCBbcCCBbbbcBcCCBcCCBcBbbbcCBcCCBbbcCCBcCCCBcB
-cbBCcBcbbbBcbBCCcBcbbbbBCcBCcBCCCcBCcbBCCcbbbBcBCCcBCCcBcbbbBCcBCCcbbBCCcBCCCcBc
-
-cBcBcBbbcCCBcCCCCBbcBcCCBbbb
-BcBcBcbbBCCcBCCCCcbBcBCCcbbb
+cCBcBcCBbcCBbbcCBbcCCBcCBcCBbbcCCCCCCCBbbbcCBcBbcBbcCCBbcCCBcCBbcBbbcCBbcBcCCCC
+BCcBcBCcbBCcbbBCcbBCCcBCcBCcbbBCCCCCCCcbbbBCcBcbBcbBCCcbBCCcBCcbBcbbBCcbBcBCCCC
 
 --------------------------------------------------------------------------------
 -15 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
--15 pt/round: Fodder2(P13) "Another sacrificial lamb."
-BbbbcBcBcCCBbcBcBcCBbbcBcCCCCBbbbbcCBcBcBbcBcCBbcCCCBcBbbbbcCCBbcBbbcBcBcCBbbbbc
-cbbbBcBcBCCcbBcBcBCcbbBcBCCCCcbbbbBCcBcBcbBcBCcbBCCCcBcbbbbBCCcbBcbbBcBcBCcbbbbB
+-15 pt/round: Fodder2(P12) "Another sacrificial lamb."
+CCCBbbcBcBcBcCCBbbcCBbcBcCBcBcBcBcCBbcCCCBbcCCBcBcCBbcBcCCCCCCBbcBcCCCCBbbbbcCBb
+CCCcbbBcBcBcBCCcbbBCcbBcBCcBcBcBcBCcbBCCCcbBCCcBcBCcbBcBCCCCCCcbBcBCCCCcbbbbBCcb
 
-CBcCCBcCCBcBbbcBbcBcCCCCCBcCCCBbcCCCCBbcCCCCCCCBbcCBcCBbbcBbbbbbcCBbcBbbbbbbbcBc
-CcBCCcBCCcBcbbBcbBcBCCCCCcBCCCcbBCCCCcbBCCCCCCCcbBCcBCcbbBcbbbbbBCcbBcbbbbbbbBcB
-
-BcBcCCCBcCBbcCBcBbbcBc
-cBcBCCCcBCcbBCcBcbbBcB
+bcBbcBbcCCCBcCCBbbcBbbbbbcCCBbbbcBbbcCBcBcC
+bBcbBcbBCCCcBCCcbbBcbbbbbBCCcbbbBcbbBCcBcBC
 
 --------------------------------------------------------------------------------
--14 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
--16 pt/round: karl-mercer(P14) "Anatol Rapoport"
-BbbcCBbBcCCCBcBcBbCCBbcCBcBcCBBbbcBbBbbcCBbBbcBcCBcCBBbbbcBBbbbbCCCCCBbbbcBBbbcB
-cbbBCcbcBCCCcBcBcbCCcbBCcBcBCccbbBcbcbbBCcbcbBcBCcBCccbbbBccbbbbCCCCCcbbbBccbbBc
+-8 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
+-19 pt/round: k. mercer(P13) "Anatol Rapoport"
+CCCBcBcCCBbbbcCBbcCBcBcBcBCCBBBCBBCCBBCCCCBBCCBCCBBBBCBCBCBBCBCBCCCBCCCBCBBBBCCC
+CCCcBcBCCcbbbBCcbBCcBcBcBcCCcccCccCCccCCCCccCCcCCccccCcCcCccCcCcCCCcCCCcCccccCCC
 
-cCCCCBBbcBbcBBbcBcBbCBbcBcCBbBcCBbcCCBbBcCCCBcBcCCCCCCCCCBbCBcCBcCCCCCBbcCCCC
-BCCCCccbBcbBccbBcBcbCcbBcBCcbcBCcbBCCcbcBCCCcBcBCCCCCCCCCcbCcBCcBCCCCCcbBCCCC
+BBBBCBCBCCBBCBCCCCCCCBCBCCCBCCB
+ccccCcCcCCccCcCCCCCCCcCcCCCcCCc
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -2413,8 +2304,8 @@ Section 3 - Game Data for Team Naga
 BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Naga(P9) "HI"
@@ -2422,11 +2313,11 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--15 pt/round: Naga(P9) "HI"
+-16 pt/round: Naga(P9) "HI"
 -16 pt/round: Bichael(P2) "Basic-AI"
 bBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCc
 bcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCB
@@ -2434,8 +2325,8 @@ bcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCB
 bBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCc
 bcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCB
 
-bBC
-bcC
+bBCcbBCcbBCcb
+bcCBbcCBbcCBb
 
 --------------------------------------------------------------------------------
 -21 pt/round: Naga(P9) "HI"
@@ -2443,8 +2334,8 @@ bcC
 bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 bb bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 --------------------------------------------------------------------------------
 -10 pt/round: Naga(P9) "HI"
@@ -2452,8 +2343,8 @@ bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Naga(P9) "HI"
@@ -2461,11 +2352,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Naga(P9) "HI"
@@ -2473,8 +2361,11 @@ CCCCCCCCCCCCCCCCCCCCCCCCC
 BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: Naga(P9) "HI"
@@ -2482,65 +2373,53 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--15 pt/round: Naga(P9) "HI"
--15 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
-BCCCcBcbbBCCcbBcbBcBCcBcBCCcBCCcbBCcBcBCcBCCCcbBCcbbBCCCcBcbbbBcbbbBcbBcbbBCcbbb
-cCCCBcBbbcCCBbcBbcBcCBcBcCCBcCCBbcCBcBcCBcCCCBbcCBbbcCCCBcBbbbcBbbbcBbcBbbcCBbbb
+-16 pt/round: Naga(P9) "HI"
+-16 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
+BCCcBcbbBcbbbbBCcbbbbbbBcbbbBcbBcBcBcBCcBcbbbBCcBcbbBCcBcbbbBcbBCCCcbBcBCcBCcBcB
+cCCBcBbbcBbbbbcCBbbbbbbcBbbbcBbcBcBcBcCBcBbbbcCBcBbbcCBcBbbbcBbcCCCBbcBcCBcCBcBc
 
-BCCcBCCCCcbbBCCCcbbbbBcBCcBcBCCCCCcBCcBcBCCcbBcbbBCcBcBCcBCcbbBcbbBCCcBcbB
-cCCBcCCCCBbbcCCCBbbbbcBcCBcBcCCCCCBcCBcBcCCBbcBbbcCBcBcCBcCBbbcBbbcCCBcBbc
+CCCCcbBCcBCcBCCcBcBCCCCcbbb
+CCCCBbcCBcCBcCCBcBcCCCCBbbb
 
 --------------------------------------------------------------------------------
 -14 pt/round: Naga(P9) "HI"
 -14 pt/round: napes(P10) "RNG GOD"
-BCcBCcBcBCCCcBCcBcBCCcBCcBCcBcBcBCcBcBCcBcBCcBcBCCcBCCcBCcBcBCCcBCcBcBcBCCCCCcBc
-cCBcCBcBcCCCBcCBcBcCCBcCBcCBcBcBcCBcBcCBcBcCBcBcCCBcCCBcCBcBcCCBcCBcBcBcCCCCCBcB
+BCCCcBcBCCcBCCcBCCCCcBCCcBcBcBcBcBCCCcBcBcBCcBCCcBcBcBCcBcBCcBCCcBCcBcBCCcBCCCcB
+cCCCBcBcCCBcCCBcCCCCBcCCBcBcBcBcBcCCCBcBcBcCBcCCBcBcBcCBcBcCBcCCBcCBcBcCCBcCCCBc
 
-BcBCCCCCcBCcBCCCcBcBCcBcBCCCCcBCCcBcBCCcBCcBcBCCCcBcBcBCcBCcBCcBCcBcBCcBCCcBcBCC
-cBcCCCCCBcCBcCCCBcBcCBcBcCCCCBcCCBcBcCCBcCBcBcCCCBcBcBcCBcCBcCBcCBcBcCBcCCBcBcCC
-
---------------------------------------------------------------------------------
--10 pt/round: Naga(P9) "HI"
--11 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
-BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+cBCcBCcBcBCcBCCCcBCCcBcBc
+BcCBcCBcBcCBcCCCBcCCBcBcB
 
 --------------------------------------------------------------------------------
 -15 pt/round: Naga(P9) "HI"
--16 pt/round: Fodder1(P12) "Be a sacrificial lamb."
+-15 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
 cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
 
-BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
-cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
 
 --------------------------------------------------------------------------------
 -15 pt/round: Naga(P9) "HI"
--15 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-15 pt/round: Fodder2(P12) "Another sacrificial lamb."
 BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
 cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
 
-BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
-cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
 
 --------------------------------------------------------------------------------
 -11 pt/round: Naga(P9) "HI"
--11 pt/round: karl-mercer(P14) "Anatol Rapoport"
-BcBcBcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-cBcBcBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+-11 pt/round: k. mercer(P13) "Anatol Rapoport"
+BcBcBcBcBcBcBcBcBcBcBcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+cBcBcBcBcBcBcBcBcBcBcBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
@@ -2551,8 +2430,11 @@ Section 3 - Game Data for Team napes
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCC
+CCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: napes(P10) "RNG GOD"
@@ -2560,32 +2442,29 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -17 pt/round: napes(P10) "RNG GOD"
 -14 pt/round: Bichael(P2) "Basic-AI"
-cbBCcbBCcbCbBCccccbCccbBCbBCbBCbCbBCccbCcccbBBBCbBBCcbCbCcccbBBBBCcbCbCccbBCcbCc
-BbcCBbcCBbCbcCBBBBbCBBbcCbcCbcCbCbcCBBbCBBBbcccCbccCBbCbCBBBbccccCBbCbCBBbcCBbCB
+cccbCbCbBCbBBCcbBCcbCcbCbCcbBCbBBCccbBBCccccbCbBBCbCccbCbBBBBCcbCbCbBCcbCbCbCccc
+BBBbCbCbcCbccCBbcCBbCBbCbCBbcCbccCBBbccCBBBBbCbccCbCBBbCbccccCBbCbCbcCBbCbCbCBBB
 
-bCbBCbBBBCbCccbBCccccccbCcbCcbBCb
-bCbcCbcccCbCBBbcCBBBBBBbCBbCBbcCb
+bBBBCbCcbCccccccbBBBBBCcbBCbCcbCcccccccccccbCccbBCbCcbCbBCccbBBBCbBBBBCcccbBBBCb
+bcccCbCBbCBBBBBBbcccccCBbcCbCBbCBBBBBBBBBBBbCBBbcCbCBbCbcCBBbcccCbccccCBBBbcccCb
+
+BBCbCbCcccbCbBCbCcccccbBCcccbBCbBBCbBBCc
+ccCbCbCBBBbCbcCbCBBBBBbcCBBBbcCbccCbccCB
 
 --------------------------------------------------------------------------------
 -25 pt/round: napes(P10) "RNG GOD"
 -11 pt/round: RokShox(P3) "The name the team gives to this strategy"
-cbcbcbbbccbbbbccbbccbbbbcbccbcbcbbccbccccccbbbbbccbbbcccbbccbcbccccbbcccbbbbccbb
-BbBbBbbbBBbbbbBBbbBBbbbbBbBBbBbBbbBBbBBBBBBbbbbbBBbbbBBBbbBBbBbBBBBbbBBBbbbbBBbb
+cbbbccbbbccbccccccbbbbcccbbccbbbbccbbccbcccccbbccbcbccbcbbcccbcbbcbcbccbbbcbbbcc
+BbbbBBbbbBBbBBBBBBbbbbBBBbbBBbbbbBBbbBBbBBBBBbbBBbBbBBbBbbBBBbBbbBbBbBBbbbBbbbBB
 
-cbbbcbbbccbbbbbcbbbcbcccbccccbbccccbccbcbbbcbbbbbccbcccccccccccccbccbbbbbcbcbbbc
-BbbbBbbbBBbbbbbBbbbBbBBBbBBBBbbBBBBbBBbBbbbBbbbbbBBbBBBBBBBBBBBBBbBBbbbbbBbBbbbB
-
-cccbcbbcbbbccbcbbbcbccb
-BBBbBbbBbbbBBbBbbbBbBBb
+bbbbbccbccbcccccbbcbccbcbbbcbbbccbcbbbbbb
+bbbbbBBbBBbBBBBBbbBbBBbBbbbBbbbBBbBbbbbbb
 
 --------------------------------------------------------------------------------
 -10 pt/round: napes(P10) "RNG GOD"
@@ -2596,8 +2475,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCC
-CCCCCCCC
+CCCCCCCCCCCCC
+CCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: napes(P10) "RNG GOD"
@@ -2605,8 +2484,11 @@ CCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: napes(P10) "RNG GOD"
@@ -2614,8 +2496,8 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: napes(P10) "RNG GOD"
@@ -2623,296 +2505,137 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--16 pt/round: napes(P10) "RNG GOD"
+-15 pt/round: napes(P10) "RNG GOD"
 -15 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
-cbCBcBCccbCccCccBCcBcCCbbCBbBcCbCcBCBbcCBCbBcbBcbccCccCcbBbCBcCbbcbCBbbbCCBbBbcb
-BbCcBcCBBbCBBCBBcCBcBCCbbCcbcBCbCBcCcbBCcCbcBbcBbBBCBBCBbcbCcBCbbBbCcbbbCCcbcbBb
+CcBcbCbbBCcbccBCCBcbBBcBccbccBBBBcBCcBcbcCbBbCbcBBcbbcCCbcCCcCBbBbCcBcCBcbCbbcBb
+CBcBbCbbcCBbBBcCCcBbccBcBBbBBccccBcCBcBbBCbcbCbBccBbbBCCbBCCBCcbcbCBcBCcBbCbbBcb
 
-BCbBCbCcCccbbCcbbBCbcbCBbBbBbccBCcBBbccbbBbbbcBBbCbBBBcBBcbCcccCCbbBcCCbBCcbcbBC
-cCbcCbCBCBBbbCBbbcCbBbCcbcbcbBBcCBccbBBbbcbbbBccbCbcccBccBbCBBBCCbbcBCCbcCBbBbcC
+BbbcBbbCccBcccBCBbbBccCcCcCBBCcCcBcBbCCCBCCCbbBCBbBCBbcBcCCBbcBCBcBccCbCBcbBcCCB
+cbbBcbbCBBcBBBcCcbbcBBCBCBCccCBCBcBcbCCCcCCCbbcCcbcCcbBcBCCcbBcCcBcBBCbCcBbcBCCc
 
-CccCCBBbCbcCBCccCc
-CBBCCccbCbBCcCBBCB
+CCcBCbcCCcbBbBcCcCB
+CCBcCbBCCBbcbcBCBCc
 
 --------------------------------------------------------------------------------
 -14 pt/round: napes(P10) "RNG GOD"
 -14 pt/round: Naga(P9) "HI"
-cCBcCBcBcCCCBcCBcBcCCBcCBcCBcBcBcCBcBcCBcBcCBcBcCCBcCCBcCBcBcCCBcCBcBcBcCCCCCBcB
-BCcBCcBcBCCCcBCcBcBCCcBCcBCcBcBcBCcBcBCcBcBCcBcBCCcBCCcBCcBcBCCcBCcBcBcBCCCCCcBc
+cCCCBcBcCCBcCCBcCCCCBcCCBcBcBcBcBcCCCBcBcBcCBcCCBcBcBcCBcBcCBcCCBcCBcBcCCBcCCCBc
+BCCCcBcBCCcBCCcBCCCCcBCCcBcBcBcBcBCCCcBcBcBCcBCCcBcBcBCcBcBCcBCCcBCcBcBCCcBCCCcB
 
-cBcCCCCCBcCBcCCCBcBcCBcBcCCCCBcCCBcBcCCBcCBcBcCCCBcBcBcCBcCBcCBcCBcBcCBcCCBcBcCC
-BcBCCCCCcBCcBCCCcBcBCcBcBCCCCcBCCcBcBCCcBCcBcBCCCcBcBcBCcBCcBCcBCcBcBCcBCCcBcBCC
-
---------------------------------------------------------------------------------
--10 pt/round: napes(P10) "RNG GOD"
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+BcCBcCBcBcCBcCCCBcCCBcBcB
+cBCcBCcBcBCcBCCCcBCCcBcBc
 
 --------------------------------------------------------------------------------
 -10 pt/round: napes(P10) "RNG GOD"
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: napes(P10) "RNG GOD"
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 -10 pt/round: napes(P10) "RNG GOD"
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
---------------------------------------------------------------------------------
-Section 3 - Game Data for Team The name the team gives to itself
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
--10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
--10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--30 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
-0 pt/round: Bichael(P2) "Basic-AI"
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
-cccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
---------------------------------------------------------------------------------
--30 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
-0 pt/round: RokShox(P3) "The name the team gives to this strategy"
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
-cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
-ccccccccccccccccccccccccccccccccccccc
-BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
--10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
--10 pt/round: 11040221(P5) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
--10 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
--10 pt/round: Team 10(P7) "The name the team gives to this strategy"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCC
-CCCC
-
---------------------------------------------------------------------------------
--20 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
--6 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
-cCcCCccccCcCCccCccccCCcCccCcCCCCccCCcCcCCCcCCCCCCCCcCcCCCcCcCCcCCcCCcccCCcCcCCcC
-BCBCCBBBBCBCCBBCBBBBCCBCBBCBCCCCBBCCBCBCCCBCCCCCCCCBCBCCCBCBCCBCCBCCBBBCCBCBCCBC
-
-CccCCCCcCcCccccCcCccCccCcCccCCcccCCCcCcCcccccCCCCCCCccccC
-CBBCCCCBCBCBBBBCBCBBCBBCBCBBCCBBBCCCBCBCBBBBBCCCCCCCBBBBC
-
---------------------------------------------------------------------------------
--11 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
--10 pt/round: Naga(P9) "HI"
-cCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-BCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
--10 pt/round: napes(P10) "RNG GOD"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCC
-CCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCC
+CCC
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 Section 3 - Game Data for Team Fodder1
 --------------------------------------------------------------------------------
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 -10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 -10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCC
-CCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--16 pt/round: Fodder1(P12) "Be a sacrificial lamb."
--15 pt/round: Bichael(P2) "Basic-AI"
+-16 pt/round: Fodder1(P11) "Be a sacrificial lamb."
+-16 pt/round: Bichael(P2) "Basic-AI"
 cbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBC
 BbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcC
 
-cbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBC
-BbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcC
-
-cbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCc
-BbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCB
+cbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbB
+BbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbc
 
 --------------------------------------------------------------------------------
--21 pt/round: Fodder1(P12) "Be a sacrificial lamb."
+-21 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 -20 pt/round: RokShox(P3) "The name the team gives to this strategy"
 cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 -10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 -10 pt/round: 11040221(P5) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 -10 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCC
-CCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 -10 pt/round: Team 10(P7) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
@@ -2921,73 +2644,61 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--15 pt/round: Fodder1(P12) "Be a sacrificial lamb."
+-15 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 -15 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
-CcbBCCCCcBCCcBCCCCcbbBCCCcbbbbBcBCcBcBcBCcbbBCcbbBCCcBcbbBcBcbbBCcBcbBcBcbbbbBCC
-CBbcCCCCBcCCBcCCCCBbbcCCCBbbbbcBcCBcBcBcCBbbcCBbbcCCBcBbbcBcBbbcCBcBbcBcBbbbbcCC
+CcBcbBcBcbbBCcbbBcbbBCCcBcbBcBCCcbbBcbBCCcbbBCCCcBCcBCCCCcbBcbBCcbBCCcbbbbbbBcbb
+CBcBbcBcBbbcCBbbcBbbcCCBcBbcBcCCBbbcBbcCCBbbcCCCBcCBcCCCCBbcBbcCBbcCCBbbbbbbcBbb
 
-cbBCcBcbbbBcbBCCcBcbbbbBCcBCcBCCCcBCcbBCCcbbbBcBCCcBCCcBcbbbBCcBCCcbbBCCcBCCCcBc
-BbcCBcBbbbcBbcCCBcBbbbbcCBcCBcCCCBcCBbcCCBbbbcBcCCBcCCBcBbbbcCBcCCBbbcCCBcCCCBcB
-
-BcBcBcbbBCCcBCCCCcbBcBCCcbbb
-cBcBcBbbcCCBcCCCCBbcBcCCBbbb
+BCcBcBCcbBCcbbBCcbBCCcBCcBCcbbBCCCCCCCcbbbBCcBcbBcbBCCcbBCCcBCcbBcbbBCcbBcBCCCC
+cCBcBcCBbcCBbbcCBbcCCBcCBcCBbbcCCCCCCCBbbbcCBcBbcBbcCCBbcCCBcCBbcBbbcCBbcBcCCCC
 
 --------------------------------------------------------------------------------
--16 pt/round: Fodder1(P12) "Be a sacrificial lamb."
+-15 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 -15 pt/round: Naga(P9) "HI"
 cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
 BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
 
-cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
-BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 -10 pt/round: napes(P10) "RNG GOD"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCC
+CCCCCC
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
 Section 3 - Game Data for Team Fodder2
 --------------------------------------------------------------------------------
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
 -10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
@@ -2995,191 +2706,176 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
 -10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--16 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-16 pt/round: Fodder2(P12) "Another sacrificial lamb."
 -15 pt/round: Bichael(P2) "Basic-AI"
 cbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBC
 BbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcC
 
-cbBCcbBCcbBCcbBCcbBCc
-BbcCBbcCBbcCBbcCBbcCB
+cbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcbBCcb
+BbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBbcCBb
 
 --------------------------------------------------------------------------------
--21 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-21 pt/round: Fodder2(P12) "Another sacrificial lamb."
 -20 pt/round: RokShox(P3) "The name the team gives to this strategy"
 cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
-bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
 -10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
 -10 pt/round: 11040221(P5) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCC
-CCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
 -10 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
 -10 pt/round: Team 10(P7) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--15 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-15 pt/round: Fodder2(P12) "Another sacrificial lamb."
 -15 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
-cbbbBcBcBCCcbBcBcBCcbbBcBCCCCcbbbbBCcBcBcbBcBCcbBCCCcBcbbbbBCCcbBcbbBcBcBCcbbbbB
-BbbbcBcBcCCBbcBcBcCBbbcBcCCCCBbbbbcCBcBcBbcBcCBbcCCCBcBbbbbcCCBbcBbbcBcBcCBbbbbc
+CCCcbbBcBcBcBCCcbbBCcbBcBCcBcBcBcBCcbBCCCcbBCCcBcBCcbBcBCCCCCCcbBcBCCCCcbbbbBCcb
+CCCBbbcBcBcBcCCBbbcCBbcBcCBcBcBcBcCBbcCCCBbcCCBcBcCBbcBcCCCCCCBbcBcCCCCBbbbbcCBb
 
-CcBCCcBCCcBcbbBcbBcBCCCCCcBCCCcbBCCCCcbBCCCCCCCcbBCcBCcbbBcbbbbbBCcbBcbbbbbbbBcB
-CBcCCBcCCBcBbbcBbcBcCCCCCBcCCCBbcCCCCBbcCCCCCCCBbcCBcCBbbcBbbbbbcCBbcBbbbbbbbcBc
-
-cBcBCCCcBCcbBCcBcbbBcB
-BcBcCCCBcCBbcCBcBbbcBc
+bBcbBcbBCCCcBCCcbbBcbbbbbBCCcbbbBcbbBCcBcBC
+bcBbcBbcCCCBcCCBbbcBbbbbbcCCBbbbcBbbcCBcBcC
 
 --------------------------------------------------------------------------------
--15 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-15 pt/round: Fodder2(P12) "Another sacrificial lamb."
 -15 pt/round: Naga(P9) "HI"
 cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
 BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
 
-cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
-BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
+cBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcB
+BcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBcBc
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
 -10 pt/round: napes(P10) "RNG GOD"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCC
-CCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
 --------------------------------------------------------------------------------
-Section 3 - Game Data for Team karl-mercer
+Section 3 - Game Data for Team k. mercer
 --------------------------------------------------------------------------------
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
 -10 pt/round: The name the team gives to itself(P0) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
 -10 pt/round: The name the team gives to itself(P1) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+CCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--17 pt/round: karl-mercer(P14) "Anatol Rapoport"
--14 pt/round: Bichael(P2) "Basic-AI"
-cbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBC
-BbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcC
+-27 pt/round: k. mercer(P13) "Anatol Rapoport"
+-4 pt/round: Bichael(P2) "Basic-AI"
+cbBCcbBCcbBCcbBCcbBCcbBCcccccccccccccccccccccccccccccccccccccccccccccccccccccccc
+BbcCBbcCBbcCBbcCBbcCBbcCBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
-ccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccbBCcbBCccb
-BBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBbcCBbcCBBb
-
---------------------------------------------------------------------------------
--23 pt/round: karl-mercer(P14) "Anatol Rapoport"
--16 pt/round: RokShox(P3) "The name the team gives to this strategy"
-cbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbbcbbbb
-BbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbbBbbbb
-
-cbbbbcbbbbcbbbbcbbbbcb
-BbbbbBbbbbBbbbbBbbbbBb
+cccccccccccccccccccc
+BBBBBBBBBBBBBBBBBBBB
 
 --------------------------------------------------------------------------------
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
+-21 pt/round: k. mercer(P13) "Anatol Rapoport"
+-20 pt/round: RokShox(P3) "The name the team gives to this strategy"
+cbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+
+bbbbbbbbbbbbbbbbbbbbbbbbb
+bbbbbbbbbbbbbbbbbbbbbbbbb
+
+--------------------------------------------------------------------------------
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
 -10 pt/round: Code Monkey(P4) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
 -10 pt/round: 11040221(P5) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
@@ -3187,47 +2883,47 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
 -10 pt/round: The name the team gives to itself(P6) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
 -10 pt/round: Team 10(P7) "The name the team gives to this strategy"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--16 pt/round: karl-mercer(P14) "Anatol Rapoport"
--14 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
-cbbBCcbcBCCCcBcBcbCCcbBCcBcBCccbbBcbcbbBCcbcbBcBCcBCccbbbBccbbbbCCCCCcbbbBccbbBc
-BbbcCBbBcCCCBcBcBbCCBbcCBcBcCBBbbcBbBbbcCBbBbcBcCBcCBBbbbcBBbbbbCCCCCBbbbcBBbbcB
+-19 pt/round: k. mercer(P13) "Anatol Rapoport"
+-8 pt/round: LoneSkylarWolf(P8) "The name the team gives to this strategy"
+CCCcBcBCCcbbbBCcbBCcBcBcBcCCcccCccCCccCCCCccCCcCCccccCcCcCccCcCcCCCcCCCcCccccCCC
+CCCBcBcCCBbbbcCBbcCBcBcBcBCCBBBCBBCCBBCCCCBBCCBCCBBBBCBCBCBBCBCBCCCBCCCBCBBBBCCC
 
-BCCCCccbBcbBccbBcBcbCcbBcBCcbcBCcbBCCcbcBCCCcBcBCCCCCCCCCcbCcBCcBCCCCCcbBCCCC
-cCCCCBBbcBbcBBbcBcBbCBbcBcCBbBcCBbcCCBbBcCCCBcBcCCCCCCCCCBbCBcCBcCCCCCBbcCCCC
+ccccCcCcCCccCcCCCCCCCcCcCCCcCCc
+BBBBCBCBCCBBCBCCCCCCCBCBCCCBCCB
 
 --------------------------------------------------------------------------------
--11 pt/round: karl-mercer(P14) "Anatol Rapoport"
+-11 pt/round: k. mercer(P13) "Anatol Rapoport"
 -11 pt/round: Naga(P9) "HI"
-cBcBcBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-BcBcBcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+cBcBcBcBcBcBcBcBcBcBcBcBcCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+BcBcBcBcBcBcBcBcBcBcBcBcBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
 -10 pt/round: napes(P10) "RNG GOD"
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
@@ -3235,34 +2931,28 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCC
+CCC
 
 --------------------------------------------------------------------------------
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
--10 pt/round: The name the team gives to itself(P11) "The name the team gives to this strategy"
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
+-10 pt/round: Fodder1(P11) "Be a sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-
---------------------------------------------------------------------------------
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
--10 pt/round: Fodder1(P12) "Be a sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCC
+CCCCCC
 
 --------------------------------------------------------------------------------
--10 pt/round: karl-mercer(P14) "Anatol Rapoport"
--10 pt/round: Fodder2(P13) "Another sacrificial lamb."
+-10 pt/round: k. mercer(P13) "Anatol Rapoport"
+-10 pt/round: Fodder2(P12) "Another sacrificial lamb."
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
-CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCC
+CCCCCCCCCCCCCCCCCCCCCC
 
 --------------------------------------------------------------------------------
