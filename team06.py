@@ -21,9 +21,9 @@ def move(my_history, their_history, my_score, their_score):
         else:
             print ('c')
     if their_history [-1] == 'b':
-        print ('c')
+        print ('b')
     else:
-        return 'b'
+        return 'c'
     # my_history: a string with one letter (c or b) per round that has been played with this opponent.
     # their_history: a string of the same length as history, possibly empty. 
     # The first round between these two players is my_history[0] and their_history[0].
