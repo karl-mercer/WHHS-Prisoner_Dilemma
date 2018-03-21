@@ -1,7 +1,7 @@
 ####
 # Each team's file must define four tokens:
-#     team_name: a string
-#     strategy_name: a string
+#     team_name: Axel and Kennedy 
+#     strategy_name: Opposites attract 
 #     strategy_description: a string
 #     move: A function that returns 'c' or 'b'
 ####
