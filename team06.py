@@ -5,7 +5,7 @@
 #     strategy_description: a string
 #     move: A function that returns 'c' or 'b'
 ####
-
+'work pls'
 team_name = 'RokShox' # Only 10 chars displayed.
 strategy_name = 'Anticipation of vengeance'
 strategy_description = '''This strat defeats other opponents based
